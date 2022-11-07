@@ -16,44 +16,46 @@
 
 /* ACHIEVEMENTS */
 
-.ac-main-body{
-    margin-top: 100px;
+.ac-main-body {
+    /* margin-top: 100px;
     margin-bottom: 200px;
     margin-left: 10%;
-    margin-right: 17%;
-}
-.ac-block{
-
-        width: 350px;
-         box-shadow: 0px 0px 7px rgb(202, 201, 201);
-         border-radius: 5px;
-         display: inline-grid;
-         margin: 50px 50px 100px 50px;
+    margin-right: 17%; */
+    margin: 100px auto 200px auto;
 }
 
-.ac-block p{
+.ac-block {
+
+    width: 350px;
+    box-shadow: 0px 0px 7px rgb(202, 201, 201);
+    border-radius: 5px;
+    display: inline-grid;
+    margin: 50px 50px 100px 50px;
+}
+
+.ac-block p {
     padding: 10px 20px 10px 20px;
 }
 
-.ac-block-img{
+.ac-block-img {
     width: 100%;
     border-radius: 5px;
 }
 
-.ac-block-img3{
+.ac-block-img3 {
     width: 100%;
     border-radius: 5px;
     height: 425px;
 }
 
-hr{
+hr {
     position: relative;
     height: 2px;
     border: none;
     background: rgb(177, 109, 177);
     width: 50%;
     margin-left: 25%;
-    
+
 }
 
 /* END ACHIEVEMENTS */
@@ -64,13 +66,25 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     position: relative;
     padding-top: 130px;
     padding-bottom: 50px;
     background-image: linear-gradient(90deg, #896eff 0, #5f3bff 51%, #896eff);
-    z-index: 1
+    z-index: 1;
+    min-height: 450px;
+}
+
+.breadcrumb-shape {
+
+    left: 0;
+    min-width: 100%;
+}
+
+.breadcrumb-shape img {
+    left: 0;
+    min-width: 100%;
 }
 
 .breadcrumb-title span {
@@ -123,7 +137,7 @@ hr{
 
 }
 
-.mag-section-header{
+.mag-section-header {
     /* background-color: #5f3bff; */
     min-width: 100%;
     text-align: center;
@@ -148,18 +162,18 @@ hr{
     padding: 32px 0px;
 }
 
-.volume{
+.volume {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     justify-content: center;
 }
 
-.volume h4{
+.volume h4 {
     text-align: center;
     min-width: 96%;
-    margin-bottom:3px;
+    margin-bottom: 3px;
 }
 
 .issues {
@@ -184,7 +198,7 @@ hr{
 
 }
 
-.recent-mags{
+.recent-mags {
     max-height: 30%;
     max-width: 30%;
     border: solid 5px #5f3bff;
@@ -196,68 +210,67 @@ hr{
 
 /* COMPETITION */
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .c-timeline {
-	position: relative;
-	margin: 20px auto;
-	width: 100%;
-	max-width: 850%;
-	padding: 5px 20px;
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 850%;
+    padding: 5px 20px;
 }
 
 .c-timeline :before,
 .c-timeline :after {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 150px;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	z-index: 5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 5;
 }
 
 .c-timeline:before {
-	content: "Start";
-	top: 0px;
+    content: "Start";
+    top: 0px;
 }
 
 .c-timeline:after {
-	content: "END";
-	bottom: 0px;
+    content: "END";
+    bottom: 0px;
 }
 
 .c-timeline .c-timeline-blocks {
-	margin: 50px 0px;
+    margin: 50px 0px;
 }
 
 .c-timeline .c-timeline-blocks:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 2px;
-	height: 100%;
-	border-left: 2px dotted #555;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+    border-left: 2px dotted #555;
 }
 
 .c-timeline .c-timeline-blocks .c-blocks {
-	position: relative;
-	width: calc(50% - 20px);
-	margin: 20px 0px;
-	padding-left: 5px;
-	border: 1px solid #eee;
-	box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: calc(50% - 20px);
+    margin: 20px 0px;
+    padding-left: 5px;
+    border: 1px solid #eee;
+    box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1);
 }
-.c-timeline .c-timeline-blocks .c-blocks:nth-child(even){
-	left: calc(50% + 20px);
+
+.c-timeline .c-timeline-blocks .c-blocks:nth-child(even) {
+    left: calc(50% + 20px);
 }
 
 /* END COMPETITION */
-
-
