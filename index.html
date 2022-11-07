@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from live.themewild.com/techrun/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 19:10:27 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Techrun - IT Solutions And Technology HTML5 Template</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/index-style.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .slid {
+        background: linear-gradient(to right, #fff);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .slider {
+        position: relative;
+        width: 150px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        100% {
+            transform: perspective(1000px) rotateY(360deg);
+        }
+    }
+
+    .slider span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*60deg)) translateZ(200px);
+    }
+
+    .slider span img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+        transition: 2s;
+    }
+
+    .slider span:hover img {
+        transform: translateY(-50px) scale(1.2);
+    }
+
+    .mentors {
+        margin-top: 5%;
+    }
+
+    .ourmen {
+        display: flex;
+        text-align: center;
+        width: auto;
+        justify-content: center;
+    }
+
+    .mentors h1 {
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+
+
+    .ourmen .ment {
+        margin: 5px;
+        background-color: whitesmoke;
+        margin-bottom: 50px;
+        line-height: 35px;
+        position: relative;
+        width: 20%;
+        padding-bottom: 10px;
+    }
+
+    .ourmen .ment h3 {
+        margin-top: 30%;
+    }
+
+    .ourmen .ment .img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+    }
+
+    .ourmen .ment .img img {
+        width: 125px;
+        height: 125px;
+
+    }
+
+    .ourmen .ment p {
+        font-size: 17px;
+        font-weight: 500
+    }
+
+    .outlet {
+        width: 20%;
+        height: 400px;
+        background-image: url("assets/img/slider/vol1.png");
+        background-size: 100% 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        animation: changeImage 20s linear infinite;
+    }
+
+    @keyframes changeImage {
+        0% {
+            background-image: url("assets/img/slider/vol1.png");
+        }
+
+        25% {
+            background-image: url("assets/img/slider/vol1issue2.png");
+        }
+
+        50% {
+            background-image: url("assets/img/slider/vol1issue3.jpeg");
+        }
+
+        75% {
+            background-image: url("assets/img/slider/vol2issue2.png");
+        }
+
+        100% {
+            background-image: url("assets/img/slider/vol2issue1.png");
+        }
+    }
+
+    .img-slider h3 {
+        margin-top: 5%;
+        margin-bottom: 25px;
+        margin-left: 80%;
+    }
+
+    .img-slider .outlet {
+        margin-left: 75%;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+    .flex {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+    }
+
+    .slider-wrapper div {
+        position: relative;
+    }
+
+    .slider-wrapper {
+        margin-top: 15vw;
+        margin-left: 11vw;
+    }
+
+    .slide-image {
+        height: 24vw;
+    }
+
+    .slide-image img {
+        width: 24vw;
+        cursor: pointer;
+    }
+
+    .slide-content {
+        width: 25vw;
+        color: #fff;
+        padding: 3vw 18vw 3vw 9vw;
+    }
+
+    .slide-date {
+        color: #0a8acb;
+        font-size: 1.1vw;
+        font-weight: 400;
+        letter-spacing: 0.1vw;
+        padding-bottom: 1.4vw;
+    }
+
+    .slide-title {
+        font-size: 1.2vw;
+        font-weight: 400;
+        letter-spacing: 0.1vw;
+        line-height: 1.55vw;
+        padding-bottom: 1.8vw;
+    }
+
+    .slide-text {
+        font-size: 0.80vw;
+        line-height: 1.2vw;
+        opacity: 0.8;
+        padding-bottom: 4vw;
+    }
+
+    .slide-more {
+        font-weight: 400;
+        letter-spacing: 0.1vw;
+        float: left;
+        font-size: 0.9vw;
+    }
+
+    .slide-bullet {
+        width: 0.5vw;
+        height: 0.5vw;
+        background-color: #0b8bcc;
+        border-radius: 200%;
+        position: relative;
+        margin-left: 1.2vw;
+    }
+
+    .slide-nav {
+        margin-left: 64vw;
+        margin-top: -5.5vw;
+    }
+
+    div.overlay-blue {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: 0.5s ease all;
+    }
+
+    div.overlay-blue:hover {
+        background-color: rgba(13, 27, 43, 0.5);
+    }
+
+    .arrows {
+        width: 3.5vw;
+        margin-top: -5.8vw;
+        margin-left: 72vw;
+        position: relative;
+    }
+
+    .arrow {
+        display: inline-block;
+        position: absolute;
+        width: 1.2vw;
+        height: 1.2vw;
+        background: transparent;
+        text-indent: -9999px;
+        border-top: 0.15vw solid #fff;
+        border-left: 0.15vw solid #fff;
+        transition: all .1s ease-in-out;
+        text-decoration: none;
+        color: transparent;
+
+    }
+
+    .arrow:hover {
+        border-color: #0A8ACB;
+        border-width: 0.25vw;
+    }
+
+    .arrow:before {
+        display: block;
+        height: 200%;
+        width: 200%;
+        margin-left: -50%;
+        margin-top: -50%;
+        content: "";
+        transform: rotate(45deg);
+    }
+
+    .arrow.prev {
+        transform: rotate(-45deg);
+        left: 0;
+    }
+
+    .arrow.next {
+        transform: rotate(135deg);
+        right: 0;
+    }
+
+    .cont {
+        width: 60%;
+        height: 500px;
+        margin: auto;
+        margin-top: 100px;
+        box-shadow: 0px 0px 0px grey;
+        box-sizing: border-box;
+    }
+
+    .slide-cont {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        position: relative;
+        background: white;
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 15%;
+        border:4px #1f2471 solid;
+        border-radius: 15px;
+    }
+
+    /* Slides */
+    .mySlides {
+        display: none;
+        padding: 80px;
+        text-align: center;
+        padding-bottom: 3%;
+        padding-top: 5%;
+    }
+
+    .mySlides img {
+        width: 25%;
+        height: 25%;
+        margin-bottom: 5%;
+    }
+
+    .mySlides h1 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 5%;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color:  #1f2471;
+        color: white;
+    }
+
+    .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        width: 50%;
+        margin-left: 10%;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #1f2471;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: ;
+    }
+
+    .author {
+        color: cornflowerblue;
+    }
+
+    .mySlides p {
+        color: black;
+    }
+</style>
+
+<body>
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-box-1"></div>
+            <div class="loader-box-2"></div>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index-2.html">
+                        <img src="assets/img/logo/logo.png" class="logo-display" alt="logo">
+                        <img src="assets/img/logo/logo-dark.png" class="logo-scrolled" alt="logo">
+                    </a>
+                    <div class="mobile-menu-right">
+                        <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="far fa-stream"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Home</a>
+                                <ul class="dropdown-menu fade-up">
+                                    <li><a class="dropdown-item" href="index-2.html">Home Page 01</a></li>
+                                    <li><a class="dropdown-item" href="index-3.html">Home Page 02</a></li>
+                                    <li><a class="dropdown-item" href="index-4.html">Home Page 03</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                                <ul class="dropdown-menu fade-up">
+                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                    <li><a class="dropdown-item" href="team.html">Team Members</a></li>
+                                    <li><a class="dropdown-item" href="pricing.html">Our Pricing</a></li>
+                                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                                    <li><a class="dropdown-item" href="faq.html">Faq</a></li>
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                    <li><a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
+                                    <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+                                    <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+                                    <li><a class="dropdown-item" href="terms.html">Terms Of Service</a></li>
+                                    <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Service</a>
+                                <ul class="dropdown-menu fade-up">
+                                    <li><a class="dropdown-item" href="service.html">Service One</a></li>
+                                    <li><a class="dropdown-item" href="service-2.html">Service Two</a></li>
+                                    <li><a class="dropdown-item" href="service-single.html">Service Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Project</a>
+                                <ul class="dropdown-menu fade-up">
+                                    <li><a class="dropdown-item" href="project.html">Project One</a></li>
+                                    <li><a class="dropdown-item" href="project-2.html">Project Two</a></li>
+                                    <li><a class="dropdown-item" href="project-single.html">Project Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+                                <ul class="dropdown-menu fade-up">
+                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                    <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="header-nav-right">
+                            <div class="header-nav-search">
+                                <a href="#" class="search-box-outer"><i class="far fa-search"></i></a>
+                            </div>
+                            <div class="header-btn">
+                                <a href="#" class="theme-btn">GET QUOTE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="search-popup">
+        <button class="close-search"><span class="far fa-times"></span></button>
+        <form action="#">
+            <div class="form-group">
+                <input type="search" name="search-field" placeholder="Search Here..." required>
+                <button type="submit"><i class="far fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <main class="main">
+
+        <div class="hero-section">
+            <div class="hero-wrapper">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="hero-content">
+                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
+                                    data-wow-duration="1s" data-wow-delay=".25s">
+                                    Best IT Solutions For You
+                                </h6>
+                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay=".50s">
+                                    IT Solutions And Technology Services Company
+                                </h1>
+                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay=".75s">
+                                    There are many variations of passages available but the majority have suffered
+                                    alteration in some form by injected humour or randomised words.
+                                </p>
+                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay="1s">
+                                    <a href="about.html" class="theme-btn theme-btn2">Contact Us</a>
+                                    <a href="contact.html" class="theme-btn">About Us</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="hero-img">
+                                <div class="slid">
+                                    <div class="slider">
+                                        <span style="--i:1;"><img src="assets/img/blog/arduino.jpeg" alt=""></span>
+                                        <span style="--i:2;"><img src="assets/img/blog/conf_ccet.jpeg" alt=""></span>
+                                        <span style="--i:3;"><img src="assets/img/blog/feature.jpeg" alt=""></span>
+                                        <span style="--i:4;"><img src="assets/img/blog/vol3issue1.png" alt=""></span>
+                                        <span style="--i:5;"><img src="assets/img/blog/sTANDEE-01.png" alt=""></span>
+                                        <span style="--i:6;"><img src="assets/img/blog/linux-yourself.jpeg"
+                                                alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-shape">
+                    <img src="assets/img/shape/shape-1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="img-slider">
+            <h3>Digital Outlet</h3>
+            <div class="outlet"></div>
+        </div>
+
+        <div class="slide-cont">
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/blog/vol3issue1.png">
+                    </div>
+                    <div>
+                        <h1>CCET ACM Student Chapter Magazine - Volume 3 Issue 1 Launched
+                        </h1>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/blog/feature.jpeg">
+                    </div>
+                    <div>
+                        <h1>CCET ACM Student Chapter got featured on ACM India Student Chapter's Website
+                        </h1>
+                        <p>
+                            CCET ACM Student Chapter got featured on ACM India Student Chapter's Website for
+                            reporting the highest number of activities i.e. a total of 213 activities.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/digital-twin.png">
+                    </div>
+                    <div>
+                        <h1>Blog by Tarun Vats And Sudhakar Kumar on Digital Twins
+                        </h1>
+                        <p>The Digital Twin (DT) combines all data (operation data, tests, etc.), models
+                            (engineering models, design drawings, analyses, etc.), and other information
+                            (orders, inspections, requirements.) generated during the life cycle of a
+                            physical asset to maximize economic potential...</p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/dlt1.png">
+                    </div>
+                    <div>
+                        <h1>Blog by Manraj Singh And Sudhakar Kumar on Distributed Ledger Technology
+                        </h1>
+                        <p>DLT (Distributed Ledger Technology) is a type of database in which records are
+                            kept and updated across several nodes on a network in a distributed manner.....
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/syscom.jpg">
+                    </div>
+                    <div>
+                        <h1>Best paper award at International Conference on Smart Systems and Advanced
+                            Computing
+
+                        </h1>
+                        <p><strong>Sudhakar Kumar</strong>, Faculty Sponsor CCET ACM Student Chapter, won
+                            the BEST PAPER
+                            AWARD for his paper entitled "Efficient Speculative Parallelization Architecture
+                            for Overcoming Speculation Overheads"
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/2021_highlight.png">
+                    </div>
+                    <div>
+                        <h1>CCET ACM Student Chapter 2021 Highlights
+                        </h1>
+                        <p>The CCET ACM and ACM - W Student Chapter wishes you all a very happy and healthy
+                            new year.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/conf_ccet.jpeg">
+                    </div>
+                    <div>
+                        <h1>CCET ACM Student Chapter is the Industry Partner for ICSPN 2022
+                        </h1>
+                        <p>The CCET ACM student chapter is proud to announce
+                            that we are the Industry Partner for ICSPN 2022, International Conference on
+                            Cyber Security, Privacy and Networking which is going to be organized during
+                            September 09-11, 2022 in Thailand.
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/app.jpeg">
+                    </div>
+                    <div>
+                        <h1>CCET ACM App is Here!!
+                        </h1>
+                        <p>The CCET ACM student chapter is proud to announce the launch of a neat and nifty
+                            mobile application created by some whip-smart brains of the chapter. The app is
+                            ready and is now available at Playstore.
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/linux_copy.jpeg">
+                    </div>
+                    <div>
+                        <h1>Launch of Book, Linux Yourself: Concept and Programming authored by Dr. Sunil K.
+                            Singh
+                        </h1>
+                        <p>
+                            This book is published by Chapman and Hall/CRC (Taylor & Francies Group) at Boca
+                            Raton, Florida USA. The CCET ACM Student Chapter express its sincere gratitude
+                            to Dr. Sunil K. Singh ...
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/certificate-sudhakar.jpg">
+                    </div>
+                    <div>
+                        <h1>CTiS 2021 Conference
+                        </h1>
+                        <p>CTis (Computational Thinking in Schools) is an
+                            Annual Computa- tional Thinking Conference organised by ACM India and the
+                            CSpathshala community. Faculty Sponsor CCET ACM student chapter <strong>Sudhakar
+                                Kumar
+                            </strong>participated in this conference and was awarded with the Certificate of
+                            participation.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/acm-summer-sudhakar.jpg">
+                    </div>
+                    <div>
+                        <h1>ACM Summer School 2021
+                        </h1>
+                        <p>Compilers are pervasive and critical for any
+                            software application to execute on any Computer System. <strong>Sudhakar
+                                Kumar</strong> was one
+                            of the top 50 students selected for summer school. This summer school aims at
+                            provid- ing you a foundation in the theory and practice of optimizing compilers.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/technical_writing.jpeg">
+                    </div>
+                    <div>
+                        <h1>Technical Paper Writing Contest
+                        </h1>
+                        <p>Insights2Techinfo in association with LoginRadius, eFeed-Hungers, InnovativeFET,
+                            Con4com, and CCET ACM Student Chapter is going to organize a 2021 Technical
+                            Paper Writing Contest.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/MLOP_copy.png">
+                    </div>
+                    <div>
+                        <h1>Blog by Muskaan Chopra And Dr. Sunil K. Singh on the trending topic MLOPs
+                        </h1>
+                        <p>With the interesting mix of terms “AI-ML” and “Development Operations,” MLOps is
+                            an assortment of methods, that is utilized for AI and its life cycle
+                            computerization and its calculations in execution...</p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/Green_HPC_copy.png">
+                    </div>
+                    <div>
+                        <h1>Blog by Kriti Aggarwal And Sudhakar Kumar on the topic of Green HPC’s
+                        </h1>
+                        <p>High performance computing (HPC) evolved as result of growing demand for
+                            computational speed, high performance and data storage. HPC puts various
+                            technologies like computer architecture, programming and its algorithms
+                            and systems software on...</p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/BCI_copy.jpg">
+                    </div>
+                    <div>
+                        <h1>Blog by Sudhakar Kumar And Dr. Sunil K. Singh on the topic of Brain Computer
+                            Interaction
+                        </h1>
+                        <p>A Brain–computer interface (BCI) is a framework that actions the movement of the
+                            central nervous system (CNS) and converts it into fake yield that replaces,
+                            re-establishes, upgrades, supplements, or further...</p>
+                    </div>
+
+                </div>
+
+                <div class="mySlides">
+                    <div>
+                        <img src="assets/img/slider/Blockchain copy.png">
+                    </div>
+                    <div>
+                        <h1>Blog by Sudhakar Kumar And Dipesh Singla on the topic of Blockchain for Data
+                            Science
+                        </h1>
+                        <p>The Data Science industry is confronting a colossal danger to its information
+                            security and information protection in the entirety of its chains, similar to
+                            information assortment, Data Production, information dissecting,
+                            and information sharing, and so forth. </p>
+                    </div>
+
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+                <span class="dot" onclick="currentSlide(15)"></span>
+                <span class="dot" onclick="currentSlide(16)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+                window.onload = function () {
+                    setInterval(function () {
+                        plusSlides(1);
+                    }, 3000);
+                }
+
+            </script>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="about-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-left">
+                            <div class="about-img">
+                                <img src="assets/img/logo/acm-w-logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right">
+                            <div class="site-heading mb-3">
+                                <h2 class="site-title"><span>ACM-W</span></h2>
+                            </div>
+                            <p class="about-text">ACM-W takes forward the torch of
+                                ACM but with a special focus on women and empowers them in a way that
+                                they lead the world in the field of technology and provides them a path
+                                and platform to showcase their talent
+                                and hard work. Which also gets recognized at the global level.</p>
+                            <div class="about-list-wrapper">
+                            </div>
+                            <a href="acm-w.html" class="theme-btn">ACM-W</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="pricing-area py-120">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+                                <h5></h5>
+                            </div>
+                            <div class="pricing-amount">
+                                <strong>Upcoming</strong><br>
+                                <div class="heading-divider"></div>
+                            </div>
+                            <div class="pricing-amount-type">
+
+                            </div>
+                            <div class="pricing-feature">
+                                <p>
+                                    <strong>CASC - CCET ACM and ACM-W Student Chapter</strong><br>
+                                    brings you an amazing workshop on <strong>“Robotics And Embedded
+                                        Systems”</strong>
+                                    <br>
+                                    19 April 2022
+                                    <br>
+                                    (02:30 P.M)
+                                </p>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="events.html" class="theme-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+
+                            </div>
+                            <div class="pricing-amount">
+                                <strong>Achievements</strong><br>
+                                <div class="heading-divider"></div>
+                            </div>
+                            <div class="pricing-amount-type">
+
+                            </div>
+                            <div class="pricing-feature">
+                                <p>CCET ACM Student Chapter got featured on ACM India Student Chapter's Website
+                                    for
+                                    reporting highest number of activities.<br>
+                                    <strong>Sudhakar Kumar, won the Best paper award at SysCom
+                                        2021</strong><br>
+                                    Book Launch by Dr. Sunil K. Singh
+                                </p>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="achievements.html" class="theme-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pricing-item">
+                            <div class="pricing-header">
+
+                            </div>
+                            <div class="pricing-amount">
+                                <strong>Previous</strong><br>
+                                <div class="heading-divider"></div>
+                            </div>
+                            <div class="pricing-amount-type">
+
+                            </div>
+                            <div class="pricing-feature">
+                                <p>DeepFake Workshop cum Hackathon orgainsed by DIC, UIET, Panjab University and
+                                    CCET ACM
+                                    student chapter<br>
+                                    <strong>International Video Contest</strong> <br> by Insights2techinfo and
+                                    CASC
+                                </p>
+                                <br>
+                            </div>
+                            <div class="pricing-footer">
+                                <a href="events.html" class="theme-btn">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mentors">
+            <h1>OUR MENTOR'S</h1>
+            <div class="ourmen">
+                <div class="ment">
+                    <div class="img">
+                        <img src="assets/img/testimonial/msgujral-01 copy.png">
+                    </div>
+                    <h3>Dr. Manpreet Singh</h3>
+                    <div class="heading-divider"></div><br>
+                    <strong class="desig">Principal CCET<br>Degree Wing</strong>
+                    <p>Our mission at CCET is not only to produce engineering graduates but to produce
+                        engineering
+                        minds.</p>
+                </div>
+                <div class="ment">
+                    <div class="img">
+                        <img src="assets/img/testimonial/sk_singh-01 copy.png">
+                    </div>
+                    <h3>Dr. Sunil K. Singh</h3>
+                    <div class="heading-divider"></div><br>
+                    <strong class="desig">Professor and HOD, CSE
+                        <br>Faculty Mentor</strong>
+                    <p>ACM CCET provides student a great opportunity to learn scientific and practical approach
+                        of
+                        computer science.</p>
+                </div>
+                <div class="ment">
+                    <div class="img">
+                        <img src="assets/img/testimonial/sudhakar_kumar-01 copy.png">
+                    </div>
+                    <h3>Sudhakar Kumar</h3>
+                    <div class="heading-divider"></div><br>
+                    <strong class="desig">Assistant Professor, CSE
+                        <br>Faculty Sponsor</strong>
+                    <p>ACM CCET provides every person with an opportunity to learn, heighten and explore the
+                        field
+                        of computer science.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-area bg py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Services</span>
+                            <h2 class="site-title">What We <span>Offer</span></h2>
+                            <div class="heading-divider"></div>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable
+                                content
+                                of a page when looking at its layout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-web"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">IT Solutions</a>
+                            </h3>
+                            <p class="service-text">
+                                There are many variations of passages available but the majority have suffered.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i
+                                        class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-item active">
+                            <div class="service-icon">
+                                <i class="flaticon-code"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Web Development</a>
+                            </h3>
+                            <p class="service-text">
+                                There are many variations of passages available but the majority have suffered.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i
+                                        class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-application-1"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">App Development</a>
+                            </h3>
+                            <p class="service-text">
+                                There are many variations of passages available but the majority have suffered.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i
+                                        class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-data"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Software Development</a>
+                            </h3>
+                            <p class="service-text">
+                                There are many variations of passages available but the majority have suffered.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i
+                                        class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-analysis"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#"> SEO Optimization</a>
+                            </h3>
+                            <p class="service-text">
+                                There are many variations of passages available but the majority have suffered.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i
+                                        class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-cyber-security"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Cyber Security</a>
+                            </h3>
+                            <p class="service-text">
+                                There are many variations of passages available but the majority have suffered.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i
+                                        class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-computer-graphic"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">UX/UI Design</a>
+                            </h3>
+                            <p class="service-text">
+                                There are many variations of passages available but the majority have suffered.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i
+                                        class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="flaticon-branch"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Networking Service</a>
+                            </h3>
+                            <p class="service-text">
+                                There are many variations of passages available but the majority have suffered.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-read-btn">Learn More<i
+                                        class="far fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="skill-area py-120">
+            <div class="container">
+                <div class="skill-wrapper">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="skill-left">
+                                <div class="skill-img">
+                                    <img src="assets/img/skill/01.png" alt="thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="skill-right">
+                                <span class="site-title-tagline">Our Skills</span>
+                                <h2 class="site-title">We Offers You <span>Best IT And Technology</span> Service
+                                </h2>
+                                <p class="skill-details">
+                                    There are many variations of passages of Lorem Ipsum available, but the
+                                    majority
+                                    have suffered alteration in some form, by injected humour, or randomised
+                                    words
+                                    which
+                                    don't look even slightly believable.
+                                </p>
+                                <div class="skills-section">
+                                    <div class="progress-box">
+                                        <h5>IT Consulting <span class="pull-right">85%</span></h5>
+                                        <div class="progress" data-value="85">
+                                            <div class="progress-bar" role="progressbar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-box">
+                                        <h5>Web Development <span class="pull-right">65%</span></h5>
+                                        <div class="progress" data-value="65">
+                                            <div class="progress-bar" role="progressbar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-box">
+                                        <h5>Software Development <span class="pull-right">75%</span></h5>
+                                        <div class="progress" data-value="75">
+                                            <div class="progress-bar" role="progressbar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="theme-btn mt-5">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="counter-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon"><i class="flaticon-code"></i></div>
+                            <span class="counter" data-count="+" data-to="500" data-speed="3000">500</span>
+                            <h6 class="title">+ Project Done</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon"><i class="flaticon-branch"></i></div>
+                            <span class="counter" data-count="+" data-to="250" data-speed="3000">250</span>
+                            <h6 class="title">+ Satisfied Clients</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon"><i class="flaticon-paper-plane"></i></div>
+                            <span class="counter" data-count="+" data-to="120" data-speed="3000">120</span>
+                            <h6 class="title">+ Active Experts</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="counter-box">
+                            <div class="icon"><i class="flaticon-writing"></i></div>
+                            <span class="counter" data-count="+" data-to="300" data-speed="3000">300</span>
+                            <h6 class="title">+ Total Support</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="case-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Cases</span>
+                            <h2 class="site-title">Featured <span>Projects</span></h2>
+                            <div class="heading-divider"></div>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable
+                                content
+                                of a page when looking at its layout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-controls">
+                    <ul class="filter-btns">
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".cat1">Web</li>
+                        <li data-filter=".cat2">Application</li>
+                        <li data-filter=".cat3">Software</li>
+                        <li data-filter=".cat4">Design</li>
+                        <li data-filter=".cat5">Seo</li>
+                    </ul>
+                </div>
+                <div class="row filter-box popup-gallery">
+                    <div class="col-md-6 col-lg-4 filter-item cat1 cat2">
+                        <div class="case-item">
+                            <div class="case-img">
+                                <img class="img-fluid" src="assets/img/case/01.jpg" alt="">
+                                <a class="popup-img case-link" href="assets/img/case/01.jpg"> <i
+                                        class="far fa-plus"></i></a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-info">
+                                    <small>Design</small>
+                                    <h4><a href="#">Web Design</a></h4>
+                                </div>
+                                <a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 filter-item cat2 cat3">
+                        <div class="case-item">
+                            <div class="case-img">
+                                <img class="img-fluid" src="assets/img/case/02.jpg" alt="">
+                                <a class="popup-img case-link" href="assets/img/case/02.jpg"> <i
+                                        class="far fa-plus"></i></a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-info">
+                                    <small>Development</small>
+                                    <h4><a href="#">App Development</a></h4>
+                                </div>
+                                <a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 filter-item cat3 cat4 cat5">
+                        <div class="case-item">
+                            <div class="case-img">
+                                <img class="img-fluid" src="assets/img/case/03.jpg" alt="">
+                                <a class="popup-img case-link" href="assets/img/case/03.jpg"> <i
+                                        class="far fa-plus"></i></a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-info">
+                                    <small>Design</small>
+                                    <h4><a href="#">Product Design</a></h4>
+                                </div>
+                                <a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 filter-item cat2 cat4">
+                        <div class="case-item">
+                            <div class="case-img">
+                                <img class="img-fluid" src="assets/img/case/04.jpg" alt="">
+                                <a class="popup-img case-link" href="assets/img/case/04.jpg"> <i
+                                        class="far fa-plus"></i></a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-info">
+                                    <small>Development</small>
+                                    <h4><a href="#">Web Development</a></h4>
+                                </div>
+                                <a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 filter-item cat1 cat4 cat5">
+                        <div class="case-item">
+                            <div class="case-img">
+                                <img class="img-fluid" src="assets/img/case/05.jpg" alt="">
+                                <a class="popup-img case-link" href="assets/img/case/05.jpg"> <i
+                                        class="far fa-plus"></i></a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-info">
+                                    <small>Networking</small>
+                                    <h4><a href="#">Networking Service</a></h4>
+                                </div>
+                                <a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 filter-item cat4 cat3">
+                        <div class="case-item">
+                            <div class="case-img">
+                                <img class="img-fluid" src="assets/img/case/06.jpg" alt="">
+                                <a class="popup-img case-link" href="assets/img/case/06.jpg"> <i
+                                        class="far fa-plus"></i></a>
+                            </div>
+                            <div class="case-content">
+                                <div class="case-content-info">
+                                    <small>Analytics</small>
+                                    <h4><a href="#">Data Analysis</a></h4>
+                                </div>
+                                <a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="choose-area bg py-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="choose-content">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline">Why Choose Us</span>
+                                <h2 class="site-title my-3">We Highlight <span>Your Business</span> World Market
+                                </h2>
+                            </div>
+                            <p>There are many variations of passages of Lorem Ipsum available,
+                                but the majority have suffered alteration in some form, by injected humour, or
+                                randomised words which don't look even.</p>
+                            <ul>
+                                <li>
+                                    <h5>Our experience</h5>
+                                    <p>
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>Certified company</h5>
+                                    <p>
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>Lifetime Update</h5>
+                                    <p>
+                                        It is a long established fact that a reader will be distracted.
+                                    </p>
+                                </li>
+                            </ul>
+                            <a href="#" class="theme-btn">Start Project</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choose-img">
+                            <img src="assets/img/choose/01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video-area pt-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="video-wrapper">
+                            <img src="assets/img/video/video.png" alt="Banner Video">
+                            <a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=ckHzmP1evNU">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="process-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Working Process</span>
+                            <h2 class="site-title">How It <span>Works</span></h2>
+                            <div class="heading-divider"></div>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable
+                                content
+                                of a page when looking at its layout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-6 text-center mb-30">
+                        <div class="process-single">
+                            <div class="icon">
+                                <span>01</span>
+                                <i class="flaticon-application-1"></i>
+                            </div>
+                            <h4>Choose Service</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable
+                                content of
+                                a page. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center mb-30">
+                        <div class="process-single">
+                            <div class="icon">
+                                <span>02</span>
+                                <i class="flaticon-code"></i>
+                            </div>
+                            <h4>Meet With Expert</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable
+                                content of
+                                a page. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center mb-30">
+                        <div class="process-single">
+                            <div class="icon">
+                                <span>03</span>
+                                <i class="flaticon-writing"></i>
+                            </div>
+                            <h4>Custom Requirment</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable
+                                content of
+                                a page. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center mb-30">
+                        <div class="process-single">
+                            <div class="icon">
+                                <span>04</span>
+                                <i class="flaticon-paper-plane"></i>
+                            </div>
+                            <h4>Make It Happen</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable
+                                content of
+                                a page. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="team-area bg py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Team</span>
+                            <h2 class="site-title">Meet <span>Experts</span></h2>
+                            <div class="heading-divider"></div>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable
+                                content
+                                of a page when looking at its layout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="assets/img/team/01.jpg" alt="thumb">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Malissa Fierro</a></h5>
+                                    <span>Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="assets/img/team/02.jpg" alt="thumb">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Arron Rodri</a></h5>
+                                    <span>Senior Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item active">
+                            <img src="assets/img/team/03.jpg" alt="thumb">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Chad Smith</a></h5>
+                                    <span>Digital Marketer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="team-item">
+                            <img src="assets/img/team/04.jpg" alt="thumb">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Tony Pinto</a></h5>
+                                    <span>CEO & Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="testimonial-area bg py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Testimonials</span>
+                            <h2 class="site-title">What our Executives have to <span>Say</span></h2>
+                            <div class="heading-divider"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slider owl-carousel owl-theme">
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                CCET ACM Student chapter is a group of people with similar interests and goals
+                                in
+                                computer science. Together, this platform focuses on the growth and development
+                                at
+                                not
+                                only personal but professional level also as it has a unique learning
+                                environment.
+                                It
+                                provides everyone an opportunity to learn something new.
+                            </p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/AKASH.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Akash Sharma</h4>
+                                <p>Chairperson</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                CCET ACM Student Chapter is an opportunity for like minded people to evolve and
+                                turn
+                                their ideas into reality. It works for the betterment of its members and helps
+                                them
+                                to
+                                excel in the field of computer science. It encourages people to increase their
+                                skill
+                                sets by evaluating their skills on real life examples.
+                            </p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/TARUN.jpeg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Tarun</h4>
+                                <p>Vice Chairperson</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                CCET ACM Student Chapter seeks to understand, collaborate and imagine novel
+                                solutions to
+                                problems both theoretical and practical in nature. This Chapter strives to keep
+                                up
+                                with
+                                the latest technology and spark curiosity in everyone, which is essential to
+                                excel
+                                in
+                                the field of Computer Science.
+                            </p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/UDAY.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Uday Madan</h4>
+                                <p>Secretary</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                CCET ACM Student Chapter seeks to understand, collaborate and imagine novel
+                                solutions to
+                                problems both theoretical and practical in nature. This Chapter strives to keep
+                                up
+                                with
+                                the latest technology and spark curiosity in everyone, which is essential to
+                                excel
+                                in
+                                the field of Computer Science.
+                            </p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/AKSHIT.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Akshit Chhikara</h4>
+                                <p>Membership Chair</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                CCET ACM Student Chapter brings together people with innovative ideas and vision
+                                in
+                                the
+                                field of computer science. It encourages people to use their knowledge for the
+                                welfare
+                                of the society. This Chapter ensures the overall professional growth of all its
+                                members
+                                with proper guidance and constant support.
+                            </p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/AISHITA.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Aishita</h4>
+                                <p>Treasurer</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                CCET ACM Student Chapter is a family that embodies the best aspects of
+                                collaboration,
+                                dedication, and the concept of growing together while assisting an individual in
+                                making
+                                a positive contribution to society.
+                            </p><br><br>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/DEVASHISH.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Devashish Gupta</h4>
+                                <p>Webmaster</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                CCET ACM Student Chapter provides resources and tools to further your career and
+                                enrich
+                                your knowledge in the field of computer science, as well as opportunities for
+                                lifelong
+                                learning and personal development.
+                            </p><br><br><br>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/HARSHIT.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Harshit Dubey</h4>
+                                <p>Editorial Head</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                CCET ACM chapter has provided me with numerous skills to explore my technical
+                                skills
+                                and
+                                knowledge and provide a whole plethora of knowledge. It's been a great journey
+                                to be
+                                associated with such a great organization and work together with some of the
+                                best
+                                subject experts and tons of guidance from numerous people outside my own college
+                                and
+                                country as well.
+                            </p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/SIDHARTH_SHARMA.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Sidharth Sharma</h4>
+                                <p>External PR Head</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                "If I have seen further, it is by standing on the shoulders of giants." - Isaac
+                                Newton.
+                                CCET ACM student chapter strives to embody the spirit of the saying by
+                                encouraging
+                                collaboration with fellow students as well as providing opportunities to learn
+                                from
+                                &
+                                with distinguished researchers in the field of computing.
+                            </p><br>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/ARJUN.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Arjun Gupta</h4>
+                                <p>Social Media Manager</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-single">
+                        <div class="testimonial-quote">
+                            <span class="testimonial-quote-icon"><i class="fal fa-quote-left"></i></span>
+                            <p>
+                                "The CCET ACM Student Chapter offers opportunities for lifelong learning and
+                                personal development as well as resources and tools to enhance your knowledge.
+                                The
+                                chapter encourages students to be creative and do their best by enabling them to
+                                use
+                                computing to realize their concepts and excel in the field of social work.
+                            </p>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="testimonial-author-img">
+                                <img src="assets/img/testimonial/PUSHKAR.jpeg" alt="">
+                            </div>
+                            <div class="testimonial-author-info">
+                                <h4>Pushkar Kaushik</h4>
+                                <p>Creative Head</p>
+                                <div class="testimonial-rate">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="blog-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Our Blog</span>
+                            <h2 class="site-title">News & <span> Blog</span></h2>
+                            <div class="heading-divider"></div>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable
+                                content
+                                of a page when looking at its layout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="assets/img/blog/01.jpg" alt="Thumb">
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a>
+                                        </li>
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="#">There are many variates of passages alteration</a>
+                                </h4>
+                                <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque
+                                </p>
+                                <a class="theme-btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="assets/img/blog/02.jpg" alt="Thumb">
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a>
+                                        </li>
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="#">There are many variates of passages alteration</a>
+                                </h4>
+                                <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque
+                                </p>
+                                <a class="theme-btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-item-img">
+                                <img src="assets/img/blog/03.jpg" alt="Thumb">
+                            </div>
+                            <div class="blog-item-info">
+                                <div class="blog-item-meta">
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a>
+                                        </li>
+                                        <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="blog-title">
+                                    <a href="#">There are many variates of passages alteration</a>
+                                </h4>
+                                <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque
+                                </p>
+                                <a class="theme-btn" href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cta-area">
+            <div class="container">
+                <div class="row">
+                    <div class="cta-content">
+                        <h5>We Offer Quality Service</h5>
+                        <h2>IT Solutions And Technology Services</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable
+                            content
+                            <br>
+                            of a page when looking at its layout.
+                        </p>
+                        <a href="#" class="cta-btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-shape">
+                <img src="assets/img/shape/shape-3.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="partner-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Partners</span>
+                            <h2 class="site-title">Our <span>Partners</span></h2>
+                            <div class="heading-divider"></div>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable
+                                content
+                                of a page when looking at its layout.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/01.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/02.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/03.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/04.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/05.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/06.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/07.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/08.png" alt="thumb">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="partner-item">
+                                <img src="assets/img/partner/09.png" alt="thumb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-area">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row footer-widget-wrapper pt-100 pb-70">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-widget-box about-us">
+                            <a href="#" class="footer-logo">
+                                <img src="assets/img/logo/logo.png" alt="">
+                            </a>
+                            <p class="mb-20">
+                                We are many variations of passages available but the majority have suffered alteration
+                                in some form by injected humour.
+                            </p>
+                            <div class="footer-contact">
+                                <ul>
+                                    <li><i class="far fa-map-marker-alt"></i>25/B Milford Road, New York, USA</li>
+                                    <li><a href="tel:+21236547898"><i class="far fa-phone"></i>+2 123 654 7898</a></li>
+                                    <li><a
+                                            href="https://live.themewild.com/cdn-cgi/l/email-protection#f88b8d8888978a8cb89d80999588949dd69b9795"><i
+                                                class="far fa-envelope"></i><span class="__cf_email__"
+                                                data-cfemail="bac9cfcacad5c8cefadfc2dbd7cad6df94d9d5d7">[email&#160;protected]</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Quick Links</h4>
+                            <ul class="footer-list">
+                                <li><a href="#"><i class="fas fa-caret-right"></i> About Us</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> FAQ's</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Terms Of Service</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Privacy policy</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Our Services</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Team Members</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Latest Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Our Services</h4>
+                            <ul class="footer-list">
+                                <li><a href="#"><i class="fas fa-caret-right"></i> IT Solutions</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Web Development</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Digital Marketing</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> App Development</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Networking Service</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> SEO Optimization</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Data Analysis</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Newsletter</h4>
+                            <div class="footer-newsletter">
+                                <p>Subscribe Our Newsletter To Get Latest Update And News</p>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                        <button class="theme-btn" type="submit">
+                                            Subscribe Now <i class="far fa-paper-plane"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <p class="copyright-text">
+                            &copy; Copyright <span id="date"></span> <a href="#"> Techrun </a> All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <ul class="footer-menu">
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Terms Of Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#" id="scroll-top"><i class="far fa-long-arrow-up"></i></a>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from live.themewild.com/techrun/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 19:10:48 GMT -->
+
+</html>

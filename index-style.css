@@ -1312,13 +1312,15 @@ button.navbar-toggler:focus {
 .about-left {
     position: relative;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    height: 20%
 }
 
 .about-right {
     position: relative;
     display: block;
-    padding-left: 25px
+    padding-left: 25px;
+    padding-top: 25%
 }
 
 .about-list-wrapper {
@@ -2937,8 +2939,8 @@ button.navbar-toggler:focus {
 }
 
 .pricing-amount strong {
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 45px;
+    font-weight: 600;
     color: #1f2471
 }
 
@@ -2954,6 +2956,10 @@ button.navbar-toggler:focus {
     padding: 4px 20px;
     color: #fff;
     border-radius: 50px
+}
+
+.pricing-feature p {
+    padding: 5%
 }
 
 .pricing-feature {
