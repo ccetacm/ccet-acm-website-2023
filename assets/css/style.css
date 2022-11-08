@@ -835,7 +835,9 @@ label {
     }
 
     .navbar .header-btn {
-        padding-top: 6px;        
+        padding-top: 6px;  
+        text-align: center;
+        
     }
 
     .navbar .header-btn .theme-btn {
