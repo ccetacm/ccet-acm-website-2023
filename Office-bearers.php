@@ -28,7 +28,6 @@
           text-align:center;
           margin-top: 40px;
         }
-        
     </style>
 </head>
 
@@ -130,8 +129,7 @@
                 <img src="assets/img/shape/shape-4.svg" alt="">
             </div>
             </div>
-            <h2 class="site-title heading">MEET OUR <span>TEAM</span></h2>
-            <div class="heading-divider"></div>
+            <h2 class="site-title heading ">MEET OUR <span>TEAM</span></h2>
 
         <div class="case-area py-120">
             
@@ -153,7 +151,46 @@
                     <div class="team-area py-120">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
+                                
+                                <?php 
+
+                                $conn = new mysqli("ccet.hosting2.acm.org" , "ccethosting2acm_admin" , "@dmin@321" , "ccethosting2acm_website_2023");
+
+                                if($conn->connect_error){
+                                    echo "Connection Failed";
+                                    die();
+                                }
+
+                                $data = $conn->query("SELECT * FROM `acm_team_record` WHERE 1");
+
+                                while($row = $data->fetch_array(MYSQLI_ASSOC)){
+
+                                    echo '<div class="col-md-6 col-lg-4 col-xl-3 filter-item '.$row["category"].'">
+                                            <div class="team-item">
+                                                <img src="assets/img/team/01.jpg" alt="thumb">
+                                                <div class="team-social">
+                                                    <a href="'.$row["github"].'"><i class="fab fa-github"></i></a>
+                                                    <a href="'.$row["linkedin"].'"><i class="fab fa-linkedin"></i></a>
+                                                    <a href="'.$row["orcid"].'"><i class="fab fa-orcid"></i></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <div class="team-bio">
+                                                        <h5><a href="#">'.$row["name"].'</a></h5>
+                                                        <span>'.$row["position"].'</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>';
+                                }
+
+
+                                ?>
+                                
+
+
+
+
+                                <!-- <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
                                     <div class="team-item">
                                         <img src="assets/img/team/01.jpg" alt="thumb">
                                         <div class="team-social">
@@ -1002,102 +1039,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+                                 -->
 
                     
+<!---------------------------------------------------------->
 
 
-<!--<div class="case-item">
-<div class="case-img">
-
-<img class="img-fluid" src="assets/img/case/01.jpg" alt="">
-<a class="popup-img case-link" href="assets/img/case/01.jpg"> <i class="far fa-plus"></i></a>
-</div>
-<div class="case-content">
-<div class="case-content-info">
-<small>Design</small>
-<h4><a href="#">Web Design</a></h4>
-</div>
-<a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 filter-item cat2 cat3">
-<div class="case-item">
-<div class="case-img">
-<img class="img-fluid" src="assets/img/case/02.jpg" alt="">
-<a class="popup-img case-link" href="assets/img/case/02.jpg"> <i class="far fa-plus"></i></a>
-</div>
-<div class="case-content">
-<div class="case-content-info">
-<small>Development</small>
-<h4><a href="#">App Development</a></h4>
-</div>
-<a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 filter-item cat3 cat4 cat5">
-<div class="case-item">
-<div class="case-img">
-<img class="img-fluid" src="assets/img/case/03.jpg" alt="">
-<a class="popup-img case-link" href="assets/img/case/03.jpg"> <i class="far fa-plus"></i></a>
-</div>
-<div class="case-content">
-<div class="case-content-info">
-<small>Design</small>
-<h4><a href="#">Product Design</a></h4>
-</div>
-<a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 filter-item cat2 cat4">
-<div class="case-item">
-<div class="case-img">
-<img class="img-fluid" src="assets/img/case/04.jpg" alt="">
-<a class="popup-img case-link" href="assets/img/case/04.jpg"> <i class="far fa-plus"></i></a>
-</div>
-<div class="case-content">
-<div class="case-content-info">
-<small>Development</small>
-<h4><a href="#">Web Development</a></h4>
-</div>
-<a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 filter-item cat1 cat4 cat5">
-<div class="case-item">
-<div class="case-img">
-<img class="img-fluid" src="assets/img/case/05.jpg" alt="">
-<a class="popup-img case-link" href="assets/img/case/05.jpg"> <i class="far fa-plus"></i></a>
-</div>
-<div class="case-content">
-<div class="case-content-info">
-<small>Networking</small>
-<h4><a href="#">Networking Service</a></h4>
-</div>
-<a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 filter-item cat4 cat3">
-<div class="case-item">
-<div class="case-img">
-<img class="img-fluid" src="assets/img/case/06.jpg" alt="">
-<a class="popup-img case-link" href="assets/img/case/06.jpg"> <i class="far fa-plus"></i></a>
-</div>
-<div class="case-content">
-<div class="case-content-info">
-<small>Analytics</small>
-<h4><a href="#">Data Analysis</a></h4>
-</div>
-<a href="#" class="case-arrow"><i class="far fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-</div>-->
                     <!------------------------TEAM END------------------------->
                     <!--</div> -->
                 </div>
@@ -1106,314 +1053,94 @@
 
 
 
-    <!-- ----------------------------------SECOND------------------------------ -->
-    <!-- <div class="search-popup">
-<button class="close-search"><span class="far fa-times"></span></button>
-<form action="#">
-<div class="form-group">
-<input type="search" name="search-field" placeholder="Search Here..." required>
-<button type="submit"><i class="far fa-search"></i></button>
-</div>
-</form>
-</div> -->
+ 
 
-    <!-- <main class="main">
-
-<div class="site-breadcrumb">
-<div class="container">
-<h2 class="breadcrumb-title">Team Members</h2>
-<ul class="breadcrumb-menu">
-<li><a href="index-2.html"><i class="far fa-home"></i> Home</a></li>
-<li class="active">Team Members</li>
-</ul>
-</div>
-<div class="breadcrumb-shape">
-<img src="assets/img/shape/shape-4.svg" alt="">
-</div>
-</div> -->
-
-    <!---------------------------------------------------------BUTTONS---------------------------------------------------------------->
-    <!-- <div class="filters clearfix">
-
-    <ul class="filter-tabs filter-btns clearfix">
-
-        <li class="filter" data-role="button" data-filter="all">YEAR 2022-2023</li>
-
-        <li class="filter" data-role="button" data-filter=".coding">YEAR 2021-2022</li>
-
-        <li class="filter" data-role="button" data-filter=".recruitments">YEAR 2020-2021</li>
-
-        <li class="filter" data-role="button" data-filter=".web">YEAR 2019-2020</li>
-
-
-
-    </ul>
-
-
-
-</div>
-
-</div>
-
-
-
-<div class="filter-list row clearfix">
-
-<div id="nav-buttons">
-
-    <button style="position: fixed ; top: 50%; left: 0%;  z-index: 4;"
-        class="w3-button w3-black w3-display-left" onclick="LEFT()">&#10094;</button>
-    <button style="position: fixed ; top: 50%; right: 0%;  z-index: 4;"
-        class="w3-button w3-black w3-display-right" onclick="RIGHT()">&#10095;</button>
-</div>
-
-<div id="modal01" class="w3-modal" style=" background-color: rgba(3, 4, 94, 0.9);"
-    onclick="collapse(this)">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-        <img id="img01" style="width:100%">
-    </div>
-
-</div> -->
-    <!------------------------------------------------------------>
-
-    <!-- <div class="team-area py-120">
-<div class="container">
-<div class="row">
-<div class="col-md-6 col-lg-4 col-xl-3">
-<div class="team-item">
-<img src="assets/img/team/01.jpg" alt="thumb">
-<div class="team-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="team-content">
-<div class="team-bio">
-<h5><a href="#">Malissa Fierro</a></h5>
-<span>Developer</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3">
-<div class="team-item">
-<img src="assets/img/team/02.jpg" alt="thumb">
-<div class="team-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="team-content">
-<div class="team-bio">
-<h5><a href="#">Arron Rodri</a></h5>
-<span>Senior Designer</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3">
-<div class="team-item active">
-<img src="assets/img/team/03.jpg" alt="thumb">
-<div class="team-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="team-content">
-<div class="team-bio">
-<h5><a href="#">Chad Smith</a></h5>
-<span>Digital Marketer</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3">
-<div class="team-item">
-<img src="assets/img/team/04.jpg" alt="thumb">
-<div class="team-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
- <a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="team-content">
-<div class="team-bio">
-<h5><a href="#">Tony Pinto</a></h5>
-<span>CEO & Founder</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3">
-<div class="team-item">
-<img src="assets/img/team/01.jpg" alt="thumb">
-<div class="team-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="team-content">
-<div class="team-bio">
-<h5><a href="#">Malissa Fierro</a></h5>
-<span>Developer</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3">
-<div class="team-item">
-<img src="assets/img/team/02.jpg" alt="thumb">
-<div class="team-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="team-content">
-<div class="team-bio">
-<h5><a href="#">Arron Rodri</a></h5>
-<span>Senior Designer</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3">
-<div class="team-item active">
-<img src="assets/img/team/03.jpg" alt="thumb">
-<div class="team-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="team-content">
-<div class="team-bio">
-<h5><a href="#">Chad Smith</a></h5>
-<span>Digital Marketer</span>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 col-xl-3">
-<div class="team-item">
-<img src="assets/img/team/04.jpg" alt="thumb">
-<div class="team-social">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-<div class="team-content">
-<div class="team-bio">
-<h5><a href="#">Tony Pinto</a></h5>
-<span>CEO & Founder</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div> -->
-
-    </main>
+    
 
 
     <!---------------------------------------------------------FOOTER START ---------------------------------------------------------------->
 
     <footer class="footer-area">
-        <div class="footer-widget">
-            <div class="container">
-                <div class="row footer-widget-wrapper pt-100 pb-70">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="footer-widget-box about-us">
-                            <a href="#" class="footer-logo">
-                                <img src="assets/img/logo/ACM Logo Black.svg    " alt="">
-                            </a>
-                            <p class="mb-20">
-                                ACM boosts up the potential and talent, supporting the overall development needs of
-                                our students to facilitate a structured path from education to employment by
-                                providing a safe and supported space where creative talent and imagination can
-                                flourish in a caring environment.
-                            </p>
-                            <div class="footer-contact">
-                                <ul>
-                                    <li><i class="far fa-map-marker-alt"></i>CCET, SECTOR-26, CHANDIGARH</li>
-                                    
+            <div class="footer-widget">
+                <div class="container">
+                    <div class="row footer-widget-wrapper pt-100 pb-70">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-widget-box about-us">
+                                <a href="#" class="footer-logo">
+                                    <img src="assets/img/logo/ACM Logo Black.svg    " alt="">
+                                </a>
+                                <p class="mb-20">
+                                    ACM boosts up the potential and talent, supporting the overall development needs of
+                                    our students to facilitate a structured path from education to employment by
+                                    providing a safe and supported space where creative talent and imagination can
+                                    flourish in a caring environment.
+                                </p>
+                                <div class="footer-contact">
+                                    <ul>
+                                        <li><i class="far fa-map-marker-alt"></i>CCET, SECTOR-26, CHANDIGARH</li>
+                                        
+                                    </ul>
+                                </div>
+                                <ul class="footer-social">
+                                    <li><a href="https://www.facebook.com/acmwccet"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
+                                    <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
-                            <ul class="footer-social">
-                                <li><a href="https://www.facebook.com/acmwccet"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
-                                <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Explore</h4>
-                            <ul class="footer-list">
-                                <li><a href="about.html"><i class="fas fa-caret-right"></i> About </a></li>
-                                <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
-                                <li><a href="team.html"><i class="fas fa-caret-right"></i> Team</a></li>
-                                <li><a href="achievements.html"><i class="fas fa-caret-right"></i> Achievments</a>
-                                </li>
-                                <li><a href="acm-w.html"><i class="fas fa-caret-right"></i> ACM-W</a></li>
+                        <div class="col-md-6 col-lg-2">
+                            <div class="footer-widget-box list">
+                                <h4 class="footer-widget-title">Explore</h4>
+                                <ul class="footer-list">
+                                    <li><a href="about.html"><i class="fas fa-caret-right"></i> About </a></li>
+                                    <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
+                                    <li><a href="team.html"><i class="fas fa-caret-right"></i> Team</a></li>
+                                    <li><a href="achievements.html"><i class="fas fa-caret-right"></i> Achievments</a>
+                                    </li>
+                                    <li><a href="acm-w.html"><i class="fas fa-caret-right"></i> ACM-W</a></li>
 
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Contact Us</h4>
-                            <div class="footer-newsletter">
-                                <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
-                                    Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a></p>
-                                <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="email" class="form-control" placeholder="Your Email">
-                                        <button class="theme-btn" type="submit">
-                                            Subscribe Now <i class="far fa-paper-plane"></i>
-                                        </button>
-                                    </form>
+                        <div class="col-md-6 col-lg-3">
+                            
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-widget-box list">
+                                <h4 class="footer-widget-title">Contact Us</h4>
+                                <div class="footer-newsletter">
+                                    <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
+                                        Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a></p>
+                                    <div class="subscribe-form">
+                                        <form action="#">
+                                            <input type="email" class="form-control" placeholder="Your Email">
+                                            <button class="theme-btn" type="submit">
+                                                Subscribe Now <i class="far fa-paper-plane"></i>
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 align-self-center">
-                        <p class="copyright-text">
-                            &copy; Copyright <span id="date"></span> Copyright © 2021 All rights reserved | <br> Designed and Developed by <a href="#">CCET ACM Website Team</a>
-                        </p>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <p class="copyright-text">
+                                &copy; Copyright <span id="date"></span> Copyright © 2021 All rights reserved | <br> Designed and Developed by <a href="#">CCET ACM Website Team</a>
+                            </p>
+                        </div>
+                        
                     </div>
-                    
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
     <!---------------------------------------------------------FOOTER END---------------------------------------------------------------->
 
