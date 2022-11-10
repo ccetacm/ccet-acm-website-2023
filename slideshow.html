@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>CodePen - Bubble Slideshow Component</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/slideshow-style.css">
+
 </head>
 <body>
-    
+<!-- partial:index.partial.html -->
+<main id="main">
+  <gallery ref="gallery" v-bind:images="images" v-on:next="next">
+  </gallery>
+</main>
+
+<template id="gallery_template">
+  <transition-group tag="figure" class="Gallery" name="open">
+    <img v-for="(image, index) of images" 
+         v-bind:src="image" 
+         v-bind:key="index"
+         v-on:click="onClick"
+         v-bind:style="{'--circle-x': x, '--circle-y': y}">
+  </transition-group>
+</template>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js'></script><script  src="assets/js/slideshow-script.js"></script>
+
 </body>
 </html>
