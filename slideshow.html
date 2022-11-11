@@ -2,28 +2,20 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Bubble Slideshow Component</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/slideshow-style.css">
+  <title>CodePen - React Slider w/ Hover Effect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="assets/css/slideshow-style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<main id="main">
-  <gallery ref="gallery" v-bind:images="images" v-on:next="next">
-  </gallery>
-</main>
-
-<template id="gallery_template">
-  <transition-group tag="figure" class="Gallery" name="open">
-    <img v-for="(image, index) of images" 
-         v-bind:src="image" 
-         v-bind:key="index"
-         v-on:click="onClick"
-         v-bind:style="{'--circle-x': x, '--circle-y': y}">
-  </transition-group>
-</template>
+<div id="app"></div>
 <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js'></script><script  src="assets/js/slideshow-script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-transition-group/4.2.1/react-transition-group.min.js'>
+</script><script  src="assets/js/slideshow-script.js"></script>
 
 </body>
 </html>

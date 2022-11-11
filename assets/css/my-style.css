@@ -620,7 +620,7 @@ div.overlay-blue:hover {
 
 .g-slideshow 
 {
-
+    text-align: center;
 }
 
 .g-col-md-6 {
@@ -1400,7 +1400,7 @@ hr {
     transition: 0.4s ease-out;
 }
 
-<<<<<<< HEAD
+
 .case-content {
     left: 20px;
     right: 20px;
@@ -1430,11 +1430,8 @@ hr {
    height: 360px;
 }
 
- {
-    height: 360px;
-}
-=======
->>>>>>> 83e173ddadf7baa06a5e13e9efbd4f9c4beda9ca
+ 
+
 
 /* MAGAZINE END */
 
