@@ -574,6 +574,17 @@ div.overlay-blue:hover {
 
 /* GALLERY */
 
+@media(min-width:1200px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        max-width: 1185px
+    }
+}
+
 .g-container {
     margin-top: 90px;
     display: grid;
@@ -677,12 +688,13 @@ div.overlay-blue:hover {
     border-radius: 8px
 }
 
-.case-link {
+.g-case-link {
     position: absolute;
     width: 60px;
     height: 60px;
     line-height: 60px;
     color: #896eff !important;
+    opacity: 0.3;
     background: #fff;
     border-radius: 50px;
     text-align: center;
