@@ -1,8 +1,9 @@
-const slideData = [{
+const slideData = [
+  {
     index: 0,
     // headline: 'New Fashion Apparel',
     // button: 'Shop now',
-    src: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg'
+    src: "assets/img/Gallery_Images/WebsiteGallery/Coding/1.jpg"
   },
 
   {
