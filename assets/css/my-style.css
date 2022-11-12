@@ -75,19 +75,20 @@
 
 .mentors h1 {
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 
 
 .ourmen .ment {
-    margin: 5px;
-    background-color: whitesmoke;
+    margin: 15px;
+    background-color: rgb(230, 230, 250);
     margin-bottom: 50px;
     line-height: 35px;
     position: relative;
     width: 20%;
     padding-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .ourmen .ment h3 {
@@ -110,17 +111,59 @@
 
 .ourmen .ment p {
     font-size: 17px;
-    font-weight: 500
+    font-weight: 500;
+    color: #03020a;
+    font-weight: 500;
+}
+
+@media (max-width: 400px) {
+    .ourmen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ourmen .ment {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+.text-sliders {
+    display: flex;
+}
+
+.img-slider {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 6%;
 }
 
 .img-slider h3 {
-    margin-top: 5%;
     margin-bottom: 25px;
-    margin-left: 80%;
+    margin-left: 25%;
 }
 
 .img-slider .outlet {
-    margin-left: 75%;
+    margin-left: 10%;
+    width: 275px;
+}
+
+@media (max-width: 400px) {
+    .mentors h1 {
+        text-align: center;
+        margin-bottom: 20%;
+    }
+    
+    .img-slider .outlet {
+        margin: auto;
+        width: 250px;
+    }
+
+    .img-slider h3 {
+        margin-top: 5%;
+        margin-bottom: 25px;
+        margin-left: 30%;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -280,10 +323,19 @@ div.overlay-blue:hover {
     position: relative;
     background: white;
     width: 50%;
-    margin-left: 10%;
+    margin-left: 35%;
     margin-top: 15%;
-    border:4px #1f2471 solid;
+    border:3px #917af7 solid;
     border-radius: 15px;
+}
+
+@media (max-width: 400px) {
+    .slideshow-container {
+        width: 300px;
+        margin-left: 55px;
+    }
+
+
 }
 
 /* Slides */
@@ -293,6 +345,9 @@ div.overlay-blue:hover {
     text-align: center;
     padding-bottom: 3%;
     padding-top: 5%;
+    height: 60%;
+    background-color: rgb(230, 230, 250);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .mySlides img {
@@ -307,6 +362,10 @@ div.overlay-blue:hover {
     margin-bottom: 5%;
 }
 
+.testimonial-quote p {
+    color: black;
+    font-weight: 500;
+}
 /* Next & previous buttons */
 .prev,
 .next {
@@ -338,20 +397,37 @@ div.overlay-blue:hover {
 .dot-container {
     text-align: center;
     padding: 20px;
-    background: #fff;
     width: 50%;
-    margin-left: 10%;
+    margin-left: 35%;
+    background-color: rgb(230, 230, 250);
+    border:3px #917af7 solid;
+    border-radius: 15px;
+}
+
+@media (max-width: 400px) {
+    .dot-container {
+        width: 300px;
+        margin-left: 55px;
+    }
 }
 
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 14px;
+    width: 14px;
     margin: 0 2px;
     background-color: #1f2471;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+@media (max-width: 400px) {
+    .dot {
+        width: 10px;
+        height: 10px;
+        margin: 0;
+    }
 }
 
 .active,
@@ -371,26 +447,77 @@ div.overlay-blue:hover {
     position: relative;
     display: flex;
     justify-content: center;
-    height: 20%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.about-left .about-img img {
+    background-color:  rgb(230, 230, 250);
 }
 
 .about-right {
     position: relative;
     display: block;
     padding-left: 25px;
-    padding-top: 25%
+    margin-top: 25%;
+    background-color:  #917af7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
+.about-right span, p, .theme-btn {
+    color: white;
+}
 .pricing-amount strong {
     font-size: 45px;
     font-weight: 600;
-    color: #1f2471
+    color: white
 }
 
 .pricing-feature p {
     padding: 5%
 }
 
+@media (max-width: 400px) {
+    .slider span {
+        transform: rotateY(calc(var(--i)*60deg)) translateZ(175px);
+    }
+}
+
+main {
+    background-color: 	rgb(203, 195, 227);
+  }
+
+
+
+.txt-chg {
+    text-align: center;
+}
+
+.text-flex {
+    display: flex;
+}
+
+.text-chng {
+    margin: 10%;
+    position: relative;
+}
+
+.pricing-item {
+    background-color: #917af7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.testimonial-area {
+    background-color: rgb(203, 195, 227);
+}
+
+.hero-shape img {
+    background-color: ;
+}
+
+.testimonial-content p {
+    color: white;
+    font-weight: 600;
+}
 /* END OF INDEX */
 
 /* ABOUT US */
@@ -412,7 +539,7 @@ div.overlay-blue:hover {
     margin-bottom: -40px;
     color: #1f2471;
   }
-  
+
   .about-right-sec-text {
     display: flex;
     flex-direction: column;
