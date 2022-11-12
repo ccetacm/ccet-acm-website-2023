@@ -4,6 +4,38 @@
 <!-- Mirrored from live.themewild.com/techrun/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 19:10:27 GMT -->
 
 <head>
+    <style>
+        .outlet {
+        width: 20%;
+        height: 400px;
+        background-image: url("assets/img/slider/vol1.png");
+        background-size: 100% 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        animation: changeImage 20s linear infinite;
+    }
+
+    @keyframes changeImage {
+        0% {
+            background-image: url("assets/img/slider/vol1.png");
+        }
+
+        25% {
+            background-image: url("assets/img/slider/vol1issue2.png");
+        }
+
+        50% {
+            background-image: url("assets/img/slider/vol1issue3.jpeg");
+        }
+
+        75% {
+            background-image: url("assets/img/slider/vol2issue2.png");
+        }
+
+        100% {
+            background-image: url("assets/img/slider/vol2issue1.png");
+        }
+    }
+    </style>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,8 +54,10 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/my-style.css">
 
 </head>
+
 
 <body>
 
@@ -135,7 +169,17 @@
                         </div>
                         <div class="col-md-6 col-lg-6">
                             <div class="hero-img">
-                                <img src="assets/img/slider/hero.png" alt="">
+                                <div class="slid">
+                                    <div class="slider">
+                                        <span style="--i:1;"><img src="assets/img/blog/arduino.jpeg" alt=""></span>
+                                        <span style="--i:2;"><img src="assets/img/blog/conf_ccet.jpeg" alt=""></span>
+                                        <span style="--i:3;"><img src="assets/img/blog/feature.jpeg" alt=""></span>
+                                        <span style="--i:4;"><img src="assets/img/blog/vol3issue1.png" alt=""></span>
+                                        <span style="--i:5;"><img src="assets/img/blog/sTANDEE-01.png" alt=""></span>
+                                        <span style="--i:6;"><img src="assets/img/blog/linux-yourself.jpeg"
+                                                alt=""></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
