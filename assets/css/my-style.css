@@ -486,6 +486,7 @@ div.overlay-blue:hover {
     background-color: #917af7;
     color: black;
     font-weight: bold;
+    padding-bottom: 3px;
   }
   
   .theme-btn:hover {
@@ -648,7 +649,7 @@ hr {
 }
 
 .breadcrumb-title span {
-    font-size: 60px;
+    font-size: 50px;
     padding-bottom: 0px;
     text-shadow: var(--textshadow-1)
 }
@@ -1420,3 +1421,134 @@ hr {
   }
 }
 /* ACM-W-TEAM-TEXT END */
+
+h2{
+    text-align: center;
+    color: #1d2736;
+    
+}
+
+h1{
+    font-size: 90%;
+}
+
+.page-text{
+    color: #000000;
+    font-size: 19.2px;
+    font-family: roboto, arial, sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.page-text-heading{
+    color: #000000;
+    font-size: 19.2px;
+    font-family: roboto, arial, sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+    
+}
+
+.heading{
+    background-color: #917AF7;
+    color: white;
+}
+
+.table-content{
+    
+}
+
+.table-heading{
+    color: #1d2736;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    
+}
+
+.table{
+    border-radius: 20px;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: #1d2736;
+    border-radius: 20px;
+    
+}
+
+.align-self-stretch{
+background-image: url(assets/img/research/sunil sir.jpeg);
+}
+
+.teacher-section{
+    margin:auto;
+    width: 50%;
+}
+
+.teacher-photos img{
+    height: 210px;
+    padding: 0px;
+    margin: auto;
+    
+   
+    
+}
+
+.teacher-photos{
+    
+}
+
+.teacher-box-1{
+    padding-top: 40px;
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+   
+    
+}
+
+.teacher-box-2{
+    padding-top: 40px;
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+    
+    
+}
+
+.teacher-box-1 h3{
+    color: white;
+}
+.teacher-box-2 h3{
+    color: white;
+
+}
+.teacher-box-1 span{
+    color: white;
+    text-align: center;
+    
+}
+.teacher-box-2 span{
+    color: white;
+    text-align: center;
+    
+}
+.footer-widget-box {
+    margin-bottom: 20px;
+    
+}
+
+.footer-box-setting{
+    margin: auto;
+}
+
+.teacher-text{
+    background-color: #917AF7;
+}
+
+
+.teacher-bg img{
+    margin: auto;
+}
