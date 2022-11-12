@@ -1324,179 +1324,7 @@ hr {
 
 /* END COMPETITION */
 
-/* EVENTS */
 
-.site-breadcrumb {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  position: relative;
-  padding-top: 130px;
-  padding-bottom: 50px;
-  background-image: linear-gradient(90deg, #896eff 0, #5f3bff 51%, #896eff);
-  z-index: 1;
-  min-height: 380px;
-}
-
-.breadcrumb-shape {
-  left: 0;
-  min-width: 100%;
-}
-
-.breadcrumb-shape img {
-  left: 0;
-  min-width: 100%;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-/*
-/* The actual timeline (the vertical ruler) */
-.e-timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0px auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.e-timeline::after {
-  content: "";
-  position: absolute;
-  width: 0px;
-  border-left: 3px dashed black;
-  /* background-color: black; */
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks {
-  padding: 10px 10px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks {
-  position: relative;
-  width: calc(50% - 35px);
-  margin: 20px 0px;
-  /* padding-left: 5px; */
-  border: 1px solid #eee;
-  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks:nth-child(even) {
-  left: calc(50% + 35px);
-}
-
-/* The circles on the timeline */
-.e-timeline .e-timeline-blocks .e-blocks:nth-child(odd)::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -47px;
-  background-color: black;
-  border: 4px solid #7864d4;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks:nth-child(even):before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: -50px;
-  background-color: black;
-  border: 4px solid #7864d4;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Arrow on timeline */
-.e-timeline .e-timeline-blocks .e-blocks:nth-child(odd)::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 18px;
-  width: 0;
-  z-index: 1;
-  right: -10px;
-  border: medium solid black;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent black;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks:nth-child(even)::after {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 18px;
-  width: 0;
-  z-index: 1;
-  left: -10px;
-  border: medium solid black;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent black transparent transparent;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks .e-header h2 {
-  font-size: 32px;
-  margin-bottom: 2px;
-  color: #fff;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks .e-header {
-  padding: 15px;
-  background: #7864d4;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks .e-header > a {
-  position: absolute;
-  font-size: 14px;
-  color: #111;
-  font-weight: 600;
-  font-style: italic;
-  background: #e6c1eb;
-  border: 1px solid #eee;
-  padding: 2px 10px;
-  border-radius: 10px;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks:nth-child(odd) .e-header > a {
-  right: -360px;
-  top: 8px;
-}
-
-.e-timeline .e-timeline-blocks .e-blocks:nth-child(even) .e-header > a {
-  left: -360px;
-  top: 8px;
-}
-
-.e-icons {
-  color: #eee;
-  margin-right: 5px;
-}
-
-.e-header p {
-  color: #eee;
-}
-
-/* END EVENTS */
 
 .mag-lower {
   display: flex;
@@ -1649,6 +1477,7 @@ hr {
 }
 
 /* MAGAZINE END */
+
 
 /* ACM-W-TEAM-TEXT  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -1951,3 +1780,157 @@ hr {
 }
 
 /* RESOURCES END */
+
+/* EVENTS */
+
+.site-breadcrumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  padding-top: 130px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(90deg, #896eff 0, #5f3bff 51%, #896eff);
+  z-index: 1;
+  min-height: 380px;
+}
+
+.breadcrumb-shape {
+
+  left: 0;
+  min-width: 100%;
+}
+
+.breadcrumb-shape img {
+  left: 0;
+  min-width: 100%;
+}
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+} */
+
+.e-bigwrap{
+
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  justify-content: center;
+}
+
+.e-blocks{
+  box-shadow: 0px 0px 10px #555;
+  width: 70% ;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  padding: 25px;
+
+  /* background-color: #b4a3ff;; */
+  /* height: 150px; */
+}
+
+
+
+.e-header{
+  color:#eee;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #b4a3ff;;
+
+}
+.e-blocktext{
+  width:100%;
+  padding: 5px 15px ;
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  font-size:20px;
+  text-align: justify;
+  /* color: #fff; */
+  /* justify-content: center; */
+}
+
+.e-blockimage{
+  width:25%;
+  border-radius: 15px;
+  overflow:hidden; 
+  margin: 10px;
+}
+
+.e-header h2 {
+  color:#fff;
+}
+
+
+.e-icons {
+ color:#eee;
+ margin-right: 5px;
+
+}
+
+.e-header p{
+  color:#eee;
+  padding: 0px;
+}
+
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .e-blocktext .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Read more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Read less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+/* Other style */  
+
+.e-blocks:hover {
+
+  transform: translateZ(-50px);
+  transition: 0.4s ease-in;
+  z-index: 50;
+  border-width: 5px;
+  border-style: solid;
+  border-color: whitesmoke;
+}
+
+
+
+/* END EVENTS */
+
