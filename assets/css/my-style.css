@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+.align-items-center {
+    padding-bottom: 10px;
+}
+
 .slid {
     background: linear-gradient(to right, #fff);
     height: 100vh;
@@ -73,16 +77,20 @@
     justify-content: center;
 }
 
-.mentors h1 {
+.mentors h1, span {
     text-align: center;
     margin-bottom: 5%;
+    font-weight: 700;
+}
+
+.mentors span {
+    color: #917af7;
 }
 
 
 
 .ourmen .ment {
     margin: 15px;
-    background-color: rgb(230, 230, 250);
     margin-bottom: 50px;
     line-height: 35px;
     position: relative;
@@ -132,8 +140,19 @@
     display: flex;
 }
 
+@media (max-width: 400px) {
+    .text-sliders {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mySlides p {
+        visibility: hidden;
+        height: 20px;
+    }
+}
+
 .img-slider {
-    width: 50%;
     margin-left: 10%;
     margin-top: 6%;
 }
@@ -155,14 +174,14 @@
     }
     
     .img-slider .outlet {
-        margin: auto;
+        margin-left: 10%;
         width: 250px;
     }
 
     .img-slider h3 {
         margin-top: 5%;
         margin-bottom: 25px;
-        margin-left: 30%;
+        margin-left: 23%;
     }
 }
 
@@ -325,7 +344,6 @@ div.overlay-blue:hover {
     width: 50%;
     margin-left: 35%;
     margin-top: 15%;
-    border:3px #917af7 solid;
     border-radius: 15px;
 }
 
@@ -346,7 +364,6 @@ div.overlay-blue:hover {
     padding-bottom: 3%;
     padding-top: 5%;
     height: 60%;
-    background-color: rgb(230, 230, 250);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -399,9 +416,6 @@ div.overlay-blue:hover {
     padding: 20px;
     width: 50%;
     margin-left: 35%;
-    background-color: rgb(230, 230, 250);
-    border:3px #917af7 solid;
-    border-radius: 15px;
 }
 
 @media (max-width: 400px) {
@@ -450,26 +464,17 @@ div.overlay-blue:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.about-left .about-img img {
-    background-color:  rgb(230, 230, 250);
-}
-
 .about-right {
     position: relative;
     display: block;
     padding-left: 25px;
     margin-top: 25%;
-    background-color:  #917af7;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.about-right span, p, .theme-btn {
-    color: white;
-}
 .pricing-amount strong {
     font-size: 45px;
     font-weight: 600;
-    color: white
 }
 
 .pricing-feature p {
@@ -482,11 +487,9 @@ div.overlay-blue:hover {
     }
 }
 
-main {
-    background-color: 	rgb(203, 195, 227);
-  }
-
-
+.pricing-item {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
 
 .txt-chg {
     text-align: center;
@@ -498,26 +501,9 @@ main {
 
 .text-chng {
     margin: 10%;
-    position: relative;
+    position: relative; 
 }
 
-.pricing-item {
-    background-color: #917af7;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.testimonial-area {
-    background-color: rgb(203, 195, 227);
-}
-
-.hero-shape img {
-    background-color: ;
-}
-
-.testimonial-content p {
-    color: white;
-    font-weight: 600;
-}
 /* END OF INDEX */
 
 /* ABOUT US */
