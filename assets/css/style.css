@@ -3895,30 +3895,3 @@ body.rtl-mode .price-wrapper {
     background: #896eff !important;
     border-radius: 50px
 }
-
-.text{
-        position: relative;
-        border: none;
-}
-.text::before,
-.text::after {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  color: #0058b6;
-  content: "";
-}
-
-.text::before {
-    left: 0;
-    top: 0;
-    border-left: 3px solid #0058b6;
-    border-top: 3px solid #0058b6;
-   }
-  
-   .text::after {
-    right: 0;
-    bottom: 0;
-    border-right: 3px solid #0058b6;
-    border-bottom: 3px solid #0058b6;
-   }
