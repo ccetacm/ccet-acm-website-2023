@@ -2,6 +2,27 @@
   --textshadow-1: 3px 3px 1px rgb(37, 15, 131);
 }
 
+/* LIST OF SECTIONS
+1. INDEX
+  - Slideshow Container
+  - Slides
+  - Next & previous buttons
+2. ABOUT US
+3. GALLERY
+4. ACHIEVEMENTS
+5. MAGAZINE
+ A. COMPETITION
+  - The actual timeline (the vertical ruler)
+  - Container around content
+  - The circles on the timeline
+  - Arrow on timeline
+ B. EVENTS
+  - The actual timeline (the vertical ruler)
+  - The circles on the timeline
+  - Arrow on timeline
+6. ACM-W-TEAM-TEXT
+7. RESOURCES  */
+
 /* INDEX */
 * {
   margin: 0;
