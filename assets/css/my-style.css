@@ -1849,7 +1849,8 @@ hr {
   height: auto; 
   display: block; 
   margin: auto; 
-  padding-top:45px;
+  padding-top:22.5px;
+  padding-bottom: 22.5px;
 }
 
 .div-2-acm-w{
