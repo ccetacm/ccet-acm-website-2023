@@ -28,7 +28,7 @@ class CareerGuide {
         return strtoupper($this->title);
     }
 }
-
+// TODO -> Create a API interaction services to fetch the data here
 $guide1 = new CareerGuide(date("d-m-Y"), "Rick Astley", "Never Gonna Give You Up", "Rick-Rolls 🌯🌯", "https://i1.sndcdn.com/artworks-000201643626-n9t98c-t500x500.jpg", "https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png?w=681&h=383&crop=1", "https://google.com/");
 $guide2 = new CareerGuide(date("d-m-Y"), "OP Takla", "Voluptate et nisi qui esse culpa labore quis. Velit cillum sunt id ea. Cupidatat dolore ex fugiat quis occaecat ipsum nostrud est reprehenderit sunt reprehenderit consectetur ut. Cillum nulla id cillum duis consectetur anim consequat est do eiusmod amet deserunt ea. Cupidatat qui eiusmod quis consectetur voluptate aliquip cillum ad aliquip est consequat laboris. Eiusmod deserunt consequat Lorem nisi irure culpa amet proident cillum qui dolore cupidatat ex ullamco. Eu occaecat laboris ea amet ipsum.Esse ex aute deserunt aliqua quis ad eu aliquip. Adipisicing in Lorem non sint pariatur irure nisi veniam. Duis sunt ut ex eu mollit minim amet eu ullamco veniam enim officia consectetur. Ad labore aute ea proident elit pariatur dolore eu ad. Non ad enim ipsum aliquip veniam cillum.", "How to deal with being OP 💪", "https://i.pinimg.com/originals/c1/59/07/c15907858762d350e518bd799d9f2333.png", "http://pm1.narvii.com/7539/b91cf90660f46a2ece88d6a6df98ded197a65d81r1-1920-1080v2_uhq.jpg",  "https://google.com/");
 $guides = [$guide1, $guide2]
