@@ -1,9 +1,46 @@
 <!DOCTYPE html>
 
 <head>
+
+    <style>
+        .hidden {
+            display: none !important;
+        }
+
+        .outlet {
+            width: 20%;
+            height: 400px;
+            background-image: url("assets/img/slider/vol1.png");
+            background-size: 100% 100%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            animation: changeImage 20s linear infinite;
+        }
+
+        @keyframes changeImage {
+            0% {
+                background-image: url("assets/img/slider/vol1.png");
+            }
+
+            25% {
+                background-image: url("assets/img/slider/vol1issue2.png");
+            }
+
+            50% {
+                background-image: url("assets/img/slider/vol1issue3.jpeg");
+            }
+
+            75% {
+                background-image: url("assets/img/slider/vol2issue2.png");
+            }
+
+            100% {
+                background-image: url("assets/img/slider/vol2issue1.png");
+            }
+        }
+    </style>
+
     <title>Achievements</title>
 
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,8 +75,8 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index-2.html">
-                        <img src="assets/img/logo/ccet acm logo.jpeg" class="logo-display" alt="logo">
-                        <img src="assets/img/logo/logo-dark.png" class="logo-scrolled" alt="logo">
+                        <img src="assets/img/logo/ACM Logo Black.svg" class="logo-display" alt="logo">
+                        <img src="assets/img/logo/ACM Logo Blue.svg" class="logo-scrolled" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
                         <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
@@ -125,11 +162,9 @@
         </div>
     </main>
 
-
+    <!-- 
     <div class="ac-main-body">
-
         <div class="ac-block">
-
             <img src="assets\img\achievements\xerds.jpeg" class="ac-block-img">
             <hr>
             <p>The CCET ACM Student Chapter is proud to announce that our Chairperson, Ms.Muskaan Chopra has been
@@ -138,7 +173,6 @@
                 Chopra is a very enthusiastic researcher and technical writer currently working in the
                 field of Data Science and Machine Learning.</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\feature.jpeg" class="ac-block-img">
             <hr>
@@ -147,16 +181,15 @@
                 month of December and was highlighted the best among the 195 student chapters
                 all over India. This was a great
                 acknowledgement for the chapter members as it
-                <!-- motivates the students to participate more. This was all done by the student
+                motivates the students to participate more. This was all done by the student
                 members with the guidance of our Faculty Mentor Dr. Sunil K. Singh (HoD,CSE,
                 CCET) and Faculty Sponsor Sudhakar Kumar and we hope to rise more and
                 perform
-                better. -->
+                better.
             </p>
         </div>
         <div class="ac-block">
-
-            <img src="assets\img\achievements\linux.jpeg" class="ac-block-img3">
+            <img src="assets\img\achievements\linux.jpeg" class="ac-block-img">
             <hr>
             <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">Launch of Book, Linux Yourself:
                 Concept and Programming authored by
@@ -170,10 +203,8 @@
                 works.</p>
         </div>
         <div class="ac-block">
-
-            <img src="https://via.placeholder.com/150" class="ac-block-img">
+            <img src="assets\img\achievements\syscom.jpg" class="ac-block-img">
             <hr>
-
             <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">Best paper award at International
                 Conference on
                 Smart Systems and Advanced
@@ -184,13 +215,13 @@
                 for Overcoming Speculation Overheads" which was published in the International
                 Conference on Smart Systems and Advance Compuitng (SysCom 2021) organized
                 during
-                <!-- December 26-27,2021 in New Delhi, India (Online Mode). The paper was written
+                December 26-27,2021 in New Delhi, India (Online Mode). The paper was written
                 under the guidance of Dr. Sunil K. Singh and Naveen Aggarwal and was
                 co-authored
-                by Kriti Aggarwal.</p> -->
+                by Kriti Aggarwal.</p>
         </div>
         <div class="ac-block">
-            <img src="https://via.placeholder.com/150" class="ac-block-img">
+            <img src="assets\img\achievements\certificate-sudhakar.jpg" class="ac-block-img">
             <hr>
             <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">CTiS 2021 Conference</p>
             <p>CTis (Computational Thinking in Schools) is an
@@ -202,37 +233,356 @@
                 </strong>participated in this conference and was awarded with the Certificate of
                 participation.</p>
         </div>
-
         <div class="ac-block">
-            <img src="https://via.placeholder.com/150" class="ac-block-img">
+            <img src="assets\img\achievements\acm-summer-sudhakar.jpg" class="ac-block-img">
             <hr>
-            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">CTiS 2021 Conference</p>
-            <p> CTis (Computational Thinking in Schools) is an
-                Annual Computa- tional Thinking Conference organised by ACM India (Association
-                of Computing Machinery) and the CSpathshala community. It aims to bring together
-                teachers, educators and researchers tod iscuss issues of curriculum, pedagogy,
-                policy and implementation, related to bringing computational thinking to
-                schools. Faculty Sponsor CCET ACM student chapter <strong>Sudhakar Kumar
-                </strong>participated in this conference and was awarded with the Certificate of
-                participation.</p>
+            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">ACM Summer School 2021</p>
+            <p> Compilers are pervasive and critical for any
+                software application to execute on any Computer System. Sudhakar Kumar was one
+                of the top 50 students selected for summer school. This summer school aims at
+                provid- ing you a foundation in the theory and practice of optimizing compilers.
+                Dr. Sunil K. Singh, Professor and HOD, CSE Department and Faculty Mentor, CASC,
+                played a crucial role in guiding the above achievement. Different Industry
+                Persons from NVIDIA, Pune, IISc Bangalore, IIT Madras, IIT Hyder- abad, and
+                IIT
+                Bombay showered their knowledge on different aspects including Compiler
+                optimizations, Interfacing with program execution, and Program Analysis.
+                Further, a study of essential components of program exe- cution environments
+                will provide you with an end-to-end understanding of the life of a program
+                in a
+                computer system.</p>
+        </div>
+        <div class="ac-block">
+            <img src="assets\img\achievements\IKDDNinja-muskaan-01.png" class="ac-block-img">
+            <hr>
+            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">ACM SIGKDD India Chapter (IKDD) Student Ninja</p>
+            <p> To help the community grow among next-generation
+                AI/ML/DS enthusiasts, ACM SIGKDD
+                India Chapter (IKDD) selected Ninjas from the country to build a team of
+                passionate students to take leadership roles in organizing activities
+                for the interest of the community, as well as creating and running new periodic
+                programs such as webinars, (virtual) meet-ups, Annual ML/Data Science Schools,
+                etc. Muskaan Chopra, UG Scholar (CSE 2019-23), Membership Chair
+                (2020-2021)
+                was among the top 6 students selected from UG, PG, and Ph.D. courses
+                in
+                India as a part of the Inaugural Student Ninja Board. IKDD, the
+                professional
+                chapter of SIGKDD in India, was established as a part of ACM India
+                in
+                2011
+                to build and strengthen interest and expertise in the theory and
+                applications
+                of artificial intelligence, machine learning, data science,
+                databases,
+                data
+                mining, and their related areas.</p>
+        </div>
+        <div class="ac-block">
+            <img src="assets\img\achievements\anshul-summerschool-01.png" class="ac-block-img">
+            <hr>
+            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">ACM Summer School 2021</p>
+            <p> Anshul Gupta, Chair, CCET ACM Student Chapter 2021
+                was among the top50 students
+                who were selected for the ACM Summer School 2021. The school lasted for 12 days
+                in virtual mode and focused on the broader aspect of Natural
+                Language Processing. Different Industry Persons from Microsoft Research, IIIT
+                Hyderabad, IIT Gandhinagar, and IIT Bombay showered  Introduction to NLP, Python for NLP, ML for NLP, NLP tools, Language
+                modeling, Shallow parsing, Advanced NLP, DL for NLP, Meaning
+                representation, Global vectors, Contextual vectors, BERT and associated
+                models, Application, Machine translation, Information extraction and
+                question answering,
+                Information retrieval,and Text summarization. The proposed school also aims
+                to create awareness
+                among undergraduate and postgraduate students in Natural Language Processing
+                (NLP). It also
+                discussed the current state-of-the-art research challenges and
+                opportunities, and future trends. A
+                salient aspect of this school is to emphasize hands-on sessions with
+                suitable case studies
+                which were carried on every day after the theoretical sessions.</p>
+        </div>
+        <div class="ac-block">
+            <img src="assets\img\achievements\Hybrid_cloud.jpeg" class="ac-block-img">
+            <hr>
+            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">ACM India Winter School 2020-21 on NLP</p>
+            <p> The proposed school aims to create awareness among
+                the undergraduate and
+                postgraduate students in the area of Natural Language Processing (NLP). The
+                school will focus on foundational knowledge in natural language processing,
+                the current state-of the-art research challenges and opportunities and future
+                trends. A salient aspect of this school is to emphasize hands-on sessions with
+                suitable case studies.</p>
+        </div>
+        <div class="ac-block">
+            <img src="assets\img\achievements\Hopper2020.png" class="ac-block-img">
+            <hr>
+            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">Hopper India 2020</p>
+            <p> Hopper India 2020 is a two-day virtual event modeled
+                after the popular Grace
+                Hopper Celebration India (GHCI) conference for women in technology. This
+                immersive event brings together women technologists at all levels
+                from industry, academia, research and startups – to build connects, learn and
+                advance their careers.</p>
+        </div>
+        <div class="ac-block">
+            <img src="assets\img\achievements\Summit_Jaipur.jpg" class="ac-block-img">
+            <hr>
+            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">ACM India Student Chapter Summit</p>
+            <p> The ACM India chapters’ Summit-2019, hosted by
+                Manipal University Jaipur's ACM
+                Student Chapter on the 10th of August 2019 was a stunning success. The event
+                witnessed participation of about 100 students from 48 institutions
+                from all over India along with their faculty mentors. The event started off with
+                the lighting of the symbolic lamp, followed by cultural performances from the
+                University's clubs. The president of ACM India, Prof.
+                Abhiram Ranade, professor at IIT Bombay
+                started the
+                presentation by highlighting the goal of ACM, the advancement of computing
+                as a
+                science
+                and profession. Emphasizing the aim of ACM, he spoke about the numerous
+                divisions and
+                various activities of ACM. Dr. Rajveer Singh Shekhawat, the director of SCIT
+                at
+                MUJ spoke
+                about the growth of MUJ ACM Students Chapter, and highlighted the various
+                activities undertaken
+                by the chapter, like the student teaching student mentorship program and
+                interactive sessions,
+                including the annual techno-cultural fest of the chapter, ELICIT..</p>
+        </div>
+        <div class="ac-block">
+            <img src="assets\img\achievements\GHCI_2019.jpg" class="ac-block-img">
+            <hr>
+            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">Grace Hopper Celebration India 2019</p>
+            <p> It's the largest
+                gathering of women technologist in India which is organized by Anita Borg
+                Organization https://anitab.org/. Each year similar events are organized across the
+                globe by Anita Borg
+                Organization with name of GHC. This conference is dedicatedly for women employees
+                and students in technical and engineering field.</p>
+        </div>
+    </div> -->
+
+    <!-- =========================================BODY START============================== -->
+
+    <div class="blog-area py-120">
+        <div class="container">
+            <div class="row ach-container" id="ach-1">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\xerds.jpeg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <button class="theme-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\feature.jpeg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets/img/achievements/linux.jpeg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets/img/achievements/syscom.jpg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets/img/achievements/certificate-sudhakar.jpg" alt="Thumb"
+                                class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets/img/achievements/acm-summer-sudhakar.jpg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ach-container hidden" id="ach-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\IKDDNinja-muskaan-01.png" alt="Thumb"
+                                class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <button class="theme-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\anshul-summerschool-01.png" alt="Thumb"
+                                class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\Hybrid_cloud.jpeg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="ac-block">
-            <img src="https://via.placeholder.com/150" class="ac-block-img">
-            <hr>
-            <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">CTiS 2021 Conference</p>
-            <p> CTis (Computational Thinking in Schools) is an
-                Annual Computa- tional Thinking Conference organised by ACM India (Association
-                of Computing Machinery) and the CSpathshala community. It aims to bring together
-                teachers, educators and researchers tod iscuss issues of curriculum, pedagogy,
-                policy and implementation, related to bringing computational thinking to
-                schools. Faculty Sponsor CCET ACM student chapter <strong>Sudhakar Kumar
-                </strong>participated in this conference and was awarded with the Certificate of
-                participation.</p>
+        <div class="pagination-area">
+            <div aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <button class="page-link" aria-label="Previous" onclick="getPreviousPage()">
+                            <span aria-hidden="true"><i class="far fa-angle-double-left"></i></span>
+                        </button>
+                    </li>
+                    <li class="page-item active"><button class="page-link">1</button></li>
+                    <li class="page-item"><button class="page-link">2</button></li>
+                    <li class="page-item">
+                        <button class="page-link" aria-label="Next" onclick="getNextPage()">
+                            <span aria-hidden="true"><i class="far fa-angle-double-right"></i></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-
+    </div>
     </div>
 
+    </main>
+
+    <!-- ===================================FOOTER START================================= -->
 
     <footer class="footer-area">
         <div class="footer-widget">
@@ -241,7 +591,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-widget-box about-us">
                             <a href="#" class="footer-logo">
-                                <img src="assets/img/logo/logo.png" alt="">
+                                <img src="assets/img/logo/ACM Logo Black.svg    " alt="">
                             </a>
                             <p class="mb-20">
                                 ACM boosts up the potential and talent, supporting the overall development needs of
@@ -252,13 +602,7 @@
                             <div class="footer-contact">
                                 <ul>
                                     <li><i class="far fa-map-marker-alt"></i>CCET, SECTOR-26, CHANDIGARH</li>
-                                    <li><a href="tel:+21236547898"><i class="far fa-phone"></i>+91</a>
-                                    </li>
-                                    <li><a
-                                            href="https://live.themewild.com/cdn-cgi/l/email-protection#f88b8d8888978a8cb89d80999588949dd69b9795"><i
-                                                class="far fa-envelope"></i><span class="__cf_email__"
-                                                data-cfemail="bac9cfcacad5c8cefadfc2dbd7cad6df94d9d5d7">[email&#160;protected]</span></a>
-                                    </li>
+
                                 </ul>
                             </div>
                             <ul class="footer-social">
@@ -266,7 +610,10 @@
                                 </li>
                                 <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a>
                                 </li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i
+                                            class="fab fa-youtube"></i></a></li>
+                                <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
                                 <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i
                                             class="fab fa-linkedin-in"></i></a></li>
                             </ul>
@@ -287,24 +634,15 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Our Services</h4>
-                            <ul class="footer-list">
-                                <li><a href="#"><i class="fas fa-caret-right"></i> IT Solutions</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Web Development</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Digital Marketing</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> App Development</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Networking Service</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> SEO Optimization</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Data Analysis</a></li>
-                            </ul>
-                        </div>
+
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Newsletter</h4>
+                            <h4 class="footer-widget-title">Contact Us</h4>
                             <div class="footer-newsletter">
-                                <p>Subscribe Our Newsletter To Get Latest Update And News</p>
+                                <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
+                                    Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a>
+                                </p>
                                 <div class="subscribe-form">
                                     <form action="#">
                                         <input type="email" class="form-control" placeholder="Your Email">
@@ -324,21 +662,15 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
                         <p class="copyright-text">
-                            &copy; Copyright <span id="date"></span> <a href="#"> Techrun </a> All Rights Reserved.
+                            &copy; Copyright <span id="date"></span> Copyright © 2021 All rights reserved | <br>
+                            Designed and Developed by <a href="#">CCET ACM Website Team</a>
                         </p>
                     </div>
-                    <div class="col-lg-6 align-self-center">
-                        <ul class="footer-menu">
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Terms Of Services</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
     </footer>
-
 
     <a href="#" id="scroll-top"><i class="far fa-long-arrow-up"></i></a>
 
@@ -357,5 +689,6 @@
     <script src="assets/js/counter-up.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/achievements.js"></script>
 
 </body>
