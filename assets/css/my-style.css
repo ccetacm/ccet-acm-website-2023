@@ -1618,7 +1618,8 @@ border-bottom: 3px solid #0058b6;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
-  background-color: #b4a3ff;;
+  background-color: #b4a3ff;
+  background: linear-gradient(45deg, #896eff 0, #5f3bff 51%, #896eff);
 
 }
 .e-blocktext{
@@ -1647,8 +1648,8 @@ border-bottom: 3px solid #0058b6;
 
 .e-icons {
  color:#eee;
+ margin:0px;
  margin-right: 5px;
-
 }
 
 .e-header p{
@@ -1699,15 +1700,17 @@ border-bottom: 3px solid #0058b6;
   transition: 0.4s ease-in-out;
   z-index: 50;
   border-width: 5px;
-  border-style: solid;
-  border-color: rgb(183,153,252);
-  background-color: #e7e5f5;
+  /* border-style: solid; */
+  /* border-color: rgb(183, 153, 252); */
+  box-shadow: 0px 0px 20px #555;
+  /* background-color: #e1daff  */
   
 }
 
 
 
 /* END EVENTS */
+
 
 
 /*  MAGAZINE */
