@@ -110,5 +110,3 @@ $guides = [$guide1, $guide2, $guide3, $guide4, $guide5]
         </div>
     <?php endforeach;?>
 </main>
-
-
