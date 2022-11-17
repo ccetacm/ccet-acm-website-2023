@@ -1,9 +1,46 @@
 <!DOCTYPE html>
 
 <head>
+
+    <style>
+        .hidden {
+            display: none !important;
+        }
+
+        .outlet {
+            width: 20%;
+            height: 400px;
+            background-image: url("assets/img/slider/vol1.png");
+            background-size: 100% 100%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            animation: changeImage 20s linear infinite;
+        }
+
+        @keyframes changeImage {
+            0% {
+                background-image: url("assets/img/slider/vol1.png");
+            }
+
+            25% {
+                background-image: url("assets/img/slider/vol1issue2.png");
+            }
+
+            50% {
+                background-image: url("assets/img/slider/vol1issue3.jpeg");
+            }
+
+            75% {
+                background-image: url("assets/img/slider/vol2issue2.png");
+            }
+
+            100% {
+                background-image: url("assets/img/slider/vol2issue1.png");
+            }
+        }
+    </style>
+
     <title>Achievements</title>
 
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,8 +75,8 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index-2.html">
-                        <img src="assets/img/logo/ccet-acm-logo.jpeg" class="logo-display" alt="logo">
-                        <img src="assets/img/logo/logo-dark.png" class="logo-scrolled" alt="logo">
+                        <img src="assets/img/logo/ACM Logo Black.svg" class="logo-display" alt="logo">
+                        <img src="assets/img/logo/ACM Logo Blue.svg" class="logo-scrolled" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
                         <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
@@ -125,11 +162,9 @@
         </div>
     </main>
 
-
+    <!-- 
     <div class="ac-main-body">
-
         <div class="ac-block">
-
             <img src="assets\img\achievements\xerds.jpeg" class="ac-block-img">
             <hr>
             <p>The CCET ACM Student Chapter is proud to announce that our Chairperson, Ms.Muskaan Chopra has been
@@ -138,7 +173,6 @@
                 Chopra is a very enthusiastic researcher and technical writer currently working in the
                 field of Data Science and Machine Learning.</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\feature.jpeg" class="ac-block-img">
             <hr>
@@ -155,7 +189,6 @@
             </p>
         </div>
         <div class="ac-block">
-
             <img src="assets\img\achievements\linux.jpeg" class="ac-block-img">
             <hr>
             <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">Launch of Book, Linux Yourself:
@@ -170,10 +203,8 @@
                 works.</p>
         </div>
         <div class="ac-block">
-
             <img src="assets\img\achievements\syscom.jpg" class="ac-block-img">
             <hr>
-
             <p style="font-size: 18px; font-weight: bold; color:rgb(92, 49, 133)">Best paper award at International
                 Conference on
                 Smart Systems and Advanced
@@ -202,7 +233,6 @@
                 </strong>participated in this conference and was awarded with the Certificate of
                 participation.</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\acm-summer-sudhakar.jpg" class="ac-block-img">
             <hr>
@@ -222,7 +252,6 @@
                 in a
                 computer system.</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\IKDDNinja-muskaan-01.png" class="ac-block-img">
             <hr>
@@ -249,7 +278,6 @@
                 data
                 mining, and their related areas.</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\anshul-summerschool-01.png" class="ac-block-img">
             <hr>
@@ -274,7 +302,6 @@
                 suitable case studies
                 which were carried on every day after the theoretical sessions.</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\Hybrid_cloud.jpeg" class="ac-block-img">
             <hr>
@@ -287,7 +314,6 @@
                 trends. A salient aspect of this school is to emphasize hands-on sessions with
                 suitable case studies.</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\Hopper2020.png" class="ac-block-img">
             <hr>
@@ -299,7 +325,6 @@
                 from industry, academia, research and startups – to build connects, learn and
                 advance their careers.</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\Summit_Jaipur.jpg" class="ac-block-img">
             <hr>
@@ -327,7 +352,6 @@
                 interactive sessions,
                 including the annual techno-cultural fest of the chapter, ELICIT..</p>
         </div>
-
         <div class="ac-block">
             <img src="assets\img\achievements\GHCI_2019.jpg" class="ac-block-img">
             <hr>
@@ -339,8 +363,224 @@
                 Organization with name of GHC. This conference is dedicatedly for women employees
                 and students in technical and engineering field.</p>
         </div>
+    </div> -->
 
+    <!-- =========================================BODY START============================== -->
+
+    <div class="blog-area py-120">
+        <div class="container">
+            <div class="row ach-container" id="ach-1">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\xerds.jpeg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <button class="theme-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\feature.jpeg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets/img/achievements/linux.jpeg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets/img/achievements/syscom.jpg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets/img/achievements/certificate-sudhakar.jpg" alt="Thumb"
+                                class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets/img/achievements/acm-summer-sudhakar.jpg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ach-container hidden" id="ach-2">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\IKDDNinja-muskaan-01.png" alt="Thumb"
+                                class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <button class="theme-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\anshul-summerschool-01.png" alt="Thumb"
+                                class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-item-img">
+                            <img src="assets\img\achievements\Hybrid_cloud.jpeg" alt="Thumb" class="ac-block-img">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> August 21, 2022</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variates of passages alteration</a>
+                            </h4>
+                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
+                            <a class="theme-btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination-area">
+            <div aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <button class="page-link" aria-label="Previous" onclick="getPreviousPage()">
+                            <span aria-hidden="true"><i class="far fa-angle-double-left"></i></span>
+                        </button>
+                    </li>
+                    <li class="page-item active"><button class="page-link">1</button></li>
+                    <li class="page-item"><button class="page-link">2</button></li>
+                    <li class="page-item">
+                        <button class="page-link" aria-label="Next" onclick="getNextPage()">
+                            <span aria-hidden="true"><i class="far fa-angle-double-right"></i></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+    </div>
+
+    </main>
 
     <!-- ===================================FOOTER START================================= -->
 
@@ -351,7 +591,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-widget-box about-us">
                             <a href="#" class="footer-logo">
-                                <img src="assets\img\logo\ccet-acm-logo.jpeg" alt="">
+                                <img src="assets/img/logo/ACM Logo Black.svg    " alt="">
                             </a>
                             <p class="mb-20">
                                 ACM boosts up the potential and talent, supporting the overall development needs of
@@ -362,13 +602,7 @@
                             <div class="footer-contact">
                                 <ul>
                                     <li><i class="far fa-map-marker-alt"></i>CCET, SECTOR-26, CHANDIGARH</li>
-                                    <li><a href="tel:+21236547898"><i class="far fa-phone"></i>+91</a>
-                                    </li>
-                                    <li><a
-                                            href="https://live.themewild.com/cdn-cgi/l/email-protection#f88b8d8888978a8cb89d80999588949dd69b9795"><i
-                                                class="far fa-envelope"></i><span class="__cf_email__"
-                                                data-cfemail="bac9cfcacad5c8cefadfc2dbd7cad6df94d9d5d7">[email&#160;protected]</span></a>
-                                    </li>
+
                                 </ul>
                             </div>
                             <ul class="footer-social">
@@ -376,7 +610,10 @@
                                 </li>
                                 <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a>
                                 </li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i
+                                            class="fab fa-youtube"></i></a></li>
+                                <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
                                 <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i
                                             class="fab fa-linkedin-in"></i></a></li>
                             </ul>
@@ -397,24 +634,15 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Our Services</h4>
-                            <ul class="footer-list">
-                                <li><a href="#"><i class="fas fa-caret-right"></i> IT Solutions</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Web Development</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Digital Marketing</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> App Development</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Networking Service</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> SEO Optimization</a></li>
-                                <li><a href="#"><i class="fas fa-caret-right"></i> Data Analysis</a></li>
-                            </ul>
-                        </div>
+
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Newsletter</h4>
+                            <h4 class="footer-widget-title">Contact Us</h4>
                             <div class="footer-newsletter">
-                                <p>Subscribe Our Newsletter To Get Latest Update And News</p>
+                                <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
+                                    Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a>
+                                </p>
                                 <div class="subscribe-form">
                                     <form action="#">
                                         <input type="email" class="form-control" placeholder="Your Email">
@@ -434,21 +662,15 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
                         <p class="copyright-text">
-                            &copy; Copyright <span id="date"></span> <a href="#"> Techrun </a> All Rights Reserved.
+                            &copy; Copyright <span id="date"></span> Copyright © 2021 All rights reserved | <br>
+                            Designed and Developed by <a href="#">CCET ACM Website Team</a>
                         </p>
                     </div>
-                    <div class="col-lg-6 align-self-center">
-                        <ul class="footer-menu">
-                            <li><a href="#">Support</a></li>
-                            <li><a href="#">Terms Of Services</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
     </footer>
-
 
     <a href="#" id="scroll-top"><i class="far fa-long-arrow-up"></i></a>
 
@@ -467,5 +689,6 @@
     <script src="assets/js/counter-up.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/achievements.js"></script>
 
 </body>

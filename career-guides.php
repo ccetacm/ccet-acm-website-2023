@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Mirrored from live.themewild.com/techrun/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 19:10:27 GMT -->
+
 <head>
+    <style>
+        .outlet {
+        width: 20%;
+        height: 400px;
+        background-image: url("assets/img/slider/vol1.png");
+        background-size: 100% 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        animation: changeImage 20s linear infinite;
+    }
+
+    @keyframes changeImage {
+        0% {
+            background-image: url("assets/img/slider/vol1.png");
+        }
+
+        25% {
+            background-image: url("assets/img/slider/vol1issue2.png");
+        }
+
+        50% {
+            background-image: url("assets/img/slider/vol1issue3.jpeg");
+        }
+
+        75% {
+            background-image: url("assets/img/slider/vol2issue2.png");
+        }
+
+        100% {
+            background-image: url("assets/img/slider/vol2issue1.png");
+        }
+    }
+    </style>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +43,10 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>CCET ACM Magazine</title>
+    <title>Techrun - IT Solutions And Technology HTML5 Template</title>
 
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
@@ -20,7 +55,6 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/my-style.css">
-
 </head>
 
 <body>
@@ -96,194 +130,130 @@
     </header>
 
     <main class="main">
-
-        <div class="site-breadcrumb">
-            <div class="container">
-                <h2 class="breadcrumb-title"><span>DIGITAL OUTLET</span></h2>
-                <h2 class="breadcrumb-subtitle">THE CCET ACM TECH MAGAZINE</h2>
-                <ul class="breadcrumb-menu">
-                    <li><a href="index-2.html"><i class="far fa-home"></i> Home</a></li>
-                    <li class="active">Magazine</li>
-                    ...
-                </ul>
-            </div>
-            <div class="breadcrumb-shape">
-                <img src="assets/img/shape/shape-4.svg" alt="">
+        <div class="hero-section">
+            <div class="hero-wrapper">
+                <div class="shit" style="padding: 12.75rem;"></div>
+                <div class="hero-shape">
+                    <img src="./assets/img/shape/shape-1.png" alt="">
+                </div>
             </div>
         </div>
-
-        <div class="magazine-wrapper">
-            <div class="mag-upper">
-
-                <section class="magazine-previous">
-
-                    <h2 class="mag-section-header">
-                        All Publications
-                    </h2>
-
-                    <div class="volume-wrapper">
-                        <div class="volume">
-                            <h4 class="volume-header">Volume 3</h4>
-                            <div class="issues">
-                                <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 1</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="volume">
-                            <h4 class="volume-header">Volume 2</h4>
-                            <div class="issues">
-                                <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 1</a>
-                                </div>
-
-                                <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 2</a>
-                                </div>
-
-                                <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 3</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="volume">
-                            <h4 class="volume-header">Volume 1</h4>
-
-                            <div class="issues">
-                                <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 1</a>
-                                </div>
-
-                                <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 2</a>
-                                </div>
-
-                                <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 3</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-                <section class="magazine-recent">
-                    <h2 class="mag-section-header">
-                        Recent Publications
-                    </h2>
-                    <div class="image-stack">
-                        <div class="stack-item stack-item-1">
-                            <img src="assets\img\magazine\recent-magazine\2.png"
-                                alt="A portrait of a girl under hanging flowers.">
-                        </div>
-
-                        <div class="stack-item stack-item-2">
-                            <img src="assets\img\magazine\recent-magazine\1.png" alt="">
-                        </div>
-
-                        <div class="stack-item stack-item-3">
-                            <img src="assets\img\magazine\recent-magazine\3.png" alt="">
-                        </div>
-
-                        <div class="stack-item stack-item-4">
-                            <img src="assets\img\magazine\recent-magazine\4.png" alt="">
-                        </div>
-
-                        <div class="stack-item stack-item-5">
-                            <img src="assets\img\magazine\recent-magazine\5.png" alt="">
-                        </div>
-
-                        <div class="stack-item stack-item-6">
-                            <img src="assets\img\magazine\recent-magazine\6.png" alt="">
-                        </div>
-
-
-                    </div>
-
-                </section>
-            </div>
-        </div>
-
-        <div class="mag-lower">
-            <section class="carousel-container">
-
-                <!-- single card of carousel -->
-                <div class="card first">
-                    <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 3 - ISSUE 1</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
-                    <div class="thumbnail">
-                        <img src="assets\img\magazine\magazine-thumbnails\vol3issue1.png" alt="magazine 1">
-                    </div>
-                </div>
-                <!-- end of single card of carousel -->
-
-                <!-- single card of carousel -->
-                <div class="card">
-                    <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 2 - ISSUE 4</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
-
-
-                    <div class="thumbnail">
-                        <img src="assets\img\magazine\magazine-thumbnails\vol2issue4.jpg" alt="magazine 1">
-                    </div>
-                </div>
-                <!-- end of single card of carousel -->
-
-                <!-- single card of carousel -->
-                <div class="card">
-                    <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 2 - ISSUE 3</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
-
-
-                    <div class="thumbnail">
-                        <img src="assets\img\magazine\magazine-thumbnails\vol2issue3.jpeg" alt="magazine 1">
-                    </div>
-                </div>
-                <!-- end of single card of carousel -->
-
-                <!-- single card of carousel -->
-                <div class="card">
-                    <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 2 - ISSUE 2</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
-
-
-                    <div class="thumbnail">
-                        <img src="assets\img\magazine\magazine-thumbnails\vol2issue2.png" alt="magazine 1">
-                    </div>
-                </div>
-                <!-- end of single card of carousel -->
-
-                <!-- single card of carousel -->
-                <div class="card">
-                    <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 2 - ISSUE 1</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
-
-
-                    <div class="thumbnail">
-                        <img src="assets\img\magazine\magazine-thumbnails\vol2issue1.png" alt="magazine 1">
-                    </div>
-                </div>
-                <!-- end of single card of carousel -->
-
-            </section>
-        </div>
-
-
     </main>
 
-    <footer class="footer-area">
+    <?php
+
+class CareerGuide {
+    public $time;
+    public $content;
+    public $title;
+    public $userAvatar;
+    public $highlightImage;
+    public $userName;
+    public $link;
+
+    public function __construct($time, $userAvatar, $userName, $title, $content, $highlightImage, $link)
+    {
+        $this->time = $time;
+        $this->content = $content;
+        $this->title = $title;
+        $this->userAvatar = $userAvatar;
+        $this->highlightImage = $highlightImage;
+        $this->userName = $userName;
+        $this->link = $link;
+    }
+
+    function getContent() {
+        return $this->content;
+    }
+
+    function getTitle() {
+        return strtoupper($this->title);
+    }
+}
+// TODO -> Create a API interaction services to fetch the data here
+$guide1 = new CareerGuide(
+    date("d-m-Y"), //time
+    "https://i1.sndcdn.com/artworks-000201643626-n9t98c-t500x500.jpg", //avatar
+    "Rick Astley", // username
+    "Rick-Rolls 🌯🌯",  // title
+    "Never Gonna Give You Up", //content
+    "https://variety.com/wp-content/uploads/2021/07/Rick-Astley-Never-Gonna-Give-You-Up.png?w=681&h=383&crop=1", // image
+    "https://google.com/" // read more link
+);
+$guide2 = new CareerGuide(
+    date("d-m-Y"), 
+    "https://i.pinimg.com/originals/c1/59/07/c15907858762d350e518bd799d9f2333.png", 
+    "OP Takla", 
+    "How to deal with being OP 💪", 
+    "Voluptate et nisi qui esse culpa labore quis. Velit cillum sunt id ea. Cupidatat dolore ex fugiat quis occaecat ipsum nostrud est reprehenderit sunt reprehenderit consectetur ut. Cillum nulla id cillum duis consectetur anim consequat est do eiusmod amet deserunt ea. Cupidatat qui eiusmod quis consectetur voluptate aliquip cillum ad aliquip est consequat laboris. Eiusmod deserunt consequat Lorem nisi irure culpa amet proident cillum qui dolore cupidatat ex ullamco. Eu occaecat laboris ea amet ipsum.Esse ex aute deserunt aliqua quis ad eu aliquip. Adipisicing in Lorem non sint pariatur irure nisi veniam. Duis sunt ut ex eu mollit minim amet eu ullamco veniam enim officia consectetur. Ad labore aute ea proident elit pariatur dolore eu ad. Non ad enim ipsum aliquip veniam cillum.", 
+    "http://pm1.narvii.com/7539/b91cf90660f46a2ece88d6a6df98ded197a65d81r1-1920-1080v2_uhq.jpg",
+    "https://google.com/"
+);
+$guide3 = new CareerGuide(
+    date("d-m-Y"),
+    "https://media.tenor.com/8con2qHslXgAAAAC/eris-greyrat.gif",
+    "Eris",
+    "How to put in thought",
+    "Putting in the thought can greatly better your career as it proves to your team that you are indeed very and supportive of the endeavour being pursued, hence it is important to understand how one can put in the thought efficiently and maintain a healthy work life balance.",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjhsqShVvcpV0ZnMGdIIa99IlJ0PyYuX9YQG4rW2qFjNQKalGB_9yg6vhj5CrhvbmCUA&usqp=CAU",
+    "https://google.com/"
+);
+$guide4 = new CareerGuide(
+    date("d-m-Y"),
+    "https://pbs.twimg.com/profile_images/832678694518796288/62uLUwxO_400x400.jpg",
+    "A dolphin",
+    "The Final Solution",
+    "Ambition is very important for one's career for without ambition one can't obtain the necessary motivation for one to achieve their goals. However it is very important that one does not get cancelled on twitter in pursuit of greatness for without musky boi's blessing what are we but shit-brained neanderthals, thus it is very important to hide your ambitions, never let them know your next move, accept the sigma grindest.",
+    "https://upload.wikimedia.org/wikipedia/commons/1/10/Tursiops_truncatus_01.jpg",
+    "https://google.com/"
+);
+$guide5 = new CareerGuide(
+    date("d-m-Y"),
+    "https://upload.wikimedia.org/wikipedia/commons/7/7f/Matt_Walsh_%28cropped%29.jpg",
+    "Real Giga Chad",
+    "What is a woman?",
+    "<a href='https://www.youtube.com/watch?v=42ivIRd9N8E' target='_blank'>https://www.youtube.com/watch?v=42ivIRd9N8E</a>",
+    "https://i.ytimg.com/vi/pX2LUvkiVeQ/maxresdefault.jpg",
+    "https://www.youtube.com/watch?v=42ivIRd9N8E"
+);
+$guides = [$guide1, $guide2, $guide3, $guide4, $guide5]
+?>
+<head>
+    <link rel="stylesheet" href="./my-style.css">
+    <script defer src="./assets/js/observer-hide-show.lib.js"></script>
+</head>
+<main class="guides">
+    <?php if (empty($guides)): ?>
+        <p class="lead mt-3">No guides available</p>
+    <?php endif; ?>
+    <?php foreach($guides as $guide): ?>
+        <?php $highlightImage = "<div class='highlightImage' style='background-image: url($guide->highlightImage)'>
+            </div>" ?>
+        <?php $guideBody = substr($guide->content, 0, 500) . "<a href='$guide->link' target='_blank'>... Read More</a>" ?>
+        <?php $guideTitle = "➜ <span class='headingText'>$guide->title</span>"?>
+        <?php $footerBody = " <p class='date'>$guide->time</p> <div class='user'> By: <p style='text-decoration: underline'> $guide->userName</p> • <div class='avatar' style='background-image: url($guide->userAvatar)'></div> </div>" ?>
+        <div class="career-guide hidden">
+            <?php echo "
+            $highlightImage
+            <div class='content'>
+                <div class='text'>
+                    <h2 class='heading'>
+                        $guideTitle
+                    </h2>
+                    <p class='contentText'>
+                        $guideBody
+                    </p>
+                </div>
+                <div class='footer'>
+                    $footerBody
+                </div>
+            </div>
+            " ?>
+        </div>
+    <?php endforeach;?>
+</main>
+
+<footer class="footer-area">
         <div class="footer-widget">
             <div class="container">
                 <div class="row footer-widget-wrapper pt-100 pb-70">
@@ -359,7 +329,6 @@
                             &copy; Copyright <span id="date"></span> Copyright © 2021 All rights reserved | <br> Designed and Developed by <a href="#">CCET ACM Website Team</a>
                         </p>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -370,21 +339,20 @@
 
 
     <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/modernizr.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/jquery.appear.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/counter-up.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/contact-form.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/modernizr.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/jquery.appear.min.js"></script>
+    <script src="./assets/js/jquery.easing.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/counter-up.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
-<!-- Mirrored from live.themewild.com/techrun/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 19:11:45 GMT -->
+<!-- Mirrored from live.themewild.com/techrun/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 19:10:48 GMT -->
 
 </html>
