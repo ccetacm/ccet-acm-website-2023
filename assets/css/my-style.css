@@ -22,7 +22,9 @@
   - Arrow on timeline
 6. ACM-W-TEAM-TEXT
 7. RESOURCES  
-8. ACM-W ABOUT US */
+8. ACM-W ABOUT US 
+9. CAREER GUIDES PAGE
+*/
 
 /* INDEX */
 * {
@@ -2073,3 +2075,113 @@ hr {
 }
 
 /* MAGAZINE END */
+
+/* CAREER GUIDES */
+
+.guides {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.guides .career-guide {
+  color: black;
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+  height: 25rem;
+  width: 87.5vw;
+  margin: 2.5rem;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.guides .career-guide .highlightImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30%;
+  height: 100%;
+}
+.guides .career-guide .content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.guides .career-guide .content .text {
+  height: calc(100% - 3rem);
+}
+.guides .career-guide .content .text .heading {
+  padding: 1.5rem 2rem;
+}
+.guides .career-guide .content .text .heading .headingText {
+  text-decoration: underline;
+}
+.guides .career-guide .content .text .contentText {
+  padding: 0 2rem 0 4.5rem;
+}
+.guides .career-guide .content .footer {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: #7C59FC;
+  color: #E9E4FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+.guides .career-guide .content .footer .user {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.guides .career-guide .content .footer .user .avatar {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+.guides .career-guide.hidden {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateY(12.5%);
+}
+.guides .career-guide.show {
+  opacity: 1;
+  transform: translateY(0%);
+}
+@media only screen and (max-width: 740px) {
+  .guides {
+    gap: 1rem;
+  }
+  .guides .career-guide {
+    flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .guides .career-guide .highlightImage {
+    width: 100%;
+    height: 20rem;
+  }
+  .guides .career-guide .content {
+    height: 70%;
+    width: 100%;
+  }
+  .guides .career-guide .content .text .contentText {
+    padding: 0 2rem 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .guides .career-guide {
+    width: 65rem;
+  }
+}
+
+/* CAREER GUIDES END */
