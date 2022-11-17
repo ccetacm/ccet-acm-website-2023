@@ -991,23 +991,23 @@ div.overlay-blue:hover {
 
 @keyframes changeImage {
   0% {
-      background-image: url("assets/img/slider/vol1.png");
+    background-image: url("assets/img/slider/vol1.png");
   }
 
   25% {
-      background-image: url("assets/img/slider/vol1issue2.png");
+    background-image: url("assets/img/slider/vol1issue2.png");
   }
 
   50% {
-      background-image: url("assets/img/slider/vol1issue3.jpeg");
+    background-image: url("assets/img/slider/vol1issue3.jpeg");
   }
 
   75% {
-      background-image: url("assets/img/slider/vol2issue2.png");
+    background-image: url("assets/img/slider/vol2issue2.png");
   }
 
   100% {
-      background-image: url("assets/img/slider/vol2issue1.png");
+    background-image: url("assets/img/slider/vol2issue1.png");
   }
 }
 
@@ -1048,41 +1048,35 @@ div.overlay-blue:hover {
 }
 
 hr {
-  
   border: none;
   background: rgb(156, 80, 172);
   width: 50%;
   margin-left: 25%;
 }
 
-@media screen and (max-width: 320px){
-    #ac-acm-logo{
-      display: none;
-    }
+@media screen and (max-width: 320px) {
+  #ac-acm-logo {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 992px){
-  
-  #ac-column{
+@media screen and (max-width: 992px) {
+  #ac-column {
     width: 50%;
   }
-
 }
 
-@media screen and (max-width: 768px){
-  
-  #ac-column{
+@media screen and (max-width: 768px) {
+  #ac-column {
     width: 80%;
     margin-left: 10%;
   }
-
 }
 
-h4:hover{
+h4:hover {
   color: rgb(149, 95, 235);
   cursor: default;
 }
-
 
 /* END ACHIEVEMENTS */
 
@@ -1787,7 +1781,121 @@ h4:hover{
 
 /* END EVENTS */
 
+/* CAREER GUIDES */
+
+.guides {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.guides .career-guide {
+  color: black;
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.75rem;
+  height: 25rem;
+  width: 87.5vw;
+  margin: 2.5rem;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.guides .career-guide .highlightImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30%;
+  height: 100%;
+}
+.guides .career-guide .content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.guides .career-guide .content .text {
+  height: calc(100% - 3rem);
+}
+.guides .career-guide .content .text .heading {
+  padding: 1.5rem 2rem;
+}
+.guides .career-guide .content .text .heading .headingText {
+  text-decoration: underline;
+}
+.guides .career-guide .content .text .contentText {
+  padding: 0 2rem 0 4.5rem;
+}
+.guides .career-guide .content .footer {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: #7c59fc;
+  color: #e9e4fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+.guides .career-guide .content .footer .user {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.guides .career-guide .content .footer .user .avatar {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+.guides .career-guide.hidden {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translateY(12.5%);
+}
+.guides .career-guide.show {
+  opacity: 1;
+  transform: translateY(0%);
+}
+@media only screen and (max-width: 740px) {
+  .guides {
+    gap: 1rem;
+  }
+  .guides .career-guide {
+    flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .guides .career-guide .highlightImage {
+    width: 100%;
+    height: 20rem;
+  }
+  .guides .career-guide .content {
+    height: 70%;
+    width: 100%;
+  }
+  .guides .career-guide .content .text .contentText {
+    padding: 0 2rem 1rem 2rem;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .guides .career-guide {
+    width: 65rem;
+  }
+}
+
+/* CAREER GUIDES END */
+
 /*  MAGAZINE */
+
+.navbar-brand{
+  padding-top: 0px;
+} 
 
 .site-breadcrumb {
   display: flex;
@@ -1900,15 +2008,18 @@ h4:hover{
 
 .stack-item {
   position: relative;
-  max-width: 200px;
-  box-shadow: 3px 0px 20px rgb(38, 31, 66);
+  max-width: 220px;
+  box-shadow: 3px 0px 20px #7c59fc;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .stack-item:hover {
   transform: scale(1.1);
   z-index: 500;
-  box-shadow: 3px 0px 50px rgb(38, 31, 66);
+  box-shadow: 0px 0px 35px #7c59fc;
   transition: 0.5s ease-out;
+  position: relative;
 }
 
 .stack-item-1 {
@@ -1916,33 +2027,38 @@ h4:hover{
   top: 30%;
   right: 40%;
   left: 60%;
+  transform: rotate(15deg);
 }
 
 .stack-item-2 {
   left: 50%;
   top: 10%;
   z-index: 30;
+  transform: rotate(-5deg);
 }
 
 .stack-item-3 {
   z-index: 20;
   top: 30%;
   right: 60%;
-  left: 40%;
+  left: 20%;
+  transform: rotate(-7deg);
 }
 
 .stack-item-4 {
   z-index: 10;
-  top: 20%;
-  right: 40%;
+  top: 10%;
+  right: 30%;
   left: 60%;
+  transform: rotate(-10deg);
 }
 
 .stack-item-5 {
-  left: 50%;
-  right: 50%;
+  left: 37%;
+  right: 60%;
   z-index: 40;
   top: 30%;
+  transform: rotate(7deg);
 }
 
 .stack-item-6 {
@@ -1950,20 +2066,7 @@ h4:hover{
   top: 20%;
   right: 60%;
   left: 40%;
-}
-
-.stack-item-7 {
-  left: 20px;
-  right: 20px;
-  z-index: 50;
-  top: 100px;
-}
-
-.stack-item-8 {
-  left: 20px;
-  right: 20px;
-  z-index: 70;
-  top: 100px;
+  transform: rotate(2deg);
 }
 
 .header-btn {
@@ -2130,114 +2233,54 @@ h4:hover{
   display: inline;
 }
 
-/* MAGAZINE END */
-
-/* CAREER GUIDES */
-
-.guides {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-.guides .career-guide {
-  color: black;
-  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.75rem;
-  height: 25rem;
-  width: 87.5vw;
-  margin: 2.5rem;
-  overflow: hidden;
-  display: flex;
-  position: relative;
-}
-.guides .career-guide .highlightImage {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 30%;
-  height: 100%;
-}
-.guides .career-guide .content {
-  width: 70%;
+.mag-lowest {
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-.guides .career-guide .content .text {
-  height: calc(100% - 3rem);
-}
-.guides .career-guide .content .text .heading {
-  padding: 1.5rem 2rem;
-}
-.guides .career-guide .content .text .heading .headingText {
-  text-decoration: underline;
-}
-.guides .career-guide .content .text .contentText {
-  padding: 0 2rem 0 4.5rem;
-}
-.guides .career-guide .content .footer {
-  height: 3rem;
-  padding: 0.5rem 1rem;
-  background-color: #7c59fc;
-  color: #e9e4fa;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  font-weight: bold;
-  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+  justify-content: center;
 }
-.guides .career-guide .content .footer .user {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
+
+.mag-lowest iframe {
+  min-width: 60vw;
+  min-height: 700px;
+  max-width: 400px;
+  height: 300px;
+  overflow: auto;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+  margin-bottom: 50px;
 }
-.guides .career-guide .content .footer .user .avatar {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+
+.lowest iframe:hover {
+  box-shadow: 0px 0px 15px 3px #5f3bff;
+  transition: 0.8s ease-in-out;
 }
-.guides .career-guide.hidden {
-  opacity: 0;
-  transition: all 1.5s;
-  transform: translateY(12.5%);
-}
-.guides .career-guide.show {
-  opacity: 1;
-  transform: translateY(0%);
-}
-@media only screen and (max-width: 740px) {
-  .guides {
-    gap: 1rem;
-  }
-  .guides .career-guide {
+
+@media (max-width: 1114px) {
+  .mag-upper {
+    display: flex;
     flex-direction: column;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
-  .guides .career-guide .highlightImage {
-    width: 100%;
-    height: 20rem;
+
+  .mag-lowest iframe {
+    min-height: 550px;
+    width: 90vw;
+    height: 300px;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    margin-bottom: 50px;
   }
-  .guides .career-guide .content {
-    height: 70%;
-    width: 100%;
-  }
-  .guides .career-guide .content .text .contentText {
-    padding: 0 2rem 1rem 2rem;
-  }
-}
-@media only screen and (min-width: 1080px) {
-  .guides .career-guide {
-    width: 65rem;
+
+  .image-stack {
+    z-index: 500;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
   }
 }
 
-/* CAREER GUIDES END */
+/* MAGAZINE END */
