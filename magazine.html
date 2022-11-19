@@ -12,6 +12,7 @@
     <title>CCET ACM Magazine</title>
 
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/my-style.css">
 
 </head>
@@ -37,9 +39,9 @@
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index-2.html">
-                        <img src="assets/img/logo/ACM Logo Black.svg" class="logo-display" alt="logo">
-                        <img src="assets/img/logo/ACM Logo Blue.svg" class="logo-scrolled" alt="logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/acm logo.svg" class="logo-display" alt="logo">
+                        <img src="assets/img/logo/acm logo colored.svg" class="logo-scrolled" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
                         <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
@@ -52,41 +54,42 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" href="index.html">Home</a>
-                                
+
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="gallery.html" data-bs-toggle="">Gallery</a>
-                                
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     <li><a class="dropdown-item" href="competition.html">competition</a></li>
-                                    
+
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Team</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="Office-bearers.html">Office bearers</a></li>
-                                    <li><a class="dropdown-item" href="Executive-members.html">Executive members</a></li>
+                                    <li><a class="dropdown-item" href="Executive-members.html">Executive members</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="Web-Masters.html">Web Masters</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="achievements.html" >Acheivements</a>
-                                
+                                <a class="nav-link" href="achievements.html">Acheivements</a>
+
                             </li>
                             <li class="nav-item"><a class="nav-link" href="resources.html"> Resources </a></li>
                             <li class="nav-item"><a class="nav-link" href="magazine.html"> magazine </a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
+                        </ul>
                         <div class="header-nav-right">
-                           
+                            <div class="header-nav-search">
+                                <a href="#" class="search-box-outer"><i class="far fa-search"></i></a>
+                            </div>
                             <div class="header-btn">
-                                <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 40px;">ACM-W</a>
+                                <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 45px;">ACM-W</a>
                             </div>
                         </div>
                     </div>
@@ -95,6 +98,17 @@
         </div>
     </header>
 
+
+    <div class="search-popup">
+        <button class="close-search"><span class="far fa-times"></span></button>
+        <form action="#">
+            <div class="form-group">
+                <input type="search" name="search-field" placeholder="Search Here..." required>
+                <button type="submit"><i class="far fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+
     <main class="main">
 
         <div class="site-breadcrumb">
@@ -102,7 +116,7 @@
                 <h2 class="breadcrumb-title"><span>DIGITAL OUTLET</span></h2>
                 <h2 class="breadcrumb-subtitle">THE CCET ACM TECH MAGAZINE</h2>
                 <ul class="breadcrumb-menu">
-                    <li><a href="index-2.html"><i class="far fa-home"></i> Home</a></li>
+                    <li><a href="index.html"><i class="far fa-home"></i> Home</a></li>
                     <li class="active">Magazine</li>
                     ...
                 </ul>
@@ -126,7 +140,7 @@
                             <h4 class="volume-header">Volume 3</h4>
                             <div class="issues">
                                 <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 1</a>
+                                    <a href="assets\pdf\pdf-viewer\digital-outlet-v1i1.html" class="theme-btn issue-btn" target="_blank">Issue 1</a>
                                 </div>
                             </div>
                         </div>
@@ -135,15 +149,15 @@
                             <h4 class="volume-header">Volume 2</h4>
                             <div class="issues">
                                 <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 1</a>
+                                    <a href="assets/pdf/pdf-viewer\digital-outlet-v2i1.html" class="theme-btn issue-btn" target="_blank">Issue 1</a>
                                 </div>
 
                                 <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 2</a>
+                                    <a href="assets/pdf/pdf-viewer\digital-outlet-v2i2.html" class="theme-btn issue-btn" target="_blank">Issue 2</a>
                                 </div>
 
                                 <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 3</a>
+                                    <a href="assets/pdf/pdf-viewer\digital-outlet-v2i3.html" class="theme-btn issue-btn" target="_blank">Issue 3</a>
                                 </div>
                             </div>
                         </div>
@@ -153,15 +167,15 @@
 
                             <div class="issues">
                                 <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 1</a>
+                                    <a href="assets/pdf/pdf-viewer\digital-outlet-v1i1.html" class="theme-btn issue-btn" target="_blank">Issue 1</a>
                                 </div>
 
                                 <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 2</a>
+                                    <a href="assets/pdf/pdf-viewer\digital-outlet-v1i2.html" class="theme-btn issue-btn" target="_blank">Issue 2</a>
                                 </div>
 
                                 <div class="header-btn">
-                                    <a href="#" class="theme-btn issue-btn">Issue 3</a>
+                                    <a href="assets/pdf/pdf-viewer\digital-outlet-v1i3.html" class="theme-btn issue-btn" target="_blank">Issue 3</a>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +185,7 @@
 
                 <section class="magazine-recent">
                     <h2 class="mag-section-header">
-                        Recent Publications
+                        Highlights...
                     </h2>
                     <div class="image-stack">
                         <div class="stack-item stack-item-1">
@@ -212,9 +226,10 @@
                 <!-- single card of carousel -->
                 <div class="card first">
                     <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 3 - ISSUE 1</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
+
+                    <div class="theme-btn read-btn read-now" onclick="changeBook('v3i1')">Read Now <i
+                            class="fas fa-angle-double-right"></i></div>
+
                     <div class="thumbnail">
                         <img src="assets\img\magazine\magazine-thumbnails\vol3issue1.png" alt="magazine 1">
                     </div>
@@ -224,9 +239,10 @@
                 <!-- single card of carousel -->
                 <div class="card">
                     <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 2 - ISSUE 4</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
+
+                    <div class="theme-btn read-btn read-now" onclick="changeBook('v2i4')">Read Now <iclass="fas
+                            fa-angle-double-right"></i></div>
+
 
 
                     <div class="thumbnail">
@@ -238,9 +254,10 @@
                 <!-- single card of carousel -->
                 <div class="card">
                     <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 2 - ISSUE 3</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
+
+                    <div class="theme-btn read-btn read-now" onclick="changeBook('v2i3')">Read Now <iclass="fas
+                            fa-angle-double-right"></i></div>
+
 
 
                     <div class="thumbnail">
@@ -252,9 +269,11 @@
                 <!-- single card of carousel -->
                 <div class="card">
                     <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 2 - ISSUE 2</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
+
+                    <div class="theme-btn read-btn read-now" onclick="changeBook('v2i2')">Read Now <iclass="fas
+                            fa-angle-double-right"></i>
+                    </div>
+
 
 
                     <div class="thumbnail">
@@ -266,9 +285,10 @@
                 <!-- single card of carousel -->
                 <div class="card">
                     <h3 class="title"><i class="fas fa-layer-group"></i> <br> VOL 2 - ISSUE 1</h3>
-                    <a href="">
-                        <div class="theme-btn read-btn">Read Now <i class="fas fa-angle-double-right"></i></div>
-                    </a>
+
+                    <div class="theme-btn read-btn read-now" onclick="changeBook('v2i1')">Read Now <iclass="fas
+                            fa-angle-double-right"></i></div>
+
 
 
                     <div class="thumbnail">
@@ -278,6 +298,10 @@
                 <!-- end of single card of carousel -->
 
             </section>
+        </div>
+
+        <div class="mag-lowest" id="flipbookWrapper">
+            <iframe src="assets/pdf/pdf-viewer/digital-outlet-v3i1.html" frameborder="0" id="flip-book"></iframe>
         </div>
 
 
@@ -290,7 +314,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="footer-widget-box about-us">
                             <a href="#" class="footer-logo">
-                                <img src="assets/img/logo/ACM Logo Black.svg    " alt="">
+                                <img src="assets/img/logo/ACM Logo Black.svg" alt="">
                             </a>
                             <p class="mb-20">
                                 ACM boosts up the potential and talent, supporting the overall development needs of
@@ -301,16 +325,20 @@
                             <div class="footer-contact">
                                 <ul>
                                     <li><i class="far fa-map-marker-alt"></i>CCET, SECTOR-26, CHANDIGARH</li>
-                                    
+
                                 </ul>
                             </div>
                             <ul class="footer-social">
-                                <li><a href="https://www.facebook.com/acmwccet"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/acmwccet"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a>
+                                </li>
                                 <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i
+                                            class="fab fa-youtube"></i></a></li>
                                 <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
-                                <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -329,14 +357,15 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        
+
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="footer-widget-box list">
                             <h4 class="footer-widget-title">Contact Us</h4>
                             <div class="footer-newsletter">
                                 <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
-                                    Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a></p>
+                                    Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a>
+                                </p>
                                 <div class="subscribe-form">
                                     <form action="#">
                                         <input type="email" class="form-control" placeholder="Your Email">
@@ -356,10 +385,11 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
                         <p class="copyright-text">
-                            &copy; Copyright <span id="date"></span> Copyright © 2021 All rights reserved | <br> Designed and Developed by <a href="#">CCET ACM Website Team</a>
+                            &copy; Copyright <span id="date"></span> Copyright © 2021 All rights reserved | <br>
+                            Designed and Developed by <a href="#">CCET ACM Website Team</a>
                         </p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -383,8 +413,21 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/contact-form.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
 
-<!-- Mirrored from live.themewild.com/techrun/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Oct 2022 19:11:45 GMT -->
+    <script>
+
+        let commonURLbefore = "assets/pdf/pdf-viewer/digital-outlet-";
+        let commonURLafter = ".html";
+
+        function changeBook(arg) {
+            console.log('helo', arg);
+            let newpdfURL = commonURLbefore + arg + commonURLafter;
+            document.getElementById('flip-book').setAttribute('src', newpdfURL);
+            document.getElementById('flipbookWrapper').scrollIntoView({behavior:"smooth", block:"end"});
+            
+        }
+    </script>
+
+</body>
 
 </html>
