@@ -10,8 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    
-
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -21,7 +19,6 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/my-style.css">
 
 </head>
@@ -35,15 +32,15 @@
         </div>
     </div>
 
+<!-- =================================HEADER START========================= -->
 
     <header class="header">
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo/acm logo.svg" class="logo-display" alt="logo">
-                        <img src="assets/img/logo/acm logo colored.svg" class="logo-scrolled" alt="logo">
-                        
+                        <img src="assets/img/logo/ACM Logo Black.svg" class="logo-display" alt="logo">
+                        <img src="assets/img/logo/ACM Logo Blue.svg" class="logo-scrolled" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
                         <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
@@ -56,42 +53,41 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" href="index.html">Home</a>
-
+                                
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
-                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="gallery.html" data-bs-toggle="">Gallery</a>
+                                
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     <li><a class="dropdown-item" href="competition.html">competition</a></li>
-
+                                    
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Team</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="Office-bearers.html">Office bearers</a></li>
-                                    <li><a class="dropdown-item" href="Executive-members.html">Executive members</a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="Executive-members.html">Executive members</a></li>
                                     <li><a class="dropdown-item" href="Web-Masters.html">Web Masters</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="achievements.html">Acheivements</a>
-
+                                <a class="nav-link" href="achievements.html" >Acheivements</a>
+                                
                             </li>
                             <li class="nav-item"><a class="nav-link" href="resources.html"> Resources </a></li>
                             <li class="nav-item"><a class="nav-link" href="magazine.html"> magazine </a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
-                        </ul>
                         <div class="header-nav-right">
-                            <div class="header-nav-search">
-                                <a href="#" class="search-box-outer"><i class="far fa-search"></i></a>
-                            </div>	
+                           
                             <div class="header-btn">
-                                <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 45px;">ACM-W</a>
+                                <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 40px;">ACM-W</a>
                             </div>
                         </div>
                     </div>
@@ -99,7 +95,6 @@
             </nav>
         </div>
     </header>
-
 
     <div class="search-popup">
         <button class="close-search"><span class="far fa-times"></span></button>
@@ -117,7 +112,7 @@
             <div class="container">
                 <h2 class="breadcrumb-title">Achievements</h2>
                 <ul class="breadcrumb-menu">
-                    <li><a href="index.html"><i class="far fa-home"></i> Home</a></li>
+                    <li><a href="index-2.html"><i class="far fa-home"></i> Home</a></li>
                     <li class="active">Achievements</li>
                 </ul>
             </div>
@@ -137,14 +132,16 @@
                         <div class="blog-item-img">
                             <img src="assets\img\achievements\xerds.jpeg" alt="Thumb" class="ac-block-img">
                         </div>
-                        <hr>
+                        <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
                         
                             <h4 class="blog-title">
                                 <h4>There are many variates of passages alteration</h4>
                             </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <button class="theme-btn">Read More</button>
+                            <p>At vero eos et accusamus et iusto<span id="dots1">...</span>
+							<span id="more1">odio ducimus qui blanditiis deleniti atque</span>
+                            </p>
+                            <button class="theme-btn" id="myBtn1" onClick="myFunction1()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -153,14 +150,15 @@
                         <div class="blog-item-img">
                             <img src="assets\img\achievements\feature.jpeg" alt="Thumb" class="ac-block-img">
                         </div>
-                        <hr>
+                        <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
-                           
-                            <h4 class="blog-title">
-                                <h4>There are many variates of passages alteration</h4>
+                            <h4>
+                                There are many variates of passages alteration
                             </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <a class="theme-btn" href="#">Read More</a>
+                            <p>At vero eos et accusamus et iusto<span id="dots2">...</span>
+                                <span id="more2">odio ducimus qui blanditiis deleniti atque</span>
+                                </p>
+                                <button class="theme-btn" id="myBtn2" onClick="myFunction2()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -169,14 +167,13 @@
                         <div class="blog-item-img">
                             <img src="assets/img/achievements/linux.jpeg" alt="Thumb" class="ac-block-img">
                         </div>
-                        <hr>
+                        <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
-                            
-                            <h4 class="blog-title">
                                 <h4>There are many variates of passages alteration</h4>
-                            </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <a class="theme-btn" href="#">Read More</a>
+                                <p>At vero eos et accusamus et iusto<span id="dots3">...</span>
+                                    <span id="more3">odio ducimus qui blanditiis deleniti atque</span>
+                                </p>
+                                <button class="theme-btn" id="myBtn3" onClick="myFunction3()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -185,14 +182,15 @@
                         <div class="blog-item-img">
                             <img src="assets/img/achievements/syscom.jpg" alt="Thumb" class="ac-block-img">
                         </div>
-                        <hr>
+                       <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
                            
-                            <h4 class="blog-title">
                                 <h4>There are many variates of passages alteration</h4>
-                            </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <a class="theme-btn" href="#">Read More</a>
+                            
+                                <p>At vero eos et accusamus et iusto<span id="dots4">...</span>
+                                <span id="more4">odio ducimus qui blanditiis deleniti atque</span>
+                                </p>
+                                <button class="theme-btn" id="myBtn4" onClick="myFunction4()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -202,14 +200,15 @@
                             <img src="assets/img/achievements/certificate-sudhakar.jpg" alt="Thumb"
                                 class="ac-block-img">
                         </div>
-                        <hr>
+                        <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
-                           
-                            <h4 class="blog-title">
+                        
                                 <h4>There are many variates of passages alteration</h4>
-                            </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <a class="theme-btn" href="#">Read More</a>
+                        
+                                <p>At vero eos et accusamus et iusto<span id="dots5">...</span>
+                                    <span id="more5">odio ducimus qui blanditiis deleniti atque</span>
+                                    </p>
+                                    <button class="theme-btn" id="myBtn5" onClick="myFunction5()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -218,14 +217,14 @@
                         <div class="blog-item-img">
                             <img src="assets/img/achievements/acm-summer-sudhakar.jpg" alt="Thumb" class="ac-block-img">
                         </div>
-                        <hr>
+                        <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
                            
-                            <h4 class="blog-title">
                                 <h4>There are many variates of passages alteration</h4>
-                            </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <a class="theme-btn" href="#">Read More</a>
+                                <p>At vero eos et accusamus et iusto<span id="dots6">...</span>
+                                    <span id="more6">odio ducimus qui blanditiis deleniti atque</span>
+                                    </p>
+                                    <button class="theme-btn" id="myBtn6" onClick="myFunction6()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -238,14 +237,14 @@
                             <img src="assets\img\achievements\IKDDNinja-muskaan-01.png" alt="Thumb"
                                 class="ac-block-img">
                         </div>
-                        <hr>
+                        <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
                            
-                            <h4 class="blog-title">
                                 <h4>There are many variates of passages alteration</h4>
-                            </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <button class="theme-btn">Read More</button>
+                                <p>At vero eos et accusamus et iusto<span id="dots7">...</span>
+                                    <span id="more7">odio ducimus qui blanditiis deleniti atque</span>
+                                    </p>
+                                    <button class="theme-btn" id="myBtn7" onClick="myFunction7()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -255,14 +254,15 @@
                             <img src="assets\img\achievements\anshul-summerschool-01.png" alt="Thumb"
                                 class="ac-block-img">
                         </div>
-                        <hr>
+                       <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
                             
-                            <h4 class="blog-title">
                                 <h4>There are many variates of passages alteration</h4>
-                            </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <a class="theme-btn" href="#">Read More</a>
+                            
+                                <p>At vero eos et accusamus et iusto<span id="dots8">...</span>
+                                    <span id="more8">odio ducimus qui blanditiis deleniti atque</span>
+                                    </p>
+                                    <button class="theme-btn" id="myBtn8" onClick="myFunction8()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -271,14 +271,14 @@
                         <div class="blog-item-img">
                             <img src="assets\img\achievements\Hybrid_cloud.jpeg" alt="Thumb" class="ac-block-img">
                         </div>
-                        <hr>
+                        <div class="heading-divider test" id="divide-line"></div>
                         <div class="blog-item-info">
                            
-                            <h4 class="blog-title">
                                 <h4>There are many variates of passages alteration</h4>
-                            </h4>
-                            <p>At vero eos et accusamus et iusto odio ducimus qui blanditiis deleniti atque </p>
-                            <a class="theme-btn" href="#">Read More</a>
+                                <p>At vero eos et accusamus et iusto<span id="dots9">...</span>
+                                    <span id="more9">odio ducimus qui blanditiis deleniti atque</span>
+                                    </p>
+                                    <button class="theme-btn" id="myBtn9" onClick="myFunction9()">Read More</button>
                         </div>
                     </div>
                 </div>
@@ -305,8 +305,6 @@
         </div>
     </div>
     </div>
-
-    </main>
 
     <!-- ===================================FOOTER START================================= -->
 
