@@ -12,6 +12,7 @@
     <title>CCET ACM Magazine</title>
 
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/flaticon.css">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/my-style.css">
 
 </head>
@@ -37,9 +39,9 @@
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand nav-fix" href="index-2.html">
-                        <img src="assets/img/logo/ACM Logo Black.svg" class="logo-display" alt="logo">
-                        <img src="assets/img/logo/ACM Logo Blue.svg" class="logo-scrolled" alt="logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/acm logo.svg" class="logo-display" alt="logo">
+                        <img src="assets/img/logo/acm logo colored.svg" class="logo-scrolled" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
                         <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
@@ -55,10 +57,7 @@
 
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="gallery.html" data-bs-toggle="">Gallery</a>
-
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
                                 <ul class="dropdown-menu fade-up">
@@ -84,8 +83,11 @@
                             <li class="nav-item"><a class="nav-link" href="magazine.html"> magazine </a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
+                        </ul>
                         <div class="header-nav-right">
-
+                            <div class="header-nav-search">
+                                <a href="#" class="search-box-outer"><i class="far fa-search"></i></a>
+                            </div>
                             <div class="header-btn">
                                 <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 45px;">ACM-W</a>
                             </div>
@@ -96,6 +98,17 @@
         </div>
     </header>
 
+
+    <div class="search-popup">
+        <button class="close-search"><span class="far fa-times"></span></button>
+        <form action="#">
+            <div class="form-group">
+                <input type="search" name="search-field" placeholder="Search Here..." required>
+                <button type="submit"><i class="far fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+
     <main class="main">
 
         <div class="site-breadcrumb">
@@ -103,7 +116,7 @@
                 <h2 class="breadcrumb-title"><span>DIGITAL OUTLET</span></h2>
                 <h2 class="breadcrumb-subtitle">THE CCET ACM TECH MAGAZINE</h2>
                 <ul class="breadcrumb-menu">
-                    <li><a href="index-2.html"><i class="far fa-home"></i> Home</a></li>
+                    <li><a href="index.html"><i class="far fa-home"></i> Home</a></li>
                     <li class="active">Magazine</li>
                     ...
                 </ul>
