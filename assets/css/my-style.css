@@ -1051,43 +1051,24 @@ div.overlay-blue:hover {
 
 @keyframes changeImage {
   0% {
-    background-image: url("assets/img/slider/vol1.png");
+      background-image: url("assets/img/slider/vol1.png");
   }
 
   25% {
-    background-image: url("assets/img/slider/vol1issue2.png");
+      background-image: url("assets/img/slider/vol1issue2.png");
   }
 
   50% {
-    background-image: url("assets/img/slider/vol1issue3.jpeg");
+      background-image: url("assets/img/slider/vol1issue3.jpeg");
   }
 
   75% {
-    background-image: url("assets/img/slider/vol2issue2.png");
+      background-image: url("assets/img/slider/vol2issue2.png");
   }
 
   100% {
-    background-image: url("assets/img/slider/vol2issue1.png");
+      background-image: url("assets/img/slider/vol2issue1.png");
   }
-}
-
-.ac-main-body {
-  margin: 100px 100px 200px 100px;
-  padding-left: 200px;
-}
-
-.ac-block {
-  width: 400px;
-  box-shadow: 0px 0px 7px rgb(202, 201, 201);
-  border-radius: 5px;
-  display: inline-grid;
-  margin: 50px 70px 100px 70px;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
 }
 
 .ac-block p {
@@ -1107,36 +1088,78 @@ div.overlay-blue:hover {
   transform: scale(1.05);
 }
 
-hr {
-  border: none;
-  background: rgb(156, 80, 172);
-  width: 50%;
-  margin-left: 25%;
+#more1{
+  display: none;
+  font-weight: lighter;
+}
+#more2{
+  display: none;
+  font-weight: lighter;
+}
+#more3{
+  display: none;
+  font-weight: lighter;
+}
+#more4{
+  display: none;
+  font-weight: lighter;
+}
+#more5{
+  display: none;
+  font-weight: lighter;
+}
+#more6{
+  display: none;
+  font-weight: lighter;
+}
+#more7{
+  display: none;
+  font-weight: lighter;
+}
+#more8{
+  display: none;
+  font-weight: lighter;
+}
+#more9{
+  display: none;
+  font-weight: lighter;
 }
 
-@media screen and (max-width: 320px) {
-  #ac-acm-logo {
-    display: none;
-  }
+#divide-line{
+ margin-left: 25%;
+ width: 50%;
+ height: 1.5px;
+ background:rgb(53, 85, 189);
 }
 
-@media screen and (max-width: 992px) {
-  #ac-column {
+@media screen and (max-width: 320px){
+    #ac-acm-logo{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+  
+  #ac-column{
     width: 50%;
   }
+
 }
 
-@media screen and (max-width: 768px) {
-  #ac-column {
+@media screen and (max-width: 768px){
+  
+  #ac-column{
     width: 80%;
     margin-left: 10%;
   }
+
 }
 
-h4:hover {
+h4:hover{
   color: rgb(149, 95, 235);
   cursor: default;
 }
+
 
 /* END ACHIEVEMENTS */
 
