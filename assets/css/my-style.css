@@ -626,9 +626,9 @@ div.overlay-blue:hover {
   justify-content: center;
 }
 
-.img-sec-1{
-  max-width: 90%;
-  margin-left: -10px;
+.img-sec-1 {
+  max-width: 80%;
+  /* margin-left: -10px; */
 }
 
 .about-sec1 {
@@ -703,7 +703,6 @@ div.overlay-blue:hover {
 .sec-2-text h2 {
   font-size: 2.5em;
 }
-
 
 .about-sec-2-img1 {
   border-radius: 5px;
@@ -811,6 +810,13 @@ div.overlay-blue:hover {
   }
   .sec-2-text p {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .img-sec-1 {
+    margin-left: -20px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1548,13 +1554,13 @@ h4:hover {
   .c-card__expander {
     width: 443.5%;
   }
-  p{
+  p {
     font-size: 15px;
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 20px;
   }
-  .c-header p{
+  .c-header p {
     font-size: 17px;
   }
 }
@@ -1562,59 +1568,56 @@ h4:hover {
   .c-card:nth-of-type(3n + 2) .c-card__expander {
     margin-left: calc(-100% - 30px);
   }
-  .c-card:nth-of-type(3n + 3) .c-card__expander{
+  .c-card:nth-of-type(3n + 3) .c-card__expander {
     margin-left: calc(-200% - 60px);
     clear: left;
   }
   .c-card__expander {
     width: calc(300% + 60px);
   }
-  p{
+  p {
     font-size: 13px;
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 18px;
   }
-  .c-header p{
+  .c-header p {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 767px) {
-  
   .c-card__expander {
     width: calc(100% + 0px);
     left: calc(10% - 34px);
   }
-  p{
+  p {
     font-size: 13px;
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 15px;
     padding-bottom: 5px;
   }
-  .c-header p{
+  .c-header p {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 424px) {
-  
   .c-card__expander {
     width: calc(100% + 0px);
     left: calc(10% - 34px);
   }
-  p{
+  p {
     font-size: 11px;
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 15px;
     padding-bottom: 5px;
   }
-  .c-header p{
+  .c-header p {
     font-size: 11px;
   }
 }
 @media screen and (max-width: 320px) {
-  
   .c-card__expander {
     width: calc(113% + 0px);
     left: calc(10% - 42px);
@@ -1626,14 +1629,14 @@ h4:hover {
     width: 106%;
     background: linear-gradient(45deg, #896eff 0, #5f3bff 51%, #896eff);
   }
-  p{
+  p {
     font-size: 11px;
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 15px;
     padding-bottom: 5px;
   }
-  .c-header p{
+  .c-header p {
     font-size: 11px;
   }
 }
@@ -2014,8 +2017,6 @@ h4:hover {
 /* RESOURCES END */
 
 /* ACM-W ABOUT US*/
-
-
 
 /* ACM-W ABOUT US END */
 
