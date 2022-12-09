@@ -2421,7 +2421,9 @@ padding: 5px;
 
 /* CAREER GUIDES END */
 
-/*  MAGAZINE */
+
+
+/* +++ MAGAZINE +++ */
 
 .navbar-brand {
   padding-top: 0px;
@@ -2510,7 +2512,7 @@ padding: 5px;
   /* background: red; */
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   min-width: 60%;
   min-height: 50vh;
@@ -2533,6 +2535,7 @@ padding: 5px;
   position: relative;
   grid-template-columns: 1fr 1fr 1fr;
   right: 115px;
+  margin: auto;
 }
 
 .stack-item {
@@ -2672,14 +2675,14 @@ padding: 5px;
 .mag-lower {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 100vw;
-  padding: 40px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  margin: 50px auto 30px auto;
-  min-height: 70vh;
+  /* padding: auto; */
+  padding-right: 9px;
+  padding-bottom: 10px;
+  margin: 50px auto 50px auto;
+  min-height: 650px;
   background: linear-gradient(45deg, #896eff 0, rgb(95, 59, 255) 51%, #896eff);
   /* border: solid 2px #5f3bff; */
 }
@@ -2687,7 +2690,8 @@ padding: 5px;
 .carousel-container {
   /* left: calc(50% - 300px); */
   min-height: 500px;
-  margin-left: 75px;
+  margin-left: 110px;
+  margin-top: 14px;
   display: flex;
 }
 
@@ -2708,7 +2712,7 @@ padding: 5px;
 }
 
 .mag-card:hover {
-  transform: translateY(-50px);
+  transform: translateY(-30px);
   transition: 0.4s ease-in-out;
   z-index: 50;
   border-width: 5px;
@@ -2719,9 +2723,9 @@ padding: 5px;
 .mag-card:hover img {
   /* opacity: 50%; */
   overflow: hidden;
-  filter: blur(10px);
-  /* filter:; */
-  transition: 0.4s ease-out;
+  filter: blur(3px);
+  transform: scale(1.01);
+  transition: 0.4s ease-in-out;
 }
 
 .mag-card .title {
@@ -2786,7 +2790,9 @@ padding: 5px;
   width: 500%;
   display: flex;
   border-radius: 18px;
+  overflow: hidden;
 }
+
 .mag-slides input {
   display: none;
 }
@@ -2804,12 +2810,11 @@ padding: 5px;
   /* position: absolute; */
   width: 500px;
   margin: 0px;
-  margin-top: 25px;
+  margin-top: 8px;
   display: flex;
   justify-content: center;
   z-index: 500;
   display: none;
-
 }
 
 .manual-circle {
@@ -2861,7 +2866,6 @@ padding: 5px;
 
 .mag-slider-title {
   position: absolute;
-  width: 100%;
   display: flex;
   height: 100px;
   justify-content: center;
@@ -2913,14 +2917,13 @@ padding: 5px;
   /* position: absolute; */
   width: 500px;
   margin: 0px;
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   position: relative;
-  top: 39px;
+  top: 22px;
   z-index: 499;
   display: none;
-
 }
 
 .nav-automatic div {
@@ -2967,12 +2970,22 @@ padding: 5px;
   transition: 0.8s ease-in-out;
 }
 
-@media (max-width: 1114px) {
+@media (max-width: 600px) {
+  .mag-header {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 1441px) {
   .mag-upper {
     display: flex;
     flex-direction: column;
   }
-
+  .mag-lower {
+    padding-top: 25px;
+    width: 100vw;
+    margin-bottom: 5%;
+  }
   .mag-lowest iframe {
     min-height: 550px;
     width: 90vw;
@@ -2984,12 +2997,27 @@ padding: 5px;
     margin-bottom: 50px;
   }
 
+  .mag-slider-title {
+    width: 90%;
+  }
+
+  .mag-slider-title .title {
+    font-size: 230%;
+  }
+
+  .mag-single-slide .read-btn {
+    position: absolute;
+    top: 50px;
+  }
+
   .image-stack {
     z-index: 500;
     display: grid;
     position: relative;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
+    position: relative;
+    left: -80px;
   }
 
   .carousel-container {
@@ -3007,10 +3035,16 @@ padding: 5px;
   .nav-manual {
     display: flex;
   }
-  
 }
 
-/* MAGAZINE END */
+@media (max-width: 991px) {
+  .mag-header {
+    margin-top: 80px;
+  }
+}
+
+/* +++ MAGAZINE END+++ */
+
 
 /* RESEARCH */
 
