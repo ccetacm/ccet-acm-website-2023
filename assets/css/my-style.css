@@ -1768,16 +1768,16 @@ padding: 5px;
 }
 
 .acmw-text-section {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eee;
+  background-color: #f8f9ff;
 }
 
 .acmw-text-wrapper {
   position: relative;
-  height: 450px;
+  height: 600px;
   width: 1075px;
   display: flex;
   align-items: center;
@@ -1801,6 +1801,7 @@ padding: 5px;
   border-radius: 20px;
   margin: 20px 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .acmw-text-wrapper .acmw-text-card .acmw-text-image {
@@ -1915,7 +1916,6 @@ padding: 5px;
 .wrapper .acmw-text-box .acmw-text-content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
   padding-top: 100px;
 }
@@ -1923,12 +1923,14 @@ padding: 5px;
 .acmw-text-box .info .name {
   font-weight: 600;
   font-size: 17px;
+  text-align: center !important;
 }
 
 .acmw-text-box .info .job {
   font-size: 16px;
   font-weight: 500;
   color: #896eff;
+  text-align: center !important;
 }
 
 .acmw-text-box .info {
@@ -1947,6 +1949,15 @@ padding: 5px;
 .acmw-text-box:hover .acmw-text-content .acmw-text-image img {
   border-color: #fff;
 }
+
+/* .content .info .name {
+  align: center;
+}
+
+
+.content .info .job {
+  align: center;
+} */
 
 @media (max-width: 1045px) {
   .swiper-wrapper .acmw-text-box {
