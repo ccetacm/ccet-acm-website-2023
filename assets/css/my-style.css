@@ -1235,6 +1235,7 @@ div.overlay-blue:hover {
   transform: scale(1.05);
 }
 
+
 #more1 {
   display: none;
   font-weight: lighter;
@@ -1272,11 +1273,19 @@ div.overlay-blue:hover {
   font-weight: lighter;
 }
 
+#ac-card{
+  overflow-y: scroll;
+  height: 250px;
+  
+}
+
 #divide-line {
   margin-left: 25%;
   width: 50%;
   height: 1.5px;
   background: rgb(53, 85, 189);
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 320px) {
