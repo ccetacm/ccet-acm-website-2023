@@ -1236,7 +1236,7 @@ div.overlay-blue:hover {
 }
 
 
-/* #more1 {
+#more1 {
   display: none;
   font-weight: lighter;
 }
@@ -1271,7 +1271,7 @@ div.overlay-blue:hover {
 #more9 {
   display: none;
   font-weight: lighter;
-} */
+}
 
 #ac-card{
   overflow-y: scroll;

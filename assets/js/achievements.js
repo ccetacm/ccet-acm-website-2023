@@ -73,3 +73,43 @@ function getNextPage() {
     });
   }
 }
+
+// ================READ MORE BUTTONS=================
+
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+// make single function for all read more buttons with class read-more-btn using event listener
+document.querySelectorAll(".read-more-btn").forEach(function (el) {
+  el.addEventListener("click", (e) => {
+    const id =
+      Array.from(document.querySelectorAll(".read-more-btn")).indexOf(
+        e.target
+      ) + 1;
+    const dots = document.getElementById(`dots${id}`);
+    const moreText = document.getElementById(`more${id}`);
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      e.target.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      e.target.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  });
+});
