@@ -11,6 +11,8 @@
 
     <title>CCET | ACM | Gallery</title>
 
+    
+
     <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -20,8 +22,9 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/my-style.css">
-    <!-- <link rel="stylesheet" href="assets/css/gallery_1.css"> -->
+
 </head>
 
 <body>
@@ -38,9 +41,9 @@
         <div class="main-navigation">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index-2.html">
-                        <img src="assets/img/logo/ACM Logo Black.svg" class="logo-display" alt="logo">
-                        <img src="assets/img/logo/ACM Logo Blue.svg" class="logo-scrolled" alt="logo">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/acm logo.svg" class="logo-display" alt="logo">
+                        <img src="assets/img/logo/acm logo colored.svg" class="logo-scrolled" alt="logo">
                     </a>
                     <div class="mobile-menu-right">
                         <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a>
@@ -56,15 +59,13 @@
 
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="gallery.html" data-bs-toggle="">Gallery</a>
-
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     <li><a class="dropdown-item" href="competition.html">competition</a></li>
+
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -84,10 +85,13 @@
                             <li class="nav-item"><a class="nav-link" href="magazine.html"> magazine </a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
+                        </ul>
                         <div class="header-nav-right">
-
+                            <div class="header-nav-search">
+                                <a href="#" class="search-box-outer"><i class="far fa-search"></i></a>
+                            </div>	
                             <div class="header-btn">
-                                <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 40px;">ACM-W</a>
+                                <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 45px;">ACM-W</a>
                             </div>
                         </div>
                     </div>
@@ -113,7 +117,7 @@
             <div class="container">
                 <h1 class="breadcrumb-title">Gallery</h1>
                 <ul class="breadcrumb-menu">
-                    <li><a href="index-2.html"><i class="far fa-home"></i> Home</a></li>
+                    <li><a href="index.html"><i class="far fa-home"></i> Home</a></li>
                     <li class="active">Gallery</li>
                 </ul>
             </div>
@@ -125,104 +129,125 @@
             </div> -->
         </div>
 
-        <div class="main-container" id="main-container">
-            <div class="categories" id="categories">
-                <div class="category active-gallery" onclick="updateGallery()">All</div>
-                <div class="category" onclick="updateGallery('website')">Website</div>
-                <div class="category" onclick="updateGallery('project')">Project</div>
-                <div class="category" onclick="updateGallery('coding')">Coding</div>
-                <div class="category" onclick="updateGallery('graphic-design')">Graphic Design</div>
-                <div class="category" onclick="updateGallery('technical-writing')">Technical Writing</div>
-                <div class="category" onclick="updateGallery('others')">Others</div>
-            </div>
-            <div class="content-container" id="content-container">
-                <div class="images-container" id="images-container">
-                    <div class="gallery-img">
-                        <!-- HEADER  -->
-                        <div class="header">
-                            <h3 class="gallery-img-title">
-                                Deez Nutz
-                            </h3>
+
+        <div class="case-area py-120">
+            <div class="container-fluid" id="containerFluid">
+                <div class="filter-controls">
+                    <ul class="filter-btns">
+                        <li class="active" data-filter="*">All</li>
+                        <li data-filter=".cat1">Website</li>
+                        <li data-filter=".cat2">Project</li>
+                        <li data-filter=".cat3">Coding</li>
+                        <li data-filter=".cat4">Graphic Design</li>
+                        <li data-filter=".cat5">Technical Writing</li>
+                        <li data-filter=".cat6">Others</li>
+                    </ul>
+                </div>
+
+                <div class="row filter-box popup-gallery" id="gallery">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 g-row-pad">
+                        <button class="g-img-container filter-item cat1">
+                            <img class="img-fluid g-img" src="assets/img/Gallery_Images/WebsiteGallery/Coding/1.jpg"
+                                alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat2">
+                            <img class="img-fluid g-img"
+                                src="assets\img\Gallery_Images\WebsiteGallery\Recruitments\2021-4.jpg" alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat3">
+                            <img class="img-fluid g-img" src="assets\img\Gallery_Images\WebsiteGallery\logodesign\1.png"
+                                alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat4">
+                            <img class="img-fluid g-img"
+                                src="assets\img\Gallery_Images\WebsiteGallery\Recruitments\3.png" alt="">
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 g-row-pad">
+                        <button class="g-img-container filter-item cat1">
+                            <img class="img-fluid g-img" src="assets/img/Gallery_Images/WebsiteGallery/Coding/gsoc.jpg"
+                                alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat2">
+                            <img class="img-fluid g-img"
+                                src="assets\img\Gallery_Images\WebsiteGallery\Recruitments/2021-2.png" alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat3">
+                            <img class="img-fluid g-img" src="assets\img\Gallery_Images\WebsiteGallery\logodesign/5.png"
+                                alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat4">
+                            <img class="img-fluid g-img"
+                                src="assets\img\Gallery_Images\WebsiteGallery\Recruitments/4.png" alt="">
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 g-row-pad">
+                        <button class="g-img-container filter-item cat1">
+                            <img class="img-fluid g-img" src="assets/img/Gallery_Images/WebsiteGallery/Coding/cse_tech_2.jpg"
+                                alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat2">
+                            <img class="img-fluid g-img"
+                                src="assets\img\Gallery_Images\WebsiteGallery\Recruitments/2021-1.png" alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat3">
+                            <img class="img-fluid g-img" src="assets\img\Gallery_Images\WebsiteGallery\logodesign/3.png"
+                                alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat4">
+                            <img class="img-fluid g-img"
+                                src="assets\img\Gallery_Images\WebsiteGallery\Recruitments/2021-4.jpg" alt="">
+                        </button>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 g-row-pad">
+                        <button class="g-img-container filter-item cat1">
+                            <img class="img-fluid g-img" src="assets/img/Gallery_Images/WebsiteGallery/Coding/hacktoberfest_2.jpg"
+                                alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat2">
+                            <img class="img-fluid g-img"
+                                src="assets\img\Gallery_Images\WebsiteGallery\Recruitments/2021-1.png" alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat3">
+                            <img class="img-fluid g-img" src="assets\img\Gallery_Images\WebsiteGallery\logodesign/6.png"
+                                alt="">
+                        </button>
+                        <button class="g-img-container filter-item cat4">
+                            <img class="img-fluid g-img"
+                                src="assets\img\Gallery_Images\WebsiteGallery\Recruitments/2021-2.png" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="preview-container" id="previewContainer">
+                    <div class="preview-menu d-flex align-items-center justify-content-between text-dark fw-bold">
+                        <p>Title of image</p>
+                        <!-- prev and next buttons -->
+                        <div class="preview-btns">
+                            <button onclick="prevImg()" class="preview-btn preview-btn-prev py-1 px-2"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button onclick="nextImg()" class="preview-btn preview-btn-next py-1 px-2"><i
+                                    class="fas fa-chevron-right"></i></button>
                         </div>
-                        <!-- IMAGE -->
-                        <img class="the-real-fkin-image" src="assets/img/Gallery_Images/WebsiteGallery/Teams/acm_2.jpg">
-                        <!-- BODY -->
-                        <div class="img-description">
-                            grrrr jappan 🇯🇵 is best country in teh world (sekai) !!!!🤬😡!!!👹🤬!!!!! west bAd grrrgghhhg japenis culture⛩🎎🎏 better than amrican🗽🍔👎!!! (>~<) vendor machine eveywhere 🗼and sakura trees are so 🌸 a e s t h e t i c 🌸 UwU if u hate it then your NOT a man of culture so shinē!!! ~hmph baka -_- 🏮
-                        </div>
-                        <!-- FOOTER -->
-                        <div class="footer">
-                            <p>Mary Jane</p>
-                            <p>Date: 9-11-2001</p>
+                        <!-- <a href="slideshow.html" class="theme-btn">slideshow</a> -->
+                        <div class="preview-close">
+                            <button onclick="closePreview()" class="py-1 px-2">X</button>
                         </div>
                     </div>
-                    <div class="gallery-img website">
-                        <img class="the-real-fkin-image" src="assets/img/Gallery_Images/WebsiteGallery/Teams/acmw.jpg">
-                        <div class="img-description">
-                            grrrr jappan 🇯🇵 is best country in teh world (sekai) !!!!🤬😡!!!👹🤬!!!!! west bAd grrrgghhhg japenis culture⛩🎎🎏 better than amrican🗽🍔👎!!! (>~<) vendor machine eveywhere 🗼and sakura trees are so 🌸 a e s t h e t i c 🌸 UwU if u hate it then your NOT a man of culture so shinē!!! ~hmph baka -_- 🏮
-                        </div>
-                        <div class="footer">
-                            <p>Mary Jane</p>
-                            <p>Date: 9-11-2001</p>
-                        </div>
+
+                    <div class="preview-img" id="previewImg">
+                        <img src="assets/img/Gallery_Images/WebsiteGallery/Coding/1.jpg" alt="">
                     </div>
-                    <div class="gallery-img project">
-                        <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/2021-1.png">
-                        <div class="footer">
-                            <p>Mary Jane</p>
-                            <p>Date: 9-11-2001</p>
-                        </div>
-                    </div>
-                    <div class="gallery-img project">
-                        <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/2021-1.png">
-                        <div class="footer">
-                            <p>Mary Jane</p>
-                            <p>Date: 9-11-2001</p>
-                        </div>
-                    </div>
-                    <div class="gallery-img coding">
-                        <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/2021-1.png">
-                        <div class="footer">
-                            <p>Mary Jane</p>
-                            <p>Date: 9-11-2001</p>
-                        </div>
-                    </div>
-                    <div class="gallery-img">
-                        <!-- HEADER  -->
-                        <div class="header">
-                            <h3 class="gallery-img-title">
-                                Deez Nutz
-                            </h3>
-                        </div>
-                        <!-- IMAGE -->
-                        <img class="the-real-fkin-image" src="assets/img/Gallery_Images/WebsiteGallery/Teams/acm_2.jpg">
-                        <!-- BODY -->
-                        <div class="img-description">
-                            grrrr jappan 🇯🇵 is best country in teh world (sekai) !!!!🤬😡!!!👹🤬!!!!! west bAd grrrgghhhg japenis culture⛩🎎🎏 better than amrican🗽🍔👎!!! (>~<) vendor machine eveywhere 🗼and sakura trees are so 🌸 a e s t h e t i c 🌸 UwU if u hate it then your NOT a man of culture so shinē!!! ~hmph baka -_- 🏮
-                        </div>
-                        <!-- FOOTER -->
-                        <div class="footer">
-                            <p>Mary Jane</p>
-                            <p>Date: 9-11-2001</p>
-                        </div>
-                    </div>
-                    <div class="gallery-img others">
-                        <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/meetTheMentor/2.png">
-                        <div class="footer">
-                            <p>Mary Jane</p>
-                            <p>Date: 9-11-2001</p>
-                        </div>
-                    </div>
-                    <div class="gallery-img others">
-                        <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/meetTheMentor/2.png">
-                        <div class="footer">
-                            <p>Mary Jane</p>
-                            <p>Date: 9-11-2001</p>
-                        </div>
+
+                    <div class="preview-desc mt-4">
+                        description like Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex adipisci esse
+                        eligendi tenetur nam!
+                        Error eius cumque, rem fugiat necessitatibus perspiciatis, temporibus deserunt provident
+                        voluptatum autem laboriosam ipsam ea veritatis!
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </main>
 
     <footer class="footer-area">
@@ -331,8 +356,7 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/contact-form.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/gallery_1.js"></script>
-
+    <script src="assets/js/gallery.js"></script>
 </body>
 
 </html>
