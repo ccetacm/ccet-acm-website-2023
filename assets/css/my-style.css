@@ -1334,7 +1334,6 @@ h4:hover {
   margin: 0px auto;
   width: 95%;
   background-color: white;
-
 }
 
 .c-cards {
@@ -1381,44 +1380,44 @@ h4:hover {
   text-shadow: var(--textshadow-1);
 }
 
-.c-header{
-  color:black;
+.c-header {
+  color: black;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
   background: whitesmoke;
 }
 
-.c-blocktext{
-  width:100%;
-  padding: 5px 15px ;
+.c-blocktext {
+  width: 100%;
+  padding: 5px 15px;
   display: flex;
-  flex-direction:column ;
+  flex-direction: column;
   align-items: center;
-  font-size:16px;
+  font-size: 16px;
   text-align: justify;
 }
 
-.c-blocktext p{
-color: white;
-padding: 5px;
+.c-blocktext p {
+  color: white;
+  padding: 5px;
 }
 
 .c-header h2 {
-  color:black;
+  color: black;
   font-size: 22px;
   text-align: center;
   font-weight: 800;
 }
 
 .c-icons {
- color:#eee;
- margin: 0px;
- margin-right: 5px;
- color: black;
+  color: #eee;
+  margin: 0px;
+  margin-right: 5px;
+  color: black;
 }
 
-.c-details{
+.c-details {
   width: 30%;
   margin: 5px;
   border-radius: 10px;
@@ -1428,7 +1427,7 @@ padding: 5px;
   margin-left: calc(-67% - 30px);
 }
 
-.c-details p{
+.c-details p {
   padding: 0px;
   padding-top: 8px;
   padding-left: 10px;
@@ -1447,7 +1446,7 @@ padding: 5px;
   padding: 10px;
   position: relative;
   cursor: pointer;
-  background-color: #b4a3ff;;
+  background-color: #b4a3ff;
   color: #eceef1;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -1466,7 +1465,7 @@ padding: 5px;
 }
 .c-card__expander {
   transition: all 0.2s ease-in-out;
-  background: linear-gradient(45deg, #5f3bff 0,  #292050 51%, #433581);
+  background: linear-gradient(45deg, #5f3bff 0, #292050 51%, #433581);
   width: 150%;
   position: relative;
   display: flex;
@@ -1516,7 +1515,7 @@ padding: 5px;
   z-index: 10;
   border-radius: 10px;
 }
-.c-card.is-expanded .c-img-text{
+.c-card.is-expanded .c-img-text {
   display: none;
 }
 .c-card.is-expanded .c-card__inner:hover img {
@@ -1571,7 +1570,7 @@ padding: 5px;
   .c-card__expander {
     width: 444.5%;
   }
-  .c-details{
+  .c-details {
     width: 43%;
     margin: 5px;
     border-radius: 10px;
@@ -1610,7 +1609,7 @@ padding: 5px;
   .c-card__expander {
     width: 330.5%;
   }
-  .c-details{
+  .c-details {
     width: 55%;
     margin: 5px;
     border-radius: 10px;
@@ -1619,14 +1618,14 @@ padding: 5px;
     flex-direction: column;
     margin-left: calc(-40% - 30px);
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 20px;
   }
-  .c-details p{
+  .c-details p {
     font-size: 15px;
     padding-top: 5px;
   }
-  .c-blocktext p{
+  .c-blocktext p {
     font-size: 14px;
   }
   .c-img-text {
@@ -1649,7 +1648,7 @@ padding: 5px;
     width: calc(100% + 30px);
     margin-left: calc(-4%);
   }
-    .c-details{
+  .c-details {
     width: 55%;
     margin: 5px;
     border-radius: 10px;
@@ -1658,14 +1657,14 @@ padding: 5px;
     flex-direction: column;
     margin-left: calc(-43%);
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 18px;
   }
-  .c-details p{
+  .c-details p {
     font-size: 12px;
     padding-top: 5px;
   }
-  .c-blocktext p{
+  .c-blocktext p {
     font-size: 12px;
   }
   .c-img-text {
@@ -1687,7 +1686,7 @@ padding: 5px;
     width: calc(111%);
     margin-left: calc(-6%);
   }
-    .c-details{
+  .c-details {
     width: 55%;
     margin: 5px;
     border-radius: 10px;
@@ -1696,14 +1695,14 @@ padding: 5px;
     flex-direction: column;
     margin-left: calc(-43%);
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 15px;
   }
-  .c-details p{
+  .c-details p {
     font-size: 11px;
     padding-top: 3px;
   }
-  .c-blocktext p{
+  .c-blocktext p {
     font-size: 11px;
   }
   .c-img-text {
@@ -1725,7 +1724,7 @@ padding: 5px;
     width: calc(113%);
     margin-left: calc(-7%);
   }
-    .c-details{
+  .c-details {
     width: 61%;
     margin: 5px;
     border-radius: 10px;
@@ -1734,14 +1733,14 @@ padding: 5px;
     flex-direction: column;
     margin-left: calc(-37%);
   }
-  .c-header h2{
+  .c-header h2 {
     font-size: 13px;
   }
-  .c-details p{
+  .c-details p {
     font-size: 11px;
     padding-top: 3px;
   }
-  .c-blocktext p{
+  .c-blocktext p {
     font-size: 11px;
   }
   .c-img-text {
@@ -1985,6 +1984,10 @@ padding: 5px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(90deg, #896eff 20%, #6846ff 30%, #8265ff 50%); */
 }
 
 .rs-carousel-row:hover {
@@ -2002,7 +2005,8 @@ padding: 5px;
   margin: 30px 0;
   padding-bottom: 10px;
   animation: slide 10s ease-in-out infinite;
-  width: 102%;
+  width: fit-content;
+  /* width: 102%; */
 }
 
 @keyframes slide {
@@ -2141,6 +2145,21 @@ padding: 5px;
 .rs-theme-btn {
   font-weight: normal;
   color: #fff;
+}
+
+.rs-author-img {
+  width: 140px;
+  height: 110px;
+  border-radius: 0;
+  padding: 2px;
+  margin-right: 10px;
+}
+
+.rs-author-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: cover;
 }
 
 /* RESOURCES END */
