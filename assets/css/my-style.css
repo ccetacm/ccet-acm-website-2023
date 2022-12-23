@@ -635,6 +635,7 @@ div.overlay-blue:hover {
 
 .img-sec-1 {
   max-width: 80%;
+  /* width: auto; */
   /* margin-left: -10px; */
 }
 
@@ -643,19 +644,20 @@ div.overlay-blue:hover {
   text-align: justify;
 }
 
-.about-img-sec-1 {
+/* .about-img-sec-1 {
   box-sizing: border-box;
   box-shadow: 0px 0.125em 1.5em -0.8em rgb(0 0 0 / 65%);
   width: 90%;
   border-radius: 0.7em;
-}
+} */
 
 .about-img {
-  min-width: 12rem;
+  min-width: 11rem;
+  margin-left: 10px;
 }
 
 .theme-btn1 {
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 #img-1 {
@@ -803,6 +805,10 @@ div.overlay-blue:hover {
     min-height: 100%;
   }
 
+  .img-sec-1 {
+    margin-bottom: 25px;
+  }
+
   .about-right-sec-text {
     justify-content: center;
   }
@@ -822,8 +828,23 @@ div.overlay-blue:hover {
 
 @media screen and (max-width: 525px) {
   .img-sec-1 {
-    margin-left: -20px;
+    margin-left: -30px;
     margin-bottom: 25px;
+    width: 80%;
+  }
+  .about-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .img-sec-1 {
+    margin-left: -40px;
+    margin-bottom: 25px;
+    width: 80%;
+  }
+  .about-text {
+    font-size: 1rem;
   }
 }
 
@@ -1242,6 +1263,7 @@ div.overlay-blue:hover {
   transform: scale(1.05);
 }
 
+
 #more1 {
   display: none;
   font-weight: lighter;
@@ -1279,11 +1301,19 @@ div.overlay-blue:hover {
   font-weight: lighter;
 }
 
+#ac-card{
+  overflow-y: scroll;
+  height: 250px;
+  
+}
+
 #divide-line {
   margin-left: 25%;
   width: 50%;
   height: 1.5px;
   background: rgb(53, 85, 189);
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 320px) {
@@ -1807,7 +1837,6 @@ h4:hover {
   border-radius: 20px;
   margin: 20px 0;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  
 }
 
 .acmw-text-wrapper .acmw-text-card .acmw-text-image {
@@ -2447,8 +2476,6 @@ h4:hover {
 
 /* CAREER GUIDES END */
 
-
-
 /* +++ MAGAZINE +++ */
 
 .navbar-brand {
@@ -3070,7 +3097,6 @@ h4:hover {
 }
 
 /* +++ MAGAZINE END+++ */
-
 
 /* RESEARCH */
 
