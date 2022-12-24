@@ -3,29 +3,29 @@ console.clear();
       const { gsap, imagesLoaded } = window;
 
       const buttons = {
-        prev: document.querySelector(".btn--left"),
-        next: document.querySelector(".btn--right"),
+        prev: document.querySelector(".events-btn--left"),
+        next: document.querySelector(".events-btn--right"),
       };
-      const cardsContainerEl = document.querySelector(".cards__wrapper");
-      const appBgContainerEl = document.querySelector(".app__bg");
+      const cardsContainerEl = document.querySelector(".events-cards__wrapper");
+      const appBgContainerEl = document.querySelector(".events-app__bg");
 
-      const cardInfosContainerEl = document.querySelector(".info__wrapper");
+      const cardInfosContainerEl = document.querySelector(".events-info__wrapper");
 
       buttons.next.addEventListener("click", () => swapCards("right"));
 
       buttons.prev.addEventListener("click", () => swapCards("left"));
 
       function swapCards(direction) {
-        const currentCardEl = cardsContainerEl.querySelector(".current--card");
+        const currentCardEl = cardsContainerEl.querySelector(".events-current--card");
         const previousCardEl =
-          cardsContainerEl.querySelector(".previous--card");
-        const nextCardEl = cardsContainerEl.querySelector(".next--card");
+          cardsContainerEl.querySelector(".events-previous--card");
+        const nextCardEl = cardsContainerEl.querySelector(".events-next--card");
 
         const currentBgImageEl =
-          appBgContainerEl.querySelector(".current--image");
+          appBgContainerEl.querySelector(".events-current--image");
         const previousBgImageEl =
-          appBgContainerEl.querySelector(".previous--image");
-        const nextBgImageEl = appBgContainerEl.querySelector(".next--image");
+          appBgContainerEl.querySelector(".events-previous--image");
+        const nextBgImageEl = appBgContainerEl.querySelector(".events-next--image");
 
         changeInfo(direction);
         swapCardsClass();
@@ -33,13 +33,13 @@ console.clear();
         removeCardEvents(currentCardEl);
 
         function swapCardsClass() {
-          currentCardEl.classList.remove("current--card");
-          previousCardEl.classList.remove("previous--card");
-          nextCardEl.classList.remove("next--card");
+          currentCardEl.classList.remove("events-current--card");
+          previousCardEl.classList.remove("events-previous--card");
+          nextCardEl.classList.remove("events-next--card");
 
-          currentBgImageEl.classList.remove("current--image");
-          previousBgImageEl.classList.remove("previous--image");
-          nextBgImageEl.classList.remove("next--image");
+          currentBgImageEl.classList.remove("events-current--image");
+          previousBgImageEl.classList.remove("events-previous--image");
+          nextBgImageEl.classList.remove("events-next--image");
 
           currentCardEl.style.zIndex = "50";
           currentBgImageEl.style.zIndex = "-2";
@@ -50,36 +50,36 @@ console.clear();
 
             nextBgImageEl.style.zIndex = "-1";
 
-            currentCardEl.classList.add("previous--card");
-            previousCardEl.classList.add("next--card");
-            nextCardEl.classList.add("current--card");
+            currentCardEl.classList.add("events-previous--card");
+            previousCardEl.classList.add("events-next--card");
+            nextCardEl.classList.add("events-current--card");
 
-            currentBgImageEl.classList.add("previous--image");
-            previousBgImageEl.classList.add("next--image");
-            nextBgImageEl.classList.add("current--image");
+            currentBgImageEl.classList.add("events-previous--image");
+            previousBgImageEl.classList.add("events-next--image");
+            nextBgImageEl.classList.add("events-current--image");
           } else if (direction === "left") {
             previousCardEl.style.zIndex = "30";
             nextCardEl.style.zIndex = "20";
 
             previousBgImageEl.style.zIndex = "-1";
 
-            currentCardEl.classList.add("next--card");
-            previousCardEl.classList.add("current--card");
-            nextCardEl.classList.add("previous--card");
+            currentCardEl.classList.add("events-next--card");
+            previousCardEl.classList.add("events-current--card");
+            nextCardEl.classList.add("events-previous--card");
 
-            currentBgImageEl.classList.add("next--image");
-            previousBgImageEl.classList.add("current--image");
-            nextBgImageEl.classList.add("previous--image");
+            currentBgImageEl.classList.add("events-next--image");
+            previousBgImageEl.classList.add("events-current--image");
+            nextBgImageEl.classList.add("events-previous--image");
           }
         }
       }
 
       function changeInfo(direction) {
         let currentInfoEl =
-          cardInfosContainerEl.querySelector(".current--info");
+          cardInfosContainerEl.querySelector(".events-current--info");
         let previousInfoEl =
-          cardInfosContainerEl.querySelector(".previous--info");
-        let nextInfoEl = cardInfosContainerEl.querySelector(".next--info");
+          cardInfosContainerEl.querySelector(".events-previous--info");
+        let nextInfoEl = cardInfosContainerEl.querySelector(".events-next--info");
 
         gsap
           .timeline()
@@ -89,7 +89,7 @@ console.clear();
             pointerEvents: "none",
           })
           .to(
-            currentInfoEl.querySelectorAll(".text"),
+            currentInfoEl.querySelectorAll(".events-text"),
             {
               duration: 0.4,
               stagger: 0.1,
@@ -104,8 +104,8 @@ console.clear();
           .call(() => initCardEvents())
           .fromTo(
             direction === "right"
-              ? nextInfoEl.querySelectorAll(".text")
-              : previousInfoEl.querySelectorAll(".text"),
+              ? nextInfoEl.querySelectorAll(".events-text")
+              : previousInfoEl.querySelectorAll(".events-text"),
             {
               opacity: 0,
               translateY: "40px",
@@ -124,18 +124,18 @@ console.clear();
           });
 
         function swapInfosClass() {
-          currentInfoEl.classList.remove("current--info");
-          previousInfoEl.classList.remove("previous--info");
-          nextInfoEl.classList.remove("next--info");
+          currentInfoEl.classList.remove("events-current--info");
+          previousInfoEl.classList.remove("events-previous--info");
+          nextInfoEl.classList.remove("events-next--info");
 
           if (direction === "right") {
-            currentInfoEl.classList.add("previous--info");
-            nextInfoEl.classList.add("current--info");
-            previousInfoEl.classList.add("next--info");
+            currentInfoEl.classList.add("events-previous--info");
+            nextInfoEl.classList.add("events-current--info");
+            previousInfoEl.classList.add("events-next--info");
           } else if (direction === "left") {
-            currentInfoEl.classList.add("next--info");
-            nextInfoEl.classList.add("previous--info");
-            previousInfoEl.classList.add("current--info");
+            currentInfoEl.classList.add("events-next--info");
+            nextInfoEl.classList.add("events-previous--info");
+            previousInfoEl.classList.add("events-current--info");
           }
         }
       }
@@ -152,7 +152,7 @@ console.clear();
           "--current-card-rotation-offset": `${angle}deg`,
         });
         const currentInfoEl =
-          cardInfosContainerEl.querySelector(".current--info");
+          cardInfosContainerEl.querySelector(".events-current--info");
         gsap.set(currentInfoEl, {
           rotateY: `${angle}deg`,
         });
@@ -161,7 +161,7 @@ console.clear();
       function resetCardTransforms(e) {
         const card = e.currentTarget;
         const currentInfoEl =
-          cardInfosContainerEl.querySelector(".current--info");
+          cardInfosContainerEl.querySelector(".events-current--info");
         gsap.set(card, {
           "--current-card-rotation-offset": 0,
         });
@@ -171,7 +171,7 @@ console.clear();
       }
 
       function initCardEvents() {
-        const currentCardEl = cardsContainerEl.querySelector(".current--card");
+        const currentCardEl = cardsContainerEl.querySelector(".events-current--card");
         currentCardEl.addEventListener("pointermove", updateCard);
         currentCardEl.addEventListener("pointerout", (e) => {
           resetCardTransforms(e);
@@ -199,8 +199,8 @@ console.clear();
         })
           .to(
             cardInfosContainerEl
-              .querySelector(".current--info")
-              .querySelectorAll(".text"),
+              .querySelector(".events-current--info")
+              .querySelectorAll(".events-text"),
             {
               delay: 0.5,
               duration: 0.4,
@@ -224,15 +224,15 @@ console.clear();
         const images = [...document.querySelectorAll("img")];
         const totalImages = images.length;
         let loadedImages = 0;
-        const loaderEl = document.querySelector(".loader span");
+        const loaderEl = document.querySelector(".events-loader span");
 
         gsap.set(cardsContainerEl.children, {
           "--card-translateY-offset": "100vh",
         });
         gsap.set(
           cardInfosContainerEl
-            .querySelector(".current--info")
-            .querySelectorAll(".text"),
+            .querySelector(".events-current--info")
+            .querySelectorAll(".events-text"),
           {
             translateY: "40px",
             opacity: 0,
@@ -258,7 +258,7 @@ console.clear();
               if (totalImages == loadedImages) {
                 gsap
                   .timeline()
-                  .to(".loading__wrapper", {
+                  .to(".events-loading__wrapper", {
                     duration: 0.8,
                     opacity: 0,
                     pointerEvents: "none",
