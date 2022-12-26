@@ -1364,6 +1364,7 @@ h4:hover {
   margin: 0px auto;
   width: 95%;
   background-color: white;
+
 }
 
 .c-cards {
@@ -1374,7 +1375,7 @@ h4:hover {
 .c-card {
   margin: 15px;
   width: calc((100% / 4) - 30px);
-  min-height: 273px;
+  min-height: 110px;
   transition: all 0.2s ease-in-out;
   border-color: #fff;
 }
@@ -1410,44 +1411,44 @@ h4:hover {
   text-shadow: var(--textshadow-1);
 }
 
-.c-header {
-  color: black;
+.c-header{
+  color:black;
   padding: 10px;
   border-radius: 10px;
   width: 100%;
   background: whitesmoke;
 }
 
-.c-blocktext {
-  width: 100%;
-  padding: 5px 15px;
+.c-blocktext{
+  width:100%;
+  padding: 5px 15px ;
   display: flex;
-  flex-direction: column;
+  flex-direction:column ;
   align-items: center;
-  font-size: 16px;
+  font-size:16px;
   text-align: justify;
 }
 
-.c-blocktext p {
-  color: white;
-  padding: 5px;
+.c-blocktext p{
+color: white;
+padding: 5px;
 }
 
 .c-header h2 {
-  color: black;
+  color:black;
   font-size: 22px;
   text-align: center;
   font-weight: 800;
 }
 
 .c-icons {
-  color: #eee;
-  margin: 0px;
-  margin-right: 5px;
-  color: black;
+ color:#eee;
+ margin: 0px;
+ margin-right: 5px;
+ color: black;
 }
 
-.c-details {
+.c-details{
   width: 30%;
   margin: 5px;
   border-radius: 10px;
@@ -1457,7 +1458,7 @@ h4:hover {
   margin-left: calc(-67% - 30px);
 }
 
-.c-details p {
+.c-details p{
   padding: 0px;
   padding-top: 8px;
   padding-left: 10px;
@@ -1476,13 +1477,13 @@ h4:hover {
   padding: 10px;
   position: relative;
   cursor: pointer;
-  background-color: #b4a3ff;
+  background-color: #b4a3ff;;
   color: #eceef1;
   font-size: 1.5em;
   text-transform: uppercase;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  min-height: 273px;
+  min-height: 130px;
   align-items: center;
   justify-content: center;
 }
@@ -1495,7 +1496,7 @@ h4:hover {
 }
 .c-card__expander {
   transition: all 0.2s ease-in-out;
-  background: linear-gradient(45deg, #5f3bff 0, #292050 51%, #433581);
+  background: linear-gradient(45deg, #5f3bff 0,  #292050 51%, #433581);
   width: 150%;
   position: relative;
   display: flex;
@@ -1545,7 +1546,7 @@ h4:hover {
   z-index: 10;
   border-radius: 10px;
 }
-.c-card.is-expanded .c-img-text {
+.c-card.is-expanded .c-img-text{
   display: none;
 }
 .c-card.is-expanded .c-card__inner:hover img {
@@ -1564,6 +1565,7 @@ h4:hover {
   background-color: #949fb0;
   transform: scale(1);
 }
+
 @media screen and (min-width: 1025px) {
   .c-card:nth-of-type(4n + 2) .c-card__expander {
     margin-left: calc(-100% - 33px);
@@ -1600,7 +1602,7 @@ h4:hover {
   .c-card__expander {
     width: 444.5%;
   }
-  .c-details {
+  .c-details{
     width: 43%;
     margin: 5px;
     border-radius: 10px;
@@ -1639,7 +1641,7 @@ h4:hover {
   .c-card__expander {
     width: 330.5%;
   }
-  .c-details {
+  .c-details{
     width: 55%;
     margin: 5px;
     border-radius: 10px;
@@ -1648,14 +1650,14 @@ h4:hover {
     flex-direction: column;
     margin-left: calc(-40% - 30px);
   }
-  .c-header h2 {
+  .c-header h2{
     font-size: 20px;
   }
-  .c-details p {
+  .c-details p{
     font-size: 15px;
     padding-top: 5px;
   }
-  .c-blocktext p {
+  .c-blocktext p{
     font-size: 14px;
   }
   .c-img-text {
@@ -1678,7 +1680,7 @@ h4:hover {
     width: calc(100% + 30px);
     margin-left: calc(-4%);
   }
-  .c-details {
+    .c-details{
     width: 55%;
     margin: 5px;
     border-radius: 10px;
@@ -1687,14 +1689,14 @@ h4:hover {
     flex-direction: column;
     margin-left: calc(-43%);
   }
-  .c-header h2 {
+  .c-header h2{
     font-size: 18px;
   }
-  .c-details p {
+  .c-details p{
     font-size: 12px;
     padding-top: 5px;
   }
-  .c-blocktext p {
+  .c-blocktext p{
     font-size: 12px;
   }
   .c-img-text {
@@ -1716,7 +1718,7 @@ h4:hover {
     width: calc(111%);
     margin-left: calc(-6%);
   }
-  .c-details {
+    .c-details{
     width: 55%;
     margin: 5px;
     border-radius: 10px;
@@ -1725,14 +1727,14 @@ h4:hover {
     flex-direction: column;
     margin-left: calc(-43%);
   }
-  .c-header h2 {
+  .c-header h2{
     font-size: 15px;
   }
-  .c-details p {
+  .c-details p{
     font-size: 11px;
     padding-top: 3px;
   }
-  .c-blocktext p {
+  .c-blocktext p{
     font-size: 11px;
   }
   .c-img-text {
@@ -1754,7 +1756,7 @@ h4:hover {
     width: calc(113%);
     margin-left: calc(-7%);
   }
-  .c-details {
+    .c-details{
     width: 61%;
     margin: 5px;
     border-radius: 10px;
@@ -1763,14 +1765,14 @@ h4:hover {
     flex-direction: column;
     margin-left: calc(-37%);
   }
-  .c-header h2 {
+  .c-header h2{
     font-size: 13px;
   }
-  .c-details p {
+  .c-details p{
     font-size: 11px;
     padding-top: 3px;
   }
-  .c-blocktext p {
+  .c-blocktext p{
     font-size: 11px;
   }
   .c-img-text {
