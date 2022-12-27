@@ -1477,7 +1477,7 @@ padding: 5px;
   padding: 10px;
   position: relative;
   cursor: pointer;
-  background-color: #b4a3ff;;
+  background-color: #b4a3ff;
   color: #eceef1;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -1568,16 +1568,16 @@ padding: 5px;
 
 @media screen and (min-width: 1025px) {
   .c-card:nth-of-type(4n + 2) .c-card__expander {
-    margin-left: calc(-100% - 33px);
+    margin-left: calc(-112%);
     width: 434.5%;
   }
   .c-card:nth-of-type(4n + 3) .c-card__expander {
-    margin-left: calc(-200% - 64px);
+    margin-left: calc(-222%);
     width: 434.5%;
   }
   .c-card:nth-of-type(4n + 4) .c-card__expander {
     clear: left;
-    margin-left: calc(-300% - 95px);
+    margin-left: calc(-331%);
     width: 434.5%;
   }
   .c-card__expander {
@@ -1587,16 +1587,16 @@ padding: 5px;
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .c-card:nth-of-type(4n + 2) .c-card__expander {
-    margin-left: calc(-100% - 33px);
+    margin-left: calc(-115%);
     width: 444.5%;
   }
   .c-card:nth-of-type(4n + 3) .c-card__expander {
-    margin-left: calc(-200% - 64px);
+    margin-left: calc(-230%);
     width: 444.5%;
   }
   .c-card:nth-of-type(4n + 4) .c-card__expander {
     clear: left;
-    margin-left: calc(-300% - 95px);
+    margin-left: calc(-343%);
     width: 444.5%;
   }
   .c-card__expander {
@@ -1609,7 +1609,7 @@ padding: 5px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    margin-left: calc(-53% - 30px);
+    margin-left: calc(-56.3%);
   }
   .c-img-text {
     position: absolute;
@@ -1631,11 +1631,11 @@ padding: 5px;
     width: calc((100% / 3) - 30px);
   }
   .c-card:nth-of-type(3n + 2) .c-card__expander {
-    margin-left: calc(-100% - 33px);
+    margin-left: calc(-115%);
     width: 330.5%;
   }
   .c-card:nth-of-type(3n + 3) .c-card__expander {
-    margin-left: calc(-200% - 64px);
+    margin-left: calc(-230%);
     width: 330.5%;
   }
   .c-card__expander {
@@ -1648,7 +1648,7 @@ padding: 5px;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
-    margin-left: calc(-40% - 30px);
+    margin-left: calc(-44%);
   }
   .c-header h2{
     font-size: 20px;
@@ -1677,8 +1677,8 @@ padding: 5px;
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .c-card__expander {
-    width: calc(100% + 30px);
-    margin-left: calc(-4%);
+    width: calc(110%);
+    margin-left: calc(-5%);
   }
     .c-details{
     width: 55%;
