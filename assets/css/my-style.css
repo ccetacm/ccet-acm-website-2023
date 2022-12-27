@@ -390,12 +390,19 @@ div.overlay-blue:hover {
 /* Slides */
 .mySlides {
   display: none;
-  padding: 80px;
+  padding: 50px;
   text-align: center;
   padding-bottom: 3%;
   padding-top: 5%;
-  height: 60%;
+  height: 32.5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.mySlides::-webkit-scrollbar {
+  display: none;
 }
 
 .mySlides img {
