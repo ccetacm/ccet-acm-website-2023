@@ -1087,14 +1087,14 @@ div.overlay-blue:hover {
 .main-container .content-container {
   display: flex;
   padding: 1rem;
-  position: relative;
 }
 
 .main-container .content-container .arrow-holder {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  display: none;
 }
 
 .main-container .content-container .arrow-holder .gallery-shifting-arrow {
@@ -1106,10 +1106,19 @@ div.overlay-blue:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 50vh;
+  z-index: 1000;
+
+}
+
+.main-container .content-container .arrow-holder .next-image-arrow {
+  right: 5rem;
 }
 
 .main-container .content-container .arrow-holder .last-image-arrow {
   transform: scale(-1,1);
+  left: 5rem;
 }
 
 /* .main-container .content-container .arrow-holder .arrow {
