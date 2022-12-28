@@ -16,7 +16,7 @@ $cell.find(".js-expander").click(function () {
       // scroll to nearest c-card__expander element
       $("html, body").animate(
         {
-          scrollTop: $thisCell.find(".c-card__expander").offset().top - 200,
+          scrollTop: $thisCell.find(".c-card__expander").offset().top - 380,
         },
         500
       );
