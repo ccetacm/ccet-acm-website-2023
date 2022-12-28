@@ -180,6 +180,16 @@ span {
     display: none;
     height: 20px;
   }
+
+  .slide-head {
+    margin-right: 10%;
+  }
+
+  .mySlides .slide div img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 5%;
+  }
 }
 
 .img-slider {
