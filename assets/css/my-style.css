@@ -1263,6 +1263,9 @@ div.overlay-blue:hover {
   transform: scale(1.05);
 }
 
+.blog-item-info > p{
+  text-align: justify;
+}
 
 #more1 {
   display: none;
@@ -1299,12 +1302,6 @@ div.overlay-blue:hover {
 #more9 {
   display: none;
   font-weight: lighter;
-}
-
-#ac-card{
-  overflow-y: scroll;
-  height: 250px;
-  
 }
 
 #divide-line {
