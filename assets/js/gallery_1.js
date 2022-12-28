@@ -1,9 +1,14 @@
+$(function() {
+    $('.gallery-img').lazy();
+});
+
 const galleryContainer = document.getElementById("images-container")
 const images = galleryContainer.getElementsByClassName("gallery-img")
 const allImages = document.getElementsByClassName("gallery-img")
 const categoryContainer = document.getElementById("categories")
 const categories = categoryContainer.getElementsByClassName("category")
 const mainContainer = document.getElementById("main-container")
+
 const updateGallery = (category = "") => {
     if (category === "") {
         // show all images
@@ -65,5 +70,3 @@ mainContainer.addEventListener("click", function () {
 })
 // run one time 
 updateGallery()
-// 69 LINE
-// CODE PERFECTION 
