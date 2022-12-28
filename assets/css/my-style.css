@@ -1170,6 +1170,34 @@ div.overlay-blue:hover {
   justify-content: space-between;
   align-items: center;
 }
+
+.main-container
+.content-container
+.images-container
+.gallery-img.img-active
+.header
+.cross-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background: white;
+border-radius: 100%;
+height: min-content;
+cursor: pointer;
+}
+
+.main-container
+.content-container
+.images-container
+.gallery-img.img-active
+.header
+.cross-button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+}
 .main-container
   .content-container
   .images-container
