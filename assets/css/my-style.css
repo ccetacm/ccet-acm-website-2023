@@ -2390,7 +2390,7 @@ body {
   .events-btn {
 	transform: translateY(0px);
 	transition: 0.3s linear;
-	background: #49c608;
+	background: #c6c308;
 	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
@@ -2742,8 +2742,8 @@ body {
 	transform-style: preserve-3d;
   }
   .events-info {
-	margin-bottom: calc(var(--card-height) / 8);
-	margin-left: calc(var(--card-width) / 1.5);
+	margin-bottom: calc(var(--card-height) / 15);
+	margin-left: calc(var(--card-width) / 1.0);
 	transform: translateZ(2rem);
 	transition: transform var(--card-transition-duration)
 	  var(--card-transition-easing);
@@ -2751,15 +2751,15 @@ body {
 
   .events-info .events-text {
 	/* position: relative; */
-	text-align: left;
+	text-align:center;
 	font-family: "Montserrat";
 	font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
 	white-space: nowrap;
-	font-weight: 1300;
-	color: rgb(5, 32, 96);
-	;
+	font-weight: 1400;
+	color: rgb(238, 235, 243);
+	text-decoration:solid;
 	width: fit-content;
-	text-shadow: 0 0 10px #908ae3, 0 0 10px #030362;
+	text-shadow: 0 0 10px #9744e0, 10px 10px 10px #0404ae;
 	text-transform: uppercase;
   }
   .events-info .events-name,
@@ -2940,7 +2940,7 @@ body {
 
 .events_card__header-text
 {
-	font-size: 15px;
+	font-size: 11px;
 
 }
 .events_card__arc {
