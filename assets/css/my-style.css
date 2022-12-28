@@ -1087,7 +1087,38 @@ div.overlay-blue:hover {
 .main-container .content-container {
   display: flex;
   padding: 1rem;
+  position: relative;
 }
+
+.main-container .content-container .arrow-holder {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .content-container .arrow-holder .gallery-shifting-arrow {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  background: linear-gradient(200deg, #9d87ff, #896eff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .content-container .arrow-holder .last-image-arrow {
+  transform: scale(-1,1);
+}
+
+/* .main-container .content-container .arrow-holder .arrow {
+  height: 2rem;
+  width: 2rem;
+  background-color: linear-gradient(200deg, #9d87ff, #896eff);
+  color: white;
+} */
+
 .main-container .content-container .images-container {
   display: flex;
   flex-wrap: wrap;
@@ -1106,6 +1137,7 @@ div.overlay-blue:hover {
   flex-direction: column;
   display: none;
   transition: all 0.5s;
+  box-shadow: 0 0 0.25rem black;
 }
 .main-container .content-container .images-container .gallery-img .header {
   display: none;
@@ -1157,7 +1189,7 @@ div.overlay-blue:hover {
   height: fit-content;
   width: 65%;
   z-index: 98;
-  background: linear-gradient(to right, #9d87ff, #896eff);
+  background: linear-gradient(200deg, #9d87ff, #896eff);
   overflow-y: scroll;
 }
 .main-container

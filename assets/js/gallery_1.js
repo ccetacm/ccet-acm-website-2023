@@ -43,6 +43,7 @@ const updateGallery = (category = "") => {
     }
     return
 }
+
 // Start here : Category ClassName Management
 for (var i = 0; i < categories.length; i++) {
     categories[i].addEventListener("click", function () {
