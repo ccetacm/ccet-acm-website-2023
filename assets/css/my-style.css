@@ -143,7 +143,7 @@ span {
 .ourmen .ment p {
   font-size: 17px;
   font-weight: 500;
-  color: #03020a;
+  color: #72707c;
   font-weight: 500;
   margin-left: 15px;
   margin-right: 15px;
@@ -175,9 +175,20 @@ span {
     flex-direction: column;
   }
 
-  .mySlides p {
+  .mySlides .slide div p {
     visibility: hidden;
+    display: none;
     height: 20px;
+  }
+
+  .slide-head {
+    margin-right: 10%;
+  }
+
+  .mySlides .slide div img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 5%;
   }
 }
 
@@ -370,13 +381,19 @@ div.overlay-blue:hover {
   margin: 0;
 }
 
+.slide-head {
+  text-align: center;
+  margin-top: 8%;
+  margin-left: 20%;
+}
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   background: white;
   width: 50%;
   margin-left: 35%;
-  margin-top: 15%;
+  margin-top: 2%;
   border-radius: 15px;
 }
 
@@ -393,12 +410,12 @@ div.overlay-blue:hover {
   padding: 50px;
   text-align: center;
   padding-bottom: 3%;
-  padding-top: 5%;
+  padding-top: 10%;
   height: 32.5rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .mySlides::-webkit-scrollbar {
@@ -406,8 +423,8 @@ div.overlay-blue:hover {
 }
 
 .mySlides img {
-  width: 25%;
-  height: 25%;
+  width: 35%;
+  height: 35%;
   margin-bottom: 5%;
 }
 
@@ -421,6 +438,17 @@ div.overlay-blue:hover {
   color: black;
   font-weight: 500;
 }
+
+@media (max-width: 400px) {
+  .slideshow-container {
+    width: 300px;
+    margin-left: 55px;
+  }
+
+  .mySlides {
+    height: 20rem;
+  }
+} 
 
 /* Next & previous buttons */
 .prev,
@@ -500,7 +528,7 @@ div.overlay-blue:hover {
   position: relative;
   display: flex;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .about-right {
@@ -508,9 +536,12 @@ div.overlay-blue:hover {
   display: block;
   padding-top: 5px;
   padding-bottom: 8px;
-  padding-left: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-top: 25%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-justify: auto;
+  text-align: justify;
 }
 
 .pricing-amount strong {
@@ -1299,6 +1330,9 @@ div.overlay-blue:hover {
   transform: scale(1.05);
 }
 
+.blog-item-info > p{
+  text-align: justify;
+}
 
 #more1 {
   display: none;
@@ -1335,12 +1369,6 @@ div.overlay-blue:hover {
 #more9 {
   display: none;
   font-weight: lighter;
-}
-
-#ac-card{
-  overflow-y: scroll;
-  height: 250px;
-  
 }
 
 #divide-line {
@@ -2405,7 +2433,7 @@ body {
   .events-btn {
 	transform: translateY(0px);
 	transition: 0.3s linear;
-	background: #49c608;
+	background: #c6c308;
 	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
@@ -2757,8 +2785,8 @@ body {
 	transform-style: preserve-3d;
   }
   .events-info {
-	margin-bottom: calc(var(--card-height) / 8);
-	margin-left: calc(var(--card-width) / 1.5);
+	margin-bottom: calc(var(--card-height) / 15);
+	margin-left: calc(var(--card-width) / 1.0);
 	transform: translateZ(2rem);
 	transition: transform var(--card-transition-duration)
 	  var(--card-transition-easing);
@@ -2766,15 +2794,15 @@ body {
 
   .events-info .events-text {
 	/* position: relative; */
-	text-align: left;
+	text-align:center;
 	font-family: "Montserrat";
 	font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
 	white-space: nowrap;
-	font-weight: 1300;
-	color: rgb(5, 32, 96);
-	;
+	font-weight: 1400;
+	color: rgb(238, 235, 243);
+	text-decoration:solid;
 	width: fit-content;
-	text-shadow: 0 0 10px #908ae3, 0 0 10px #030362;
+	text-shadow: 0 0 10px #9744e0, 10px 10px 10px #0404ae;
 	text-transform: uppercase;
   }
   .events-info .events-name,
@@ -2955,7 +2983,7 @@ body {
 
 .events_card__header-text
 {
-	font-size: 15px;
+	font-size: 11px;
 
 }
 .events_card__arc {
@@ -3204,7 +3232,7 @@ position: absolute;
 
   /* background-color: #b4a3ff;; */
   /* height: 150px; */
-}
+
 
 /* .e-header {
   color: #eee;
@@ -3225,7 +3253,7 @@ position: absolute;
   text-align: justify;
   /* color: #fff; */
   /* justify-content: center; */
-}
+
 
 /*.e-blockimage {
   width: 25%;
@@ -3293,7 +3321,6 @@ position: absolute;
   /* border-color: rgb(183, 153, 252); */
   /* box-shadow: 0px 0px 20px #555; */
   /* background-color: #e1daff  */
-} */
 
 /* END EVENTS */
 
