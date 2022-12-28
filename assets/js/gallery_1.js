@@ -9,6 +9,21 @@ const categoryContainer = document.getElementById("categories")
 const categories = categoryContainer.getElementsByClassName("category")
 const mainContainer = document.getElementById("main-container")
 
+const crossButton = document.getElementById("cross-button")
+
+function makeInactive(event) {
+    event.stopPropagation()
+    var imgInactive = document.getElementsByClassName("img-inactive")
+    var imgActive = document.getElementsByClassName("img-active");
+    // remove active image from active image
+    if (imgActive.length > 0) {
+        imgActive[0].className = imgActive[0].className.replace(" img-active", "");
+    }
+    while (imgInactive.length) {
+        imgInactive[0].className = imgInactive[0].className.replace(" img-inactive", "");
+    }
+}
+
 const updateGallery = (category = "") => {
     if (category === "") {
         // show all images
@@ -57,16 +72,9 @@ for (let i = 0; i < images.length; i++) {
         this.className += " img-active";
     }, false)
 }
-mainContainer.addEventListener("click", function () {
-    var imgInactive = document.getElementsByClassName("img-inactive")
-    var imgActive = document.getElementsByClassName("img-active");
-    // remove active image from active image
-    if (imgActive.length > 0) {
-        imgActive[0].className = imgActive[0].className.replace(" img-active", "");
-    }
-    while (imgInactive.length) {
-        imgInactive[0].className = imgInactive[0].className.replace(" img-inactive", "");
-    }
-})
+mainContainer.addEventListener("click", function (event) {makeInactive(event)})
+
+crossButton.addEventListener("click", function (event) {makeInactive(event)})
+
 // run one time 
 updateGallery()

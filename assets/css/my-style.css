@@ -1180,10 +1180,10 @@ div.overlay-blue:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-background: white;
-border-radius: 100%;
-height: min-content;
-cursor: pointer;
+  background: white;
+  border-radius: 100%;
+  height: min-content;
+  cursor: pointer;
 }
 
 .main-container
@@ -1197,6 +1197,7 @@ cursor: pointer;
   align-items: center;
   height: 2.5rem;
   width: 2.5rem;
+  color: #896eff;
 }
 .main-container
   .content-container
