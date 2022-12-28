@@ -1097,6 +1097,14 @@ div.overlay-blue:hover {
   display: none;
 }
 
+.main-container .content-container.img-selected .arrow-holder {
+  display: block;
+}
+
+.main-container .content-container.img-selected .arrow-holder .gallery-shifting-arrow.hidden {
+  display: none;
+}
+
 .main-container .content-container .arrow-holder .gallery-shifting-arrow {
   height: 3rem;
   width: 3rem;
@@ -1107,18 +1115,19 @@ div.overlay-blue:hover {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50vh;
+  top: 15rem;
   z-index: 1000;
-
+  box-shadow: 0 0 0.35rem rgb(110, 110, 110);
+  cursor: pointer;
 }
 
 .main-container .content-container .arrow-holder .next-image-arrow {
-  right: 5rem;
+  right: 15%;
 }
 
 .main-container .content-container .arrow-holder .last-image-arrow {
   transform: scale(-1,1);
-  left: 5rem;
+  left: 15%;
 }
 
 /* .main-container .content-container .arrow-holder .arrow {
@@ -1136,8 +1145,6 @@ div.overlay-blue:hover {
 }
 .main-container .content-container .images-container .gallery-img {
   width: 27.5vw;
-  height: -webkit-min-content;
-  height: -moz-min-content;
   height: min-content;
   border-radius: 1rem;
   overflow: hidden;
@@ -1146,7 +1153,7 @@ div.overlay-blue:hover {
   flex-direction: column;
   display: none;
   transition: all 0.5s;
-  box-shadow: 0 0 0.25rem black;
+  box-shadow: 0 0 0.25rem rgb(110, 110, 110);
 }
 .main-container .content-container .images-container .gallery-img .header {
   display: none;
@@ -1265,15 +1272,26 @@ div.overlay-blue:hover {
   background: #523eab;
   padding: 0.4rem 2rem;
 }
+
 @media only screen and (max-width: 1200px) {
   .main-container .content-container .images-container .gallery-img {
-    width: 45vw !important;
+    width: 95vw !important;
+    transform: translate(-1.75%);
+  }
+
+  .main-container .content-container .arrow-holder {
+    display: none !important;
   }
 }
+
 @media only screen and (max-width: 760px) {
   .main-container .content-container .images-container .gallery-img {
     width: 95vw !important;
-    transform: translateX(-2.5%);
+    transform: translateX(-1.75%);
+  }
+
+  .main-container .content-container .arrow-holder {
+    display: none !important;
   }
 } /*# sourceMappingURL=gallery_1.css.map */
 

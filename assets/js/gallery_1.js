@@ -9,19 +9,80 @@ const categoryContainer = document.getElementById("categories")
 const categories = categoryContainer.getElementsByClassName("category")
 const mainContainer = document.getElementById("main-container")
 
-const crossButton = document.getElementById("cross-button")
+const crossButton = document.getElementsByClassName("cross-button")
+const contentContainer = document.getElementById("content-container")
 
-function makeInactive(event) {
-    event.stopPropagation()
-    var imgInactive = document.getElementsByClassName("img-inactive")
-    var imgActive = document.getElementsByClassName("img-active");
-    // remove active image from active image
-    if (imgActive.length > 0) {
-        imgActive[0].className = imgActive[0].className.replace(" img-active", "");
+const nextImageArrow = document.getElementById("next-image-arrow")
+const lastImageArrow = document.getElementById("last-image-arrow")
+
+const updateActiveSupport = () => {
+    console.log('ran')
+    const currentImages = document.getElementsByClassName("show")
+    const positionMap = []
+    for (let i = 0; i < currentImages.length; i++) {
+        if (currentImages[i].classList.contains('img-active')) {
+            positionMap.push(true)
+        }
+        positionMap.push(false)
     }
-    while (imgInactive.length) {
-        imgInactive[0].className = imgInactive[0].className.replace(" img-inactive", "");
+    positionMap.pop()
+    console.log(positionMap)
+
+    if (positionMap[0] === true) {
+        lastImageArrow.classList.add('hidden')
+    } else {
+        lastImageArrow.classList.remove('hidden')
     }
+
+    if (positionMap[positionMap.length - 1] === true) {
+        nextImageArrow.classList.add('hidden')
+    } else {
+        nextImageArrow.classList.remove('hidden')
+    }
+
+    const switchInactive = () => {
+        // var imgInactive = document.getElementsByClassName("img-inactive")
+        var imgActive = document.getElementsByClassName("img-active");
+
+        console.log(contentContainer.className)
+        // remove active-image class from active image
+        if (imgActive.length > 0) {
+            imgActive[0].className = imgActive[0].className.replace(" img-active", "");
+        }
+        // while (imgInactive.length) {
+        //     imgInactive[0].className = imgInactive[0].className.replace(" img-inactive", "");
+        // }
+    }
+
+    const showAccordingToPosition = () => {
+        for (let i = 0; i < currentImages.length; i++) {
+            if (positionMap[i]) {
+                currentImages[i].classList.add("img-active")
+            }
+        }
+    }
+
+    nextImageArrow.addEventListener("click", function (event) {
+        event.stopPropagation()
+        console.log('next arrow clicked')
+        switchInactive()
+        positionMap.unshift(false)
+        positionMap.pop()
+        showAccordingToPosition()
+        updateActiveSupport()
+    })
+
+    lastImageArrow.addEventListener("click", function (event) {
+        event.stopPropagation()
+        console.log('prev arrow clicked')
+        switchInactive()
+        positionMap.push(false)
+        positionMap.shift()
+        showAccordingToPosition()
+        updateActiveSupport()
+    })
+
+    console.log('finished!')
 }
 
 const updateGallery = (category = "") => {
@@ -47,6 +108,17 @@ const updateGallery = (category = "") => {
 // Start here : Category ClassName Management
 for (var i = 0; i < categories.length; i++) {
     categories[i].addEventListener("click", function () {
+        var imgInactive = document.getElementsByClassName("img-inactive")
+        var imgActive = document.getElementsByClassName("img-active");
+    
+        contentContainer.classList.remove('img-selected')
+    
+        if (imgActive.length > 0) {
+            imgActive[0].className = imgActive[0].className.replace(" img-active", "");
+        }
+        while (imgInactive.length) {
+            imgInactive[0].className = imgInactive[0].className.replace(" img-inactive", "");
+        }
         // get active gallery from other elements
         var active = document.getElementsByClassName("active-gallery");
         // remove active gallery class from other elements 
@@ -71,11 +143,29 @@ for (let i = 0; i < images.length; i++) {
         console.log('opened')
         // img active takes priority over inactive as it's assigned after
         this.className += " img-active";
+
+        contentContainer.classList.add("img-selected")
+
+        updateActiveSupport()
     }, false)
 }
-mainContainer.addEventListener("click", function (event) {makeInactive(event)})
-
-crossButton.addEventListener("click", function (event) {makeInactive(event)})
+// mainContainer.addEventListener("click", function (event) {fullInactive(event)})
+for (let i = 0; i < crossButton.length; i++) {
+    crossButton[i].addEventListener("click", function (event) {
+        event.stopPropagation()
+        var imgInactive = document.getElementsByClassName("img-inactive")
+        var imgActive = document.getElementsByClassName("img-active");
+    
+        contentContainer.classList.remove('img-selected')
+    
+        if (imgActive.length > 0) {
+            imgActive[0].className = imgActive[0].className.replace(" img-active", "");
+        }
+        while (imgInactive.length) {
+            imgInactive[0].className = imgInactive[0].className.replace(" img-inactive", "");
+        }
+    })
+}
 
 // run one time 
 updateGallery()
