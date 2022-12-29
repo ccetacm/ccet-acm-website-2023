@@ -1154,17 +1154,78 @@ div.overlay-blue:hover {
 .main-container .content-container {
   display: flex;
   padding: 1rem;
+  justify-content: space-around;
 }
+
+.main-container .content-container.img-selected {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+  position: absolute;
+  background-color: white;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+.main-container .content-container .arrow-holder {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  display: none;
+}
+
+.main-container .content-container.img-selected .arrow-holder {
+  display: block;
+}
+
+.main-container .content-container.img-selected .arrow-holder .gallery-shifting-arrow.hidden {
+  display: none;
+}
+
+.main-container .content-container .arrow-holder .gallery-shifting-arrow {
+  
+
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  background: linear-gradient(200deg, #9d87ff, #896eff);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  z-index: 1000;
+  box-shadow: 0 0 0.35rem rgb(110, 110, 110);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.main-container .content-container .arrow-holder .next-image-arrow {
+  right: 15%;
+}
+
+.main-container .content-container .arrow-holder .last-image-arrow {
+  transform: scale(-1,1);
+  left: 15%;
+
+}
+
 .main-container .content-container .images-container {
+  width: 100vw;
+}
+
+.main-container .content-container.active-gallery .images-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
 }
 .main-container .content-container .images-container .gallery-img {
+  margin: 1rem;
   width: 27.5vw;
-  height: -webkit-min-content;
-  height: -moz-min-content;
   height: min-content;
   border-radius: 1rem;
   overflow: hidden;
@@ -1173,6 +1234,7 @@ div.overlay-blue:hover {
   flex-direction: column;
   display: none;
   transition: all 0.5s;
+  box-shadow: 0 0 0.25rem rgb(110, 110, 110);
 }
 .main-container .content-container .images-container .gallery-img .header {
   display: none;
@@ -1217,14 +1279,21 @@ div.overlay-blue:hover {
   display: none;
 }
 .main-container .content-container .images-container .gallery-img.img-active {
+  /* positioning important to fight with isotope */
+
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
   display: flex;
   flex-direction: column;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 65%;
+  width: 50%;
   z-index: 98;
-  background: linear-gradient(to right, #9d87ff, #896eff);
+  background: linear-gradient(200deg, #9d87ff, #896eff);
   overflow-y: scroll;
 }
 .main-container
@@ -1236,6 +1305,35 @@ div.overlay-blue:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.main-container
+.content-container
+.images-container
+.gallery-img.img-active
+.header
+.cross-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 100%;
+  height: min-content;
+  cursor: pointer;
+}
+
+.main-container
+.content-container
+.images-container
+.gallery-img.img-active
+.header
+.cross-button p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #896eff;
 }
 .main-container
   .content-container
@@ -1262,17 +1360,24 @@ div.overlay-blue:hover {
   background: #523eab;
   padding: 0.4rem 2rem;
 }
+
 @media only screen and (max-width: 1200px) {
   .main-container .content-container .images-container .gallery-img {
-    width: 45vw !important;
+    width: calc(95vw - 3rem) !important;
+    transform: translateX(-0.75rem);
   }
-}
-@media only screen and (max-width: 760px) {
-  .main-container .content-container .images-container .gallery-img {
+  .main-container .content-container .images-container .gallery-img.img-active {
     width: 95vw !important;
-    transform: translateX(-2.5%);
+    transform: translateX(calc(-50% - 1rem)) translateY(calc(-50% - 1.5rem)) !important;
   }
-} /*# sourceMappingURL=gallery_1.css.map */
+  .main-container .content-container .arrow-holder .next-image-arrow {
+    transform: translateY(-10%) !important;
+  }
+  .main-container .content-container .arrow-holder .gallery-shifting-arrow {
+    top: auto;
+    bottom: 1% !important;
+  }
+} 
 
 /* END GALLERY */
 

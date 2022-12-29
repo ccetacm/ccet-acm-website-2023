@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/my-style.css">
-    <!-- <link rel="stylesheet" href="assets/css/gallery_1.css"> -->
 </head>
 
 <body>
@@ -52,12 +51,12 @@
                     <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
 
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="gallery.html" data-bs-toggle="">Gallery</a>
+                                <a class="nav-link active" href="gallery.html" data-bs-toggle="">Gallery</a>
 
                             </li>
                             <li class="nav-item dropdown">
@@ -127,26 +126,37 @@
 
         <div class="main-container" id="main-container">
             <div class="categories" id="categories">
-                <div class="category active-gallery" onclick="updateGallery()">All</div>
-                <div class="category" onclick="updateGallery('coding')">Coding</div>
-                <div class="category" onclick="updateGallery('graphic-design')">Graphic Design</div>
-                <div class="category" onclick="updateGallery('Recruitments')">Recruitments</div>
-                <div class="category" onclick="updateGallery('workshops')">workshops</div>
+                <div class="category active-gallery" data-filter="*" onclick="updateGallery()">All</div>
+                <div class="category" data-filter=".coding" onclick="updateGallery('coding')">Coding</div>
+                <div class="category" data-filter=".graphic-design" onclick="updateGallery('graphic-design')">Graphic Design</div>
+                <div class="category" data-filter=".Recruitments" onclick="updateGallery('Recruitments')">Recruitments</div>
+                <div class="category" data-filter=".workshops" onclick="updateGallery('workshops')">Workshops</div>
             </div>
             <div class="content-container" id="content-container">
+                <!-- LAST IMAGE ARROW -->
+                <div class="arrow-holder">
+                    <div class="gallery-shifting-arrow last-image-arrow" id="last-image-arrow">
+                        ➜
+                   </div>
+                </div>
                 <div class="images-container" id="images-container">
                     <div class="gallery-img">
                         <!-- HEADER  -->
                         <div class="header">
                             <h3 class="gallery-img-title">
-                                
+                                Do nisi aute labore dolor minim sint deserunt qui.
                             </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
                         </div>
                         <!-- IMAGE -->
                         <img class="the-real-fkin-image" src="assets/img/Gallery_Images/WebsiteGallery/Teams/Team Image.jpg">
                         <!-- BODY -->
                         <div class="img-description">
-                            
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ipsum, nulla laudantium expedita quisquam architecto alias provident maxime doloribus quaerat eaque totam voluptates minima eius, consequatur necessitatibus. Quis, aliquid laudantium.
                         </div>
                         <!-- FOOTER -->
                         <div class="footer">
@@ -156,19 +166,33 @@
                     </div>
                     
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Workshops/ML_Roadmap.png">
                         <div class="footer">
-                            <p>Roadmap to Machine Learning 2021</p>
+                            <p>Roadmap to Machine Learning</p>
                             <p>Date: 17-08-2021</p>
                         </div>
                     </div>
                     
                     <div class="gallery-img workshops">
-                        <!-- HEADER  -->
                         <div class="header">
                             <h3 class="gallery-img-title">
-                               
+                                Do nisi aute labore dolor minim sint deserunt qui.
                             </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
                         </div>
                         <!-- IMAGE -->
                         <img class="the-real-fkin-image" src="assets/img/Gallery_Images/WebsiteGallery/Workshops/Future_Prospects.png">
@@ -183,6 +207,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Workshops/Making_Of_programming_Language.png">
                         <div class="footer">
                             <p>Making of Programming Language</p>
@@ -190,6 +224,16 @@
                         </div>
                     </div>
                     <div class="gallery-img coding">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/PythonProgramming2021/1.png">
                         <div class="footer">
                             <p>Python Programming 2021</p>
@@ -197,6 +241,16 @@
                         </div>
                     </div>
                     <div class="gallery-img graphic-design">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/logodesign/1.png">
                         <div class="footer">
                             <p>Logo Design</p>
@@ -204,6 +258,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/meetTheMentor/1.png">
                         <div class="footer">
                             <p>Meet the Mentor</p>
@@ -212,6 +276,16 @@
                     </div>
                     
                     <div class="gallery-img Recruitments">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/2021-2.png">
                         <div class="footer">
                             <p>Recruitments 2021</p>
@@ -219,6 +293,16 @@
                         </div>
                     </div>
                     <div class="gallery-img Recruitments">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/2021-1.png">
                         <div class="footer">
                             <p>Recruitments 2021</p>
@@ -226,6 +310,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Workshops/hacktoberfest2020.jfif">
                         <div class="footer">
                             <p>Hacktober Fest 2020</p>
@@ -233,6 +327,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Workshops/deep learning from scratch.JPG">
                         <div class="footer">
                             <p>Deep Learning from Scratch</p>
@@ -240,6 +344,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Workshops/alexa.jfif">
                         <div class="footer">
                             <p>Building your first skill with Alexa</p>
@@ -247,6 +361,16 @@
                         </div>
                     </div>
                     <div class="gallery-img coding">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Coding/1.jpg">
                         <div class="footer">
                             <p>CSE Tech Quiz</p>
@@ -254,6 +378,16 @@
                         </div>
                     </div>
                     <div class="gallery-img Recruitments">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/1.png">
                         <div class="footer">
                             <p>Recruitments 2021</p>
@@ -261,6 +395,16 @@
                         </div>
                     </div>
                     <div class="gallery-img graphic-design">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Web & Designing/Webappsattacks (1).jpg">
                         <div class="footer">
                             <p>Webappsattacks</p>
@@ -268,6 +412,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Workshops/Portfolio (cocampus).jpg">
                         <div class="footer">
                             <p>Portfolio (cocampus)</p>
@@ -275,6 +429,16 @@
                         </div>
                     </div>
                     <div class="gallery-img Recruitments">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/3.png">
                         <div class="footer">
                             <p>Recruitments 2021</p>
@@ -282,6 +446,16 @@
                         </div>
                     </div>
                     <div class="gallery-img graphic-design">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Web & Designing/Webappsattacks (2).jpg">
                         <div class="footer">
                             <p>Webappsattacks</p>
@@ -289,6 +463,16 @@
                         </div>
                     </div>
                     <div class="gallery-img coding">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Coding/hacktoberfest_1.jpg">
                         <div class="footer">
                             <p>Hacktober Fest 2021</p>
@@ -296,6 +480,16 @@
                         </div>
                     </div>
                     <div class="gallery-img coding">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Coding/gsoc.jpg">
                         <div class="footer">
                             <p>Gsoc</p>
@@ -303,6 +497,16 @@
                         </div>
                     </div>
                     <div class="gallery-img Recruitments">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/4.png">
                         <div class="footer">
                             <p>Recruitments 2021</p>
@@ -310,6 +514,16 @@
                         </div>
                     </div>
                     <div class="gallery-img graphic-design">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Web & Designing/Webappsattacks (3).jpg">
                         <div class="footer">
                             <p>Webappsattacks</p>
@@ -318,6 +532,16 @@
                     </div>
                     
                     <div class="gallery-img coding">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Coding/hacktoberfest_2.jpg">
                         <div class="footer">
                             <p>Hacktober Fest 2021</p>
@@ -325,6 +549,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image" src="assets/img/Gallery_Images/WebsiteGallery/Workshops/Deep_Dive_DL.png">
                         <div class="img-description">
                             
@@ -335,6 +569,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Workshops/Hacktober_2021.png">
                         <div class="footer">
                             <p>Hacktober Festv 2021</p>
@@ -342,6 +586,16 @@
                         </div>
                     </div>
                     <div class="gallery-img workshops">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Workshops/ML_Muskan_Navjot.jpeg">
                         <div class="footer">
                             <p>Roadmap to Machine learning</p>
@@ -349,6 +603,16 @@
                         </div>
                     </div>
                     <div class="gallery-img Recruitments">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/2021-4.jpg">
                         <div class="footer">
                             <p>Recruitments 2021</p>
@@ -356,6 +620,16 @@
                         </div>
                     </div>
                     <div class="gallery-img coding">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Coding/cse_tech_2.jpg">
                         <div class="footer">
                             <p>CSE Tech Quiz</p>
@@ -363,6 +637,16 @@
                         </div>
                     </div>
                     <div class="gallery-img Recruitments">
+                        <div class="header">
+                            <h3 class="gallery-img-title">
+                                Do nisi aute labore dolor minim sint deserunt qui.
+                            </h3>
+                            <div class="cross-button" id="cross-button">
+                                <p>
+                                    X
+                                </p>
+                            </div>
+                        </div>
                         <img class="the-real-fkin-image"  src="assets/img/Gallery_Images/WebsiteGallery/Recruitments/2021-3.JPG">
                         <div class="footer">
                             <p>Recruitments 2021</p>
@@ -371,11 +655,17 @@
                     </div>
                     
                 </div>
+                <!-- NEXT IMAGE ARROW HERE -->
+                <div class="arrow-holder">
+                    <div class="gallery-shifting-arrow next-image-arrow" id="next-image-arrow">
+                        ➜
+                   </div>
+                </div>
             </div>
         </div> 
     </main>
 
-    <footer class="footer-area">
+    <footer class="footer-area" id="footer">
         <div class="footer-widget">
             <div class="container">
                 <div class="row footer-widget-wrapper pt-100 pb-70 ">
@@ -465,20 +755,17 @@
 
     <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/modernizr.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/jquery.appear.min.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/counter-up.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/contact-form.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- Every script below this line is important for the gallery -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js" ></script>
     <script src="assets/js/gallery_1.js"></script>
-
 </body>
 
 </html>
