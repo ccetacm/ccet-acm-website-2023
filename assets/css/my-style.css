@@ -1301,10 +1301,14 @@ div.overlay-blue:hover {
   }
   .main-container .content-container .images-container .gallery-img.img-active {
     width: 95vw !important;
-    transform: translateX(calc(-50% - 1rem)) translateY(-50%) !important;
+    transform: translateX(calc(-50% - 1rem)) translateY(calc(-50% - 1.5rem)) !important;
   }
-  .main-container .content-container .arrow-holder {
-    display: none !important;
+  .main-container .content-container .arrow-holder .next-image-arrow {
+    transform: translateY(-10%) !important;
+  }
+  .main-container .content-container .arrow-holder .gallery-shifting-arrow {
+    top: auto;
+    bottom: 1% !important;
   }
 } 
 
