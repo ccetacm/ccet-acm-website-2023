@@ -126,11 +126,11 @@
 
         <div class="main-container" id="main-container">
             <div class="categories" id="categories">
-                <div class="category active-gallery" onclick="updateGallery()">All</div>
-                <div class="category" onclick="updateGallery('coding')">Coding</div>
-                <div class="category" onclick="updateGallery('graphic-design')">Graphic Design</div>
-                <div class="category" onclick="updateGallery('Recruitments')">Recruitments</div>
-                <div class="category" onclick="updateGallery('workshops')">Workshops</div>
+                <div class="category active-gallery" data-filter="*" onclick="updateGallery()">All</div>
+                <div class="category" data-filter=".coding" onclick="updateGallery('coding')">Coding</div>
+                <div class="category" data-filter=".graphic-design" onclick="updateGallery('graphic-design')">Graphic Design</div>
+                <div class="category" data-filter=".Recruitments" onclick="updateGallery('Recruitments')">Recruitments</div>
+                <div class="category" data-filter=".workshops" onclick="updateGallery('workshops')">Workshops</div>
             </div>
             <div class="content-container" id="content-container">
                 <!-- LAST IMAGE ARROW -->
@@ -762,9 +762,10 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/contact-form.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- Every script below this line is important for the gallery -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/js/isotope.pkgd.min.js" ></script>
     <script src="assets/js/gallery_1.js"></script>
 </body>

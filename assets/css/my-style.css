@@ -1087,6 +1087,7 @@ div.overlay-blue:hover {
 .main-container .content-container {
   display: flex;
   padding: 1rem;
+  justify-content: space-around;
 }
 
 .main-container .content-container .arrow-holder {
@@ -1272,11 +1273,6 @@ div.overlay-blue:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  .main-container .content-container .images-container .gallery-img {
-    width: 95vw !important;
-    transform: translate(-1.75%);
-  }
-
   .main-container .content-container .arrow-holder {
     display: none !important;
   }
