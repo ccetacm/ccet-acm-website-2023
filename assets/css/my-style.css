@@ -2685,6 +2685,29 @@ body {
 	margin-top: 40px;
   }
 
+  
+.events-heading-divider {
+  display: inline-block;
+  position: relative;
+  height: 4px;
+  background-color: #896eff;
+  width: 110px;
+  overflow: hidden
+}
+
+.events-heading-divider:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1.1px;
+  height: 7px;
+  width: 8px;
+  background-color: #fff;
+  -webkit-animation: heading-move 5s infinite linear;
+  animation: heading-move 5s infinite linear
+}
+
+
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
    .event-card-ratio{
 	--card-width: 250px;
@@ -2698,12 +2721,12 @@ body {
 	padding: 0;
   }  */
   .events-test {
-	margin-top: 30px;
+	margin-top: 0px;
 	width: 80%;
-	height: 75vh;
+	height: 87vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items:center;
 	background: rgba(159, 112, 255, 0.541);
 	overflow: hidden;
     box-shadow: 2px 3px 3px 2px #896eff; 
@@ -2810,6 +2833,7 @@ body {
 	width: 100%;
 	height: 100%;
 	perspective: 1000px;
+
   }
   .events-card {
 	--card-translateY-offset: 100vh;
@@ -2884,14 +2908,15 @@ body {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-end;
+	justify-content:center;
+	align-items:flex-end;
 	perspective: 1000px;
 	transform-style: preserve-3d;
+  top:40px;
   }
   .events-info {
-	margin-bottom: calc(var(--card-height) / 15);
-	margin-left: calc(var(--card-width) / 1.0);
+	margin-bottom: calc(var(--card-height) / 1000);
+	/* margin-left: calc(var(--card-width) / 1.0); */
 	transform: translateZ(2rem);
 	transition: transform var(--card-transition-duration)
 	  var(--card-transition-easing);
@@ -2909,6 +2934,7 @@ body {
 	width: fit-content;
 	text-shadow: 0 0 10px #9744e0, 10px 10px 10px #0404ae;
 	text-transform: uppercase;
+  margin-bottom: -200px;
   }
   .events-info .events-name,
   .events-info .events-location {
@@ -3070,6 +3096,7 @@ body {
 	transform: translateY(0);
 	/* background: #5f3bff; */
 }
+
 
 .events_card__header {
 	/* background: #5f3bff; */
