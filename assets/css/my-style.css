@@ -1295,6 +1295,14 @@ div.overlay-blue:hover {
 }
 
 @media only screen and (max-width: 1200px) {
+  .main-container .content-container .images-container .gallery-img {
+    width: calc(95vw - 3rem) !important;
+    transform: translateX(-0.75rem);
+  }
+  .main-container .content-container .images-container .gallery-img.img-active {
+    width: 95vw !important;
+    transform: translateX(calc(-50% - 1rem)) translateY(-50%) !important;
+  }
   .main-container .content-container .arrow-holder {
     display: none !important;
   }
