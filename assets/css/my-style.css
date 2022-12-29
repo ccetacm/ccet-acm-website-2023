@@ -2914,6 +2914,12 @@ body {
 	transform-style: preserve-3d;
   top:40px;
   }
+ @media screen and (max-width:400px){
+  .events-infoList .events-info__wrapper{
+  top:33px;
+  }
+  
+ } media
   .events-info {
 	margin-bottom: calc(var(--card-height) / 1000);
 	/* margin-left: calc(var(--card-width) / 1.0); */
@@ -2929,7 +2935,7 @@ body {
 	font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
 	white-space: nowrap;
 	font-weight: 1400;
-	color: rgb(238, 235, 243);
+	color:white;
 	text-decoration:solid;
 	width: fit-content;
 	text-shadow: 0 0 10px #9744e0, 10px 10px 10px #0404ae;
