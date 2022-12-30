@@ -326,7 +326,7 @@ $guides = [$guide1, $guide2, $guide3, $guide4, $guide5]
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
                         <p class="copyright-text">
-                            &copy; Copyright <span id="date"></span> Copyright © 2021 All rights reserved | <br> Designed and Developed by <a href="#">CCET ACM Website Team</a>
+                            Copyright © 2023 All rights reserved | <br> Designed and Developed by <a href="#">CCET ACM Website Team</a>
                         </p>
                     </div>
                 </div>
