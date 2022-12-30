@@ -3845,6 +3845,12 @@ body {
   text-shadow: var(--textshadow-1);
 }
 
+@media only screen and (max-width: 400px) {
+  .breadcrumb-title {
+    margin-top: 30%;
+  }
+}
+
 .breadcrumb-subtitle {
   font-size: 35px;
   color: #fff;
