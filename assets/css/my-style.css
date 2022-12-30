@@ -3850,12 +3850,6 @@ media .events-info {
   text-shadow: var(--textshadow-1);
 }
 
-@media only screen and (max-width: 400px) {
-  .breadcrumb-title {
-    margin-top: 30%;
-  }
-}
-
 .breadcrumb-subtitle {
   font-size: 35px;
   color: #fff;
@@ -4180,7 +4174,7 @@ media .events-info {
 }
 
 .mag-slider-wrapper {
-  width: 500px;
+  width: 85vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -4202,6 +4196,7 @@ media .events-info {
 }
 
 .mag-single-slide {
+  position: relative;
   width: 20%;
   transition: 0.8s;
   display: flex;
@@ -4285,6 +4280,8 @@ media .events-info {
   align-items: center;
   transform: scale(1.3);
   z-index: 500;
+  top: 360px;
+  width: 90vw;
 }
 
 .mag-single-slide .title {
@@ -4350,6 +4347,8 @@ media .events-info {
   margin-right: 40px;
 }
 
+
+
 .mag-lowest iframe {
   min-width: 60vw;
   min-height: 700px;
@@ -4371,13 +4370,9 @@ media .events-info {
   .mag-header {
     margin-top: 80px;
   }
-
-  .mag-slider-title {
-    position: relative;
-  }
 }
 
-@media (max-width: 1441px) {
+@media (max-width: 1024px) {
   .mag-upper {
     display: flex;
     flex-direction: column;
@@ -4388,12 +4383,6 @@ media .events-info {
     margin-bottom: 5%;
     overflow: hidden;
   }
-
-  .mag-slider-wrapper {
-    overflow: hidden;
-    max-width: 87vw;
-  }
-
   .mag-lowest iframe {
     min-height: 550px;
     width: 90vw;
@@ -4405,17 +4394,22 @@ media .events-info {
     margin-bottom: 50px;
   }
 
-  .mag-slider-title {
-    width: 90%;
-  }
+
 
   .mag-slider-title .title {
-    font-size: 230%;
+    font-size: 155%;
   }
 
   .mag-single-slide .read-btn {
     position: absolute;
     top: 50px;
+  }
+
+  .magazine-recent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .image-stack {
@@ -4433,14 +4427,14 @@ media .events-info {
     left: 10%;
     transform: rotate(15deg);
   }
-
+  
   .stack-item-2 {
     left: 0%;
     top: 10%;
     z-index: 30;
     transform: rotate(-5deg);
   }
-
+  
   .stack-item-3 {
     z-index: 20;
     top: 30%;
@@ -4448,7 +4442,7 @@ media .events-info {
     left: -20%;
     transform: rotate(-7deg);
   }
-
+  
   .stack-item-4 {
     z-index: 10;
     top: 10%;
@@ -4456,7 +4450,7 @@ media .events-info {
     left: 10%;
     transform: rotate(-10deg);
   }
-
+  
   .stack-item-5 {
     left: -10%;
     right: 60%;
@@ -4464,7 +4458,7 @@ media .events-info {
     top: 30%;
     transform: rotate(7deg);
   }
-
+  
   .stack-item-6 {
     z-index: 60;
     top: 20%;
@@ -4472,6 +4466,7 @@ media .events-info {
     left: -10%;
     transform: rotate(2deg);
   }
+  
 
   .carousel-container {
     display: none;
