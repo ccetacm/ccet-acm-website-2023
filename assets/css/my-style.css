@@ -835,6 +835,10 @@ div.overlay-blue:hover {
   justify-content: space-evenly;
 }
 
+.footer-btn{
+  
+}
+
 @media screen and (max-width: 767px) {
   .about-row-sec-3 {
     width: 100%;
