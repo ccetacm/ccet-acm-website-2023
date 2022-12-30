@@ -2205,7 +2205,11 @@ h4:hover {
 }
 
 /* END COMPETITION */
-
+/* ACM -W - HEADER*/
+.acm-w-logo{
+  max-width: 30%;
+}
+/* ACM-W-HEADER END */
 /* ACM-W-TEAM-TEXT  */
 
 .acmw-text-left {
