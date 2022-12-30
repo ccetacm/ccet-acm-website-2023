@@ -4371,6 +4371,10 @@ media .events-info {
   .mag-header {
     margin-top: 80px;
   }
+
+  .mag-slider-title {
+    position: relative;
+  }
 }
 
 @media (max-width: 1441px) {
