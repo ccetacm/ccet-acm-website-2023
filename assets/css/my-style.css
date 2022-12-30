@@ -1059,6 +1059,10 @@ body {
   justify-content: space-evenly;
 }
 
+.footer-btn{
+  
+}
+
 @media screen and (max-width: 767px) {
   .about-row-sec-3 {
     width: 100%;
@@ -4058,17 +4062,24 @@ body {
 }
 
 .carousel-container {
-  /* left: calc(50% - 300px); */
+  position: relative;
+  min-height: 135px;
+  left: 53px;
+  display: flex;
+  padding: 0 100px;
+}
+
+/* .carousel-container {
   min-height: 500px;
   margin-left: 110px;
   margin-top: 14px;
   display: flex;
-}
+} */
 
 .mag-card {
   display: flex;
-  height: 150%;
-  width: 150%;
+  height: 120%;
+  width: 30%;
   box-shadow: -3px 0px 20px 5px hwb(252 12% 74% / 0.3);
   transition: 0.4s ease-in-out;
   position: relative;
@@ -4088,6 +4099,7 @@ body {
   border-width: 5px;
   border-style: solid;
   border-color: whitesmoke;
+  box-shadow: -3px 0px 20px 5px rgba(38, 31, 66, 0.8);
 }
 
 .mag-card:hover img {
@@ -4192,6 +4204,15 @@ body {
   padding: 5px;
   border-radius: 10px;
   transition: 0.2s;
+}
+
+.manual-circle-white {
+  border: 2px solid #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.2s;
+  background-color: white;
+  overflow: hidden;
 }
 
 .slide-thumbnail {
@@ -4307,7 +4328,8 @@ body {
   margin-right: 40px;
 }
 
-#radio1:checked ~ .nav-automatic .auto-circle1 {
+/* #radio1:checked ~ .nav-manual .auto-circle1 {
+  z-index: 1000;
   background-color: #ffffff;
 }
 #radio2:checked ~ .nav-automatic .auto-circle2 {
@@ -4321,7 +4343,7 @@ body {
 }
 #radio5:checked ~ .nav-automatic .auto-circle5 {
   background-color: #ffffff;
-}
+} */
 
 .mag-lowest iframe {
   min-width: 60vw;
@@ -4355,6 +4377,7 @@ body {
     padding-top: 25px;
     width: 100vw;
     margin-bottom: 5%;
+    overflow: hidden;
   }
   .mag-lowest iframe {
     min-height: 550px;
@@ -4380,15 +4403,68 @@ body {
     top: 50px;
   }
 
+  .magazine-recent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .image-stack {
+    right: 0;
     z-index: 500;
     display: grid;
-    position: relative;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    position: relative;
-    left: -80px;
+    /* border: dashed 2px red; */
   }
+
+  .stack-item-1 {
+    z-index: 0;
+    top: 30%;
+    right: 40%;
+    left: 10%;
+    transform: rotate(15deg);
+  }
+  
+  .stack-item-2 {
+    left: 0%;
+    top: 10%;
+    z-index: 30;
+    transform: rotate(-5deg);
+  }
+  
+  .stack-item-3 {
+    z-index: 20;
+    top: 30%;
+    right: 60%;
+    left: -20%;
+    transform: rotate(-7deg);
+  }
+  
+  .stack-item-4 {
+    z-index: 10;
+    top: 10%;
+    right: 30%;
+    left: 10%;
+    transform: rotate(-10deg);
+  }
+  
+  .stack-item-5 {
+    left: -10%;
+    right: 60%;
+    z-index: 40;
+    top: 30%;
+    transform: rotate(7deg);
+  }
+  
+  .stack-item-6 {
+    z-index: 60;
+    top: 20%;
+    right: 60%;
+    left: -10%;
+    transform: rotate(2deg);
+  }
+  
 
   .carousel-container {
     display: none;
@@ -4413,7 +4489,7 @@ body {
   }
 }
 
-/* +++ MAGAZINE END+++ */
+/* +++ MAGAZINE END +++ */
 
 /* RESEARCH */
 
