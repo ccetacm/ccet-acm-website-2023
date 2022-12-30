@@ -24,6 +24,7 @@
 7. RESOURCES  
 8. ACM-W ABOUT US 
 9. CAREER GUIDES PAGE
+10. Nav bar
 */
 
 /* INDEX */
@@ -4501,3 +4502,12 @@ body {
 }
 
 /* RESEARCH END */
+
+/*NAV BAR*/
+@media only screen and (max-width: 400px) {
+  .navbar {
+    background-color: #896eff;
+}
+}
+
+/*NAV BAR END*/
