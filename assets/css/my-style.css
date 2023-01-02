@@ -2805,6 +2805,7 @@ body {
   margin: 5em auto;
   height: auto;
   width: 100%;
+  margin-left: -9px;
 }
 
 /* 	Product details  */
