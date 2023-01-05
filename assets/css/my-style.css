@@ -50,6 +50,7 @@
 
 .slider {
   position: relative;
+  top: 0%;
   width: 150px;
   height: 200px;
   transform-style: preserve-3d;
@@ -203,11 +204,6 @@ span {
   margin-top: 6%;
 }
 
-.img-slider h3 {
-  margin-bottom: 25px;
-  margin-left: 25%;
-}
-
 .img-slider .outlet {
   margin-left: 10%;
   width: 275px;
@@ -227,7 +223,6 @@ span {
   .img-slider h3 {
     margin-top: 5%;
     margin-bottom: 25px;
-    margin-left: 23%;
   }
 }
 
@@ -590,6 +585,15 @@ div.overlay-blue:hover {
   }
 }
 
+@media (max-width: 450px) {
+  .choose-content {
+    padding-left: 5px;
+  }
+
+  .choose-img {
+    margin-left: 5px;
+  }
+}
 
 /* END OF INDEX */
 
