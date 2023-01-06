@@ -50,6 +50,7 @@
 
 .slider {
   position: relative;
+  top: 0%;
   width: 150px;
   height: 200px;
   transform-style: preserve-3d;
@@ -64,6 +65,11 @@
   100% {
     transform: perspective(1000px) rotateY(360deg);
   }
+}
+
+.hero-rounded-img {
+  z-index: 1;
+  position: relative;
 }
 
 .slider span {
@@ -203,17 +209,12 @@ span {
   margin-top: 6%;
 }
 
-.img-slider h3 {
-  margin-bottom: 25px;
-  margin-left: 25%;
-}
-
 .img-slider .outlet {
   margin-left: 10%;
   width: 275px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 412px) {
   .mentors h1 {
     text-align: center;
     margin-bottom: 20%;
@@ -226,8 +227,7 @@ span {
 
   .img-slider h3 {
     margin-top: 5%;
-    margin-bottom: 25px;
-    margin-left: 23%;
+    margin-bottom: 5%;
   }
 }
 
@@ -590,6 +590,22 @@ div.overlay-blue:hover {
   }
 }
 
+@media (max-width: 450px) {
+  .choose-content {
+    padding-left: 5px;
+  }
+
+  .choose-img {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-wrapper {
+    padding-bottom: 5px;
+  }
+}
+
 
 /* END OF INDEX */
 
@@ -666,6 +682,7 @@ div.overlay-blue:hover {
 .second-container-heading {
   text-align: center;
 }
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
 @media only screen and (max-width: 400px) {
@@ -685,10 +702,11 @@ div.overlay-blue:hover {
   color: var(--white);
   font-family: var(--base-font);
   width: 100vw;
-  min-height: 100vh;
+  min-height: 65vh;
   display: grid;
   justify-content: center;
   align-items: center;
+  margin-bottom: 7%;
 }
 
 .coding-container img {
@@ -1147,7 +1165,7 @@ div.overlay-blue:hover {
 
 .about-right-sec-3-text p {
   font-size: 1.2em;
-  padding: 1em;
+  padding-left: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1843,7 +1861,7 @@ h4:hover {
 /* END ACHIEVEMENTS */
 
 /* COMPETITION */
-.site-breadcrumb {
+/* .site-breadcrumb {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1855,9 +1873,9 @@ h4:hover {
   background-image: linear-gradient(90deg, #896eff 0, #5f3bff 51%, #896eff);
   z-index: 1;
   min-height: 380px;
-}
+} */
 
-.breadcrumb-shape {
+/* .breadcrumb-shape {
   left: 0;
   min-width: 100%;
 }
@@ -1865,6 +1883,14 @@ h4:hover {
 .breadcrumb-shape img {
   left: 0;
   min-width: 100%;
+} */
+
+.events-title {
+  margin-top: -2%;
+}
+
+.bcb-title {
+  margin-top: 3.5%;
 }
 
 .c-wrapper {
@@ -2701,9 +2727,9 @@ h4:hover {
 }
 
 .rs-author-img {
-  width: 140px;
-  height: 110px;
-  border-radius: 0;
+  width: 155px;
+  height: 60px;
+  border-radius: 100%;
   padding: 2px;
   margin-right: 10px;
 }
@@ -2711,7 +2737,7 @@ h4:hover {
 .rs-author-img img {
   width: 100%;
   height: 100%;
-  border-radius: 0;
+  border-radius: 100%;
   object-fit: cover;
 }
 
@@ -3917,6 +3943,7 @@ media .events-info {
 .navbar-brand {
   padding-top: 0px;
 }
+
 .site-breadcrumb {
   display: flex;
   flex-direction: column;
@@ -3944,7 +3971,7 @@ media .events-info {
 }
 
 .breadcrumb-title span {
-  font-size: 60px;
+  font-size: 50px;
   padding-bottom: 0px;
   text-shadow: var(--textshadow-1);
 }
