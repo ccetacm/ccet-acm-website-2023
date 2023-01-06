@@ -54,7 +54,6 @@ window.onload = () => {
 
     const updateActiveSupport = async() => {
 
-        console.log('ran')
         const currentImages = document.getElementsByClassName("show")
         const positionMap = []
         for (let i = 0; i < currentImages.length; i++) {
@@ -65,17 +64,19 @@ window.onload = () => {
         }
         positionMap.pop()
         console.log(positionMap)
-    
-        if (positionMap[0] === true) {
-            lastImageArrow.classList.add('hidden')
-        } else {
-            lastImageArrow.classList.remove('hidden')
-        }
-    
-        if (positionMap[positionMap.length - 1] === true) {
-            nextImageArrow.classList.add('hidden')
-        } else {
-            nextImageArrow.classList.remove('hidden')
+        
+        const checkEdge = () => {
+            if (positionMap[0] === true) {
+                lastImageArrow.classList.add('hidden')
+            } else {
+                lastImageArrow.classList.remove('hidden')
+            }
+        
+            if (positionMap[positionMap.length - 1] === true) {
+                nextImageArrow.classList.add('hidden')
+            } else {
+                nextImageArrow.classList.remove('hidden')
+            }
         }
     
         const switchInactive = async() => {
@@ -103,7 +104,7 @@ window.onload = () => {
             positionMap.pop()
             await showAccordingToPosition()
             shifting = 0
-            await updateActiveSupport()
+            checkEdge()
         })
     
         lastImageArrow.addEventListener("click", async function (event) {
@@ -113,11 +114,11 @@ window.onload = () => {
             positionMap.push(false)
             positionMap.shift()
             await showAccordingToPosition()
-            await updateActiveSupport()
+            checkEdge()
         })
+        checkEdge()
         console.log('finished!')
     }
-
     for (let i = 0; i < images.length; i++) {
         images[i].addEventListener("click", async function (event) {
             event.stopPropagation()
@@ -138,7 +139,6 @@ window.onload = () => {
         }, false)
     }
 }
-
 for (let i = 0; i < crossButton.length; i++) {
     crossButton[i].addEventListener("click", function (event) {
         event.stopPropagation()
