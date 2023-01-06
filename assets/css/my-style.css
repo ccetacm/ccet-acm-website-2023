@@ -1861,7 +1861,7 @@ h4:hover {
 /* END ACHIEVEMENTS */
 
 /* COMPETITION */
-.site-breadcrumb {
+/* .site-breadcrumb {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1873,9 +1873,9 @@ h4:hover {
   background-image: linear-gradient(90deg, #896eff 0, #5f3bff 51%, #896eff);
   z-index: 1;
   min-height: 380px;
-}
+} */
 
-.breadcrumb-shape {
+/* .breadcrumb-shape {
   left: 0;
   min-width: 100%;
 }
@@ -1883,6 +1883,14 @@ h4:hover {
 .breadcrumb-shape img {
   left: 0;
   min-width: 100%;
+} */
+
+.events-title {
+  margin-top: -2%;
+}
+
+.bcb-title {
+  margin-top: 3.5%;
 }
 
 .c-wrapper {
@@ -2719,7 +2727,7 @@ h4:hover {
 }
 
 .rs-author-img {
-  width: 150px;
+  width: 155px;
   height: 60px;
   border-radius: 100%;
   padding: 2px;
