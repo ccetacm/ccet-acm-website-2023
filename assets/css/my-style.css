@@ -1875,7 +1875,7 @@ h4:hover {
   min-height: 380px;
 } */
 
-.breadcrumb-shape {
+/* .breadcrumb-shape {
   left: 0;
   min-width: 100%;
 }
@@ -1883,6 +1883,14 @@ h4:hover {
 .breadcrumb-shape img {
   left: 0;
   min-width: 100%;
+} */
+
+.events-title {
+  margin-top: -2%;
+}
+
+.bcb-title {
+  margin-top: 3.5%;
 }
 
 .c-wrapper {
