@@ -67,6 +67,11 @@
   }
 }
 
+.hero-rounded-img {
+  z-index: 1;
+  position: relative;
+}
+
 .slider span {
   position: absolute;
   top: 0;
@@ -209,7 +214,7 @@ span {
   width: 275px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 412px) {
   .mentors h1 {
     text-align: center;
     margin-bottom: 20%;
@@ -222,7 +227,7 @@ span {
 
   .img-slider h3 {
     margin-top: 5%;
-    margin-bottom: 25px;
+    margin-bottom: 5%;
   }
 }
 
@@ -594,6 +599,13 @@ div.overlay-blue:hover {
     margin-left: 5px;
   }
 }
+
+@media (max-width: 767px) {
+  .header-wrapper {
+    padding-bottom: 5px;
+  }
+}
+
 
 /* END OF INDEX */
 
