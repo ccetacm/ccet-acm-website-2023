@@ -156,7 +156,7 @@ span {
   margin-right: 15px;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 450px) {
   .ourmen {
     display: flex;
     flex-direction: column;
@@ -176,7 +176,7 @@ span {
   display: flex;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 450px) {
   .text-sliders {
     display: flex;
     flex-direction: column;
@@ -214,7 +214,7 @@ span {
   width: 275px;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 450px) {
   .mentors h1 {
     text-align: center;
     margin-bottom: 20%;
@@ -445,7 +445,7 @@ div.overlay-blue:hover {
   font-weight: 500;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 450px) {
   .slideshow-container {
     width: 300px;
     margin-left: 55px;
@@ -583,7 +583,7 @@ div.overlay-blue:hover {
   position: relative;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 450px) {
   .btn {
     font-size: 15px;
     font-weight: 400;
@@ -606,6 +606,10 @@ div.overlay-blue:hover {
   }
 }
 
+.membership-button {
+   margin-top: 5%;
+   cursor: pointer;
+}
 
 /* END OF INDEX */
 
