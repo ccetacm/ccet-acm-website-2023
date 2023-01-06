@@ -25,10 +25,24 @@
     <link rel="stylesheet" href="assets/css/my-style.css">
 
 </head>
+<style>
+    @media all and (max-width: 412px) {
+        .footer-alignment{
+                margin-left: 0px !important;
+            }
+        .mobile-view-nav-color{
+        background-color: linear-gradient(#7052fb 0%, #8a60fd 100%) !important;
+
+        }
+            
+        }
+    
+    </style>
+
 
 <body>
 
-    <div class="preloader">
+    <div class="preloader" style="background-color: linear-gradient(-60deg, #7052fb 0%, #8a60fd 100%) !important;">
         <div class="loader">
             <div class="loader-box-1"></div>
             <div class="loader-box-2"></div>
@@ -37,9 +51,9 @@
 
 <!-- =================================HEADER START========================= -->
 
-    <header class="header">
+    <!-- <header class="header">
         <div class="main-navigation">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg mobile-view-nav-color">
                 <div class="container" id="ac-navbar">
                     <a class="navbar-brand" href="index.html">
                         <img src="assets/img/logo/ACM Logo Black.svg" class="logo-display" alt="logo">
@@ -84,7 +98,7 @@
                             </li>
                             <li class="nav-item"><a class="nav-link" href="resources.html"> Resources </a></li>
                             <li class="nav-item"><a class="nav-link" href="magazine.html">Magazine </a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
                         </ul>
                         <div class="header-nav-right">
                            
@@ -96,7 +110,73 @@
                 </div>
             </nav>
         </div>
-    </header>
+    </header> -->
+
+    
+  <header class="header">
+    <div class="main-navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/img/logo/ACM Logo Black.svg" class="logo-display" alt="logo">
+            <img src="assets/img/logo/ACM Logo Blue.svg" class="logo-scrolled" alt="logo">
+          </a>
+          <div class="mobile-menu-right">
+            <!-- <a href="#" class="mobile-search-btn search-box-outer"><i class="far fa-search"></i></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"><i class="far fa-stream"></i></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+
+              </li>
+              <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="gallery.html" data-bs-toggle="">Gallery</a>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
+                <ul class="dropdown-menu fade-up">
+                  <li><a class="dropdown-item" href="events.html">Events</a></li>
+                  <li><a class="dropdown-item" href="competition.html">Competition</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Team</a>
+                <ul class="dropdown-menu fade-up">
+                  <li><a class="dropdown-item" href="Office-bearers.html">Office bearers</a></li>
+                  <li><a class="dropdown-item" href="Executive-members.html">Executive members</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Web-Masters.html">Web Masters</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active" href="achievements.html">Achievements</a>
+
+              </li>
+              <li class="nav-item"><a class="nav-link" href="resources.html"> Resources </a></li>
+              <li class="nav-item"><a class="nav-link" href="magazine.html">Magazine </a></li>
+              <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+            </ul>
+            <div class="header-nav-right">
+
+              <div class="header-btn">
+                <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 45px;">ACM-W</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
 
     <!-- <div class="search-popup">
         <button class="close-search"><span class="far fa-times"></span></button>
@@ -110,7 +190,7 @@
 
     <main class="main">
 
-        <div class="site-breadcrumb mag-header">
+        <div class="site-breadcrumb mag-header " style="background-image: linear-gradient(-60deg, #7052fb 0%, #8a60fd 100%) !important;">
             <div class="container">
                 <h2 class="breadcrumb-title"><span>Achievements</span></h2>
             </div>
@@ -397,6 +477,7 @@
 
     <!-- ===================================FOOTER START================================= -->
 
+    <a name="footer"></a>
     <footer class="footer-area">
         <div class="footer-widget">
             <div class="container">
@@ -419,17 +500,17 @@
                                 </ul>
                             </div>
                             <ul class="footer-social">
-                                <li><a href="https://www.facebook.com/acmwccet"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/acmccet"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/acmccet"><i class="fab fa-instagram"></i></a></li>
                                 <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
                                 <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i class="fab fa-youtube"></i></a></li>
                                 <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
-                                <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/ccet-acm-student-chapter"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 
-                    <div class="col-md-6 col-lg-2 col-md-8 offset-md-2" style="margin-left: 9rem;">
+                    <div class="col-md-6 col-lg-2 col-md-8 offset-md-2 footer-alignment" style="margin-left: 9rem;">
                         <div class="footer-widget-box list">
                             <h4 class="footer-widget-title">Explore</h4>
                             <ul class="footer-list">
@@ -455,7 +536,7 @@
                                     <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
                                         Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a></p>
                                     <div class="subscribe-form">
-                                        <a href="#"
+                                        <a href="./Web-Masters.html"
                                         class="theme-btn" style="width:150px; height: 45px; font-size: 13.9px; font-weight: 550;">WEBMASTERS</a>
                                         <a href="./magazine.html"
                                         class="theme-btn" target="_blank" style="width:150px; height: 45px; font-size: 13.9px; font-weight: 550;">MAGAZINE</a>

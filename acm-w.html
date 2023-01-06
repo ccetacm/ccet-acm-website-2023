@@ -25,9 +25,15 @@
     <link rel="stylesheet" href="assets/css/my-style.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-
 </head>
-
+<style>
+    @media all and (max-width: 412px) {
+        .footer-alignment{
+                margin-left: 0px !important;
+            }
+        }
+    
+    </style>
 
 <body>
 
@@ -88,7 +94,7 @@ HEADER/NAV BAR
                             </li>
                             <li class="nav-item"><a class="nav-link" href="resources.html"> Resources </a></li>
                             <li class="nav-item"><a class="nav-link" href="magazine.html">Magazine </a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
                         </ul>
                         </ul>
                         <div class="header-nav-right">
@@ -170,8 +176,8 @@ END OF HEADER
                             <div class="choose-content">
                                 <br>
                                 <h3>ABOUT US</h3>
-                                <br>
-                                <p align="justify">The CCET ACM-W was founded in October 2021 with an aim to empower
+                                <br><div class="margin-fix" style="margin:auto;">
+                                <p style="text-align:justify;">The CCET ACM-W was founded in October 2021 with an aim to empower
                                     women in the field of
                                     computing and increase the global visibility of women in the field of research as
                                     well as development.
@@ -185,7 +191,7 @@ END OF HEADER
                                     Student chapter aim to build a
                                     globally visible platform where like-minded people can collaborate and develop in
                                     their field of interest.
-                                </p>
+                                </p></div>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -226,8 +232,6 @@ END OF HEADER
                     <div class="team-area py-120">
                         <div class="container">
                             <div class="row">
-
-
                                 <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
                                     <div class="team-item">
                                         <img src="assets\img\Team_Images\2022_team\Anureet-1.svg" alt="thumb">
@@ -268,7 +272,7 @@ END OF HEADER
                                 </div>
 
                                 <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
-                                    <div class="team-item active">
+                                    <div class="team-item">
                                         <img src="assets\img\Team_Images\2022_team\Yadvi-1.svg" alt="thumb">
                                         <div class="team-social">
                                             <a href="https://github.com/YadviNanda"><i class="fab fa-github"></i></a>
@@ -388,7 +392,7 @@ END OF HEADER
 
                                 <div class="col-md-6 col-lg-4 col-xl-3 filter-item cat1">
                                     <div class="team-item">
-                                        <img src="assets\img\Team_Images\2022_team\Deepak-1.jpeg" alt="thumb">
+                                        <img src="assets\img\Team_Images\2022_team\deepak-1.jpeg" alt="thumb">
                                         <div class="team-social">
                                             <a href="https://github.com/deepakm12"><i class="fab fa-github"></i></a>
                                             <a href="https://www.linkedin.com/in/deepak-mahto-196694200"><i
@@ -1022,7 +1026,7 @@ END OF HEADER
                                     <div class="acmw-text-box">
 
                                         <div class="acmw-text-image">
-                                            <img src="assets\img\Team_Images\2022_team\Deepak-1.jpeg" height="75px" width="75px"
+                                            <img src="assets\img\Team_Images\2022_team\deepak-1.jpeg" height="75px" width="75px"
                                                 alt="" style="border-radius: 99%;">
                                         </div>
                                         <p>The ACM-W student chapter promotes women's involvement in the field of
@@ -1178,6 +1182,8 @@ END OF HEADER
     <!-- --------------------------------------------------------------------------------------------------------------------
 FOOTER
 ------------------------------------------------------------------------------------------------------------------ -->
+
+<a name="footer"></a>
     <footer class="footer-area">
         <div class="footer-widget">
             <div class="container">
@@ -1214,7 +1220,7 @@ FOOTER
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-2 col-md-8 offset-md-2" style="margin-left: 9rem;">
+                    <div class="col-md-6 col-lg-2 col-md-8 offset-md-2  footer-alignment" style="margin-left: 9rem;">
                         <div class="footer-widget-box list">
                             <h4 class="footer-widget-title">Explore</h4>
                             <ul class="footer-list">
@@ -1241,7 +1247,7 @@ FOOTER
                                     Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a>
                                 </p>
                                 <div class="subscribe-form">
-                                    <a href="#" class="theme-btn" style="width:160px; height: 45px; font-size: 15px;"
+                                    <a href="./Web-Masters.html" class="theme-btn" style="width:160px; height: 45px; font-size: 15px;"
                                         type="submit">
                                         WEBMASTERS
                                     </a>
