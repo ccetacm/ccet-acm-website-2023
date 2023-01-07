@@ -342,7 +342,8 @@
                 <div class="row">
                     <div class="col-lg-6 align-self-center">
                         <p class="copyright-text">
-                            Copyright © 2023 All rights reserved | <br> Developed by <a href="#">CCET ACM Website
+                            Copyright © 2023 All rights reserved | <br> Developed by <a href="./web-masters.html">CCET
+                                ACM Website
                                 Team</a>
                         </p>
                     </div>
