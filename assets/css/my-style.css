@@ -4684,12 +4684,6 @@ media .events-info {
   transition: 0.8s ease-in-out;
 }
 
-@media (max-width: 600px) {
-  .mag-header {
-    margin-top: 80px;
-  }
-}
-
 @media (max-width: 1024px) {
   .mag-upper {
     display: flex;
@@ -4805,6 +4799,16 @@ media .events-info {
 @media (max-width: 991px) {
   .mag-header {
     margin-top: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mag-header {
+    margin-top: 80px;
+  }
+
+  .mag-single-slide .read-btn {
+    top: 25px;
   }
 }
 
