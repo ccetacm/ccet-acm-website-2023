@@ -107,7 +107,7 @@
                                     <li><a class="dropdown-item" href="Office-bearers.html">Office bearers</a></li>
                                     <li><a class="dropdown-item" href="Executive-members.html">Executive members</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="Web-Masters.html">Web Masters</a></li>
+                                    <li><a class="dropdown-item" href="web-masters.html">Web Masters</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
