@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="team.css"> 
+    <link rel="stylesheet" href="team.css">
     <style>
-        .heading{
-          text-align:center;
-          margin-top: 40px;
+        .heading {
+            text-align: center;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -60,39 +60,40 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link active" href="index.html">Home</a>
-                                
+
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="gallery.html" data-bs-toggle="">Gallery</a>
-                                
+
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     <li><a class="dropdown-item" href="competition.html">competition</a></li>
-                                    
+
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Team</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="Office-bearers.html">Office bearers</a></li>
-                                    <li><a class="dropdown-item" href="Executive-members.html">Executive members</a></li>
+                                    <li><a class="dropdown-item" href="Executive-members.html">Executive members</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="Web-Masters.html">Web Masters</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="achievements.html" >Acheivements</a>
-                                
+                                <a class="nav-link" href="achievements.html">Acheivements</a>
+
                             </li>
                             <li class="nav-item"><a class="nav-link" href="resources.html"> Resources </a></li>
                             <li class="nav-item"><a class="nav-link" href="magazine.html"> magazine </a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                         <div class="header-nav-right">
-                           
+
                             <div class="header-btn">
                                 <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 40px;">ACM-W</a>
                             </div>
@@ -128,13 +129,13 @@
             <div class="breadcrumb-shape">
                 <img src="assets/img/shape/shape-4.svg" alt="">
             </div>
-            </div>
-            <h2 class="site-title heading ">MEET OUR <span>TEAM</span></h2>
+        </div>
+        <h2 class="site-title heading ">MEET OUR <span>TEAM</span></h2>
 
         <div class="case-area py-120">
-            
+
             <div class="container">
-        
+
                 <!----------------------BUTTONS------------------------->
                 <div class="filter-controls">
                     <ul class="filter-btns">
@@ -151,32 +152,32 @@
                     <div class="team-area py-120">
                         <div class="container">
                             <div class="row">
-                                
-                                <?php 
 
-                                $conn = new mysqli("ccet.hosting2.acm.org" , "ccethosting2acm_admin" , "@dmin@321" , "ccethosting2acm_website_2023");
+                                <?php
 
-                                if($conn->connect_error){
+                                $conn = new mysqli("ccet.hosting2.acm.org", "ccethosting2acm_admin", "@dmin@321", "ccethosting2acm_website_2023");
+
+                                if ($conn->connect_error) {
                                     echo "Connection Failed";
                                     die();
                                 }
 
                                 $data = $conn->query("SELECT * FROM `acm_team_record` WHERE 1");
 
-                                while($row = $data->fetch_array(MYSQLI_ASSOC)){
+                                while ($row = $data->fetch_array(MYSQLI_ASSOC)) {
 
-                                    echo '<div class="col-md-6 col-lg-4 col-xl-3 filter-item '.$row["category"].'">
+                                    echo '<div class="col-md-6 col-lg-4 col-xl-3 filter-item ' . $row["category"] . '">
                                             <div class="team-item">
-                                                <img src="'.$row["image_link"].'" alt="thumb">
+                                                <img src="' . $row["image_link"] . '" alt="thumb">
                                                 <div class="team-social">
-                                                    <a href="'.$row["github"].'"><i class="fab fa-github"></i></a>
-                                                    <a href="'.$row["linkedin"].'"><i class="fab fa-linkedin"></i></a>
-                                                    <a href="'.$row["orcid"].'"><i class="fab fa-orcid"></i></a>
+                                                    <a href="' . $row["github"] . '"><i class="fab fa-github"></i></a>
+                                                    <a href="' . $row["linkedin"] . '"><i class="fab fa-linkedin"></i></a>
+                                                    <a href="' . $row["orcid"] . '"><i class="fab fa-orcid"></i></a>
                                                 </div>
                                                 <div class="team-content">
                                                     <div class="team-bio">
-                                                        <h5><a href="#">'.$row["name"].'</a></h5>
-                                                        <span>'.$row["position"].'</span>
+                                                        <h5><a href="#">' . $row["name"] . '</a></h5>
+                                                        <span>' . $row["position"] . '</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -185,101 +186,107 @@
 
 
                                 ?>
-                                
-                </div>
+
+                            </div>
 
     </main>
 
 
 
- 
 
-    
+
+
 
 
     <!---------------------------------------------------------FOOTER START ---------------------------------------------------------------->
 
     <footer class="footer-area">
-            <div class="footer-widget">
-                <div class="container">
-                    <div class="row footer-widget-wrapper pt-100 pb-70">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-widget-box about-us">
-                                <a href="#" class="footer-logo">
-                                    <img src="assets/img/logo/ACM Logo Black.svg    " alt="">
-                                </a>
-                                <p class="mb-20">
-                                    ACM boosts up the potential and talent, supporting the overall development needs of
-                                    our students to facilitate a structured path from education to employment by
-                                    providing a safe and supported space where creative talent and imagination can
-                                    flourish in a caring environment.
-                                </p>
-                                <div class="footer-contact">
-                                    <ul>
-                                        <li><i class="far fa-map-marker-alt"></i>CCET, SECTOR-26, CHANDIGARH</li>
-                                        
-                                    </ul>
-                                </div>
-                                <ul class="footer-social">
-                                    <li><a href="https://www.facebook.com/acmwccet"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
-                                    <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-2">
-                            <div class="footer-widget-box list">
-                                <h4 class="footer-widget-title">Explore</h4>
-                                <ul class="footer-list">
-                                    <li><a href="about.html"><i class="fas fa-caret-right"></i> About </a></li>
-                                    <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
-                                    <li><a href="team.html"><i class="fas fa-caret-right"></i> Team</a></li>
-                                    <li><a href="achievements.html"><i class="fas fa-caret-right"></i> Achievments</a>
-                                    </li>
-                                    <li><a href="acm-w.html"><i class="fas fa-caret-right"></i> ACM-W</a></li>
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row footer-widget-wrapper pt-100 pb-70">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-widget-box about-us">
+                            <a href="#" class="footer-logo">
+                                <img src="assets/img/logo/ACM Logo Black.svg    " alt="">
+                            </a>
+                            <p class="mb-20">
+                                ACM boosts up the potential and talent, supporting the overall development needs of
+                                our students to facilitate a structured path from education to employment by
+                                providing a safe and supported space where creative talent and imagination can
+                                flourish in a caring environment.
+                            </p>
+                            <div class="footer-contact">
+                                <ul>
+                                    <li><i class="far fa-map-marker-alt"></i>CCET, SECTOR-26, CHANDIGARH</li>
 
                                 </ul>
                             </div>
+                            <ul class="footer-social">
+                                <li><a href="https://www.facebook.com/acmwccet"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li><a href="https://www.instagram.com/acmwccet"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i
+                                            class="fab fa-youtube"></i></a></li>
+                                <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="http://linkedin.com/in/ccet-acm-w-843729228"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
                         </div>
-                        <div class="col-md-6 col-lg-3">
-                            
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Explore</h4>
+                            <ul class="footer-list">
+                                <li><a href="about.html"><i class="fas fa-caret-right"></i> About </a></li>
+                                <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
+                                <li><a href="team.html"><i class="fas fa-caret-right"></i> Team</a></li>
+                                <li><a href="achievements.html"><i class="fas fa-caret-right"></i> Achievments</a>
+                                </li>
+                                <li><a href="acm-w.html"><i class="fas fa-caret-right"></i> ACM-W</a></li>
+
+                            </ul>
                         </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="footer-widget-box list">
-                                <h4 class="footer-widget-title">Contact Us</h4>
-                                <div class="footer-newsletter">
-                                    <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
-                                        Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a></p>
-                                    <div class="subscribe-form">
-                                        <form action="#">
-                                            <input type="email" class="form-control" placeholder="Your Email">
-                                            <button class="theme-btn" type="submit">
-                                                Subscribe Now <i class="far fa-paper-plane"></i>
-                                            </button>
-                                        </form>
-                                    </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Contact Us</h4>
+                            <div class="footer-newsletter">
+                                <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
+                                    Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a>
+                                </p>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="email" class="form-control" placeholder="Your Email">
+                                        <button class="theme-btn" type="submit">
+                                            Subscribe Now <i class="far fa-paper-plane"></i>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 align-self-center">
-                            <p class="copyright-text">
-                                Copyright © 2023 All rights reserved | <br> Designed and Developed by <a href="#">CCET ACM Website Team</a>
-                            </p>
-                        </div>
-                        
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <p class="copyright-text">
+                            Copyright © 2023 All rights reserved | <br> Developed by <a href="#">CCET ACM Website
+                                Team</a>
+                        </p>
                     </div>
+
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <!---------------------------------------------------------FOOTER END---------------------------------------------------------------->
 
