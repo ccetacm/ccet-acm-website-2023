@@ -4860,4 +4860,10 @@ media .events-info {
 
 /*NAV BAR*/
 
+@media all and (min-width: 991px) {
+  .acm-w-nav-mobile {
+    display: none;
+  }
+}
+
 /*NAV BAR END*/

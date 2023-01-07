@@ -6,45 +6,43 @@
 <head>
     <style>
         .outlet {
-        width: 20%;
-        height: 400px;
-        background-image: url("assets/img/slider/vol1.png");
-        background-size: 100% 100%;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        animation: changeImage 20s linear infinite;
-    }
-
-    @keyframes changeImage {
-        0% {
+            width: 20%;
+            height: 400px;
             background-image: url("assets/img/slider/vol1.png");
+            background-size: 100% 100%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            animation: changeImage 20s linear infinite;
         }
 
-        25% {
-            background-image: url("assets/img/slider/vol1issue2.png");
+        @keyframes changeImage {
+            0% {
+                background-image: url("assets/img/slider/vol1.png");
+            }
+
+            25% {
+                background-image: url("assets/img/slider/vol1issue2.png");
+            }
+
+            50% {
+                background-image: url("assets/img/slider/vol1issue3.jpeg");
+            }
+
+            75% {
+                background-image: url("assets/img/slider/vol2issue2.png");
+            }
+
+            100% {
+                background-image: url("assets/img/slider/vol2issue1.png");
+            }
         }
 
-        50% {
-            background-image: url("assets/img/slider/vol1issue3.jpeg");
+
+
+        @media all and (max-width: 412px) {
+            .footer-alignment {
+                margin-left: 0px !important;
+            }
         }
-
-        75% {
-            background-image: url("assets/img/slider/vol2issue2.png");
-        }
-
-        100% {
-            background-image: url("assets/img/slider/vol2issue1.png");
-        }
-    }
-
-
-    
-@media all and (max-width: 412px) {
-    .footer-alignment{
-            margin-left: 0px !important;
-        }
-    }
-
-
     </style>
 
     <meta charset="UTF-8">
@@ -98,39 +96,41 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
-                                
+
                             </li>
                             <li class="nav-item"><a class="nav-link" href="about.html"> About </a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="gallery.html" data-bs-toggle="">Gallery</a>
-                                
+
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Events</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="events.html">Events</a></li>
                                     <li><a class="dropdown-item" href="competition.html">Competition</a></li>
-                                    
+
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Team</a>
                                 <ul class="dropdown-menu fade-up">
                                     <li><a class="dropdown-item" href="Office-bearers.html">Office bearers</a></li>
-                                    <li><a class="dropdown-item" href="Executive-members.html">Executive members</a></li>
+                                    <li><a class="dropdown-item" href="Executive-members.html">Executive members</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="Web-Masters.html">Web Masters</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="achievements.html" >Achievements</a>
-                                
+                                <a class="nav-link" href="achievements.html">Achievements</a>
+
                             </li>
                             <li class="nav-item"><a class="nav-link" href="resources.html"> Resources </a></li>
                             <li class="nav-item"><a class="nav-link" href="magazine.html">Magazine </a></li>
                             <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                            <li class="nav-item acm-w-nav-mobile"><a class="nav-link" href="acm-w.html">ACM-W</a></li>
                         </ul>
                         <div class="header-nav-right">
-                           
+
                             <div class="header-btn">
                                 <a href="acm-w.html" class="theme-btn" style="width: 100px; height: 40px;">ACM-W</a>
                             </div>
@@ -221,16 +221,20 @@
                                 <div class="footer-contact">
                                     <ul>
                                         <li><i class="far fa-map-marker-alt"></i>CCET, SECTOR-26, CHANDIGARH</li>
-                                        
+
                                     </ul>
                                 </div>
                                 <ul class="footer-social">
-                                    <li><a href="https://www.facebook.com/acmccet"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.instagram.com/acmccet"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.facebook.com/acmccet"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/acmccet"><i class="fab fa-instagram"></i></a>
+                                    </li>
                                     <li><a href="https://twitter.com/acmccet"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCdqrwqNB9ibYjFpBkMA-4iQ"><i
+                                                class="fab fa-youtube"></i></a></li>
                                     <li><a href="mailto:acm@ccet.ac.in"><i class="fa fa-envelope"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/ccet-acm-student-chapter"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/ccet-acm-student-chapter"><i
+                                                class="fab fa-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -249,14 +253,16 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                            
+
                         </div>
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-widget-box list">
                                 <h4 class="footer-widget-title">Contact Us</h4>
                                 <div class="footer-newsletter">
-                                    <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26, Chandigarh
-                                        Website: <a style="color: white;" href="https://www.ccet.ac.in/">www.ccet.ac.in</a></p>
+                                    <p>Chandigarh College of Engineering and Technology Degree Wing Sector - 26,
+                                        Chandigarh
+                                        Website: <a style="color: white;"
+                                            href="https://www.ccet.ac.in/">www.ccet.ac.in</a></p>
                                     <div class="subscribe-form">
                                         <form action="#">
                                             <input type="email" class="form-control" placeholder="Your Email">
@@ -276,10 +282,11 @@
                     <div class="row">
                         <div class="col-lg-6 align-self-center">
                             <p class="copyright-text">
-                                Copyright © 2023 All rights reserved | <br> Designed and Developed by <a href="#">CCET ACM Website Team</a>
+                                Copyright © 2023 All rights reserved | <br> Designed and Developed by <a href="#">CCET
+                                    ACM Website Team</a>
                             </p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
