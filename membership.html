@@ -1,0 +1,919 @@
+<html lang="en">
+
+<head>
+    <title>ACM Registration</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="keywords"
+        content="Full Screen Enroll Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements">
+
+    <!-- css files -->
+    <!-- <link rel="stylesheet" href="/style.css" type="text/css" media="all">-->
+    <!-- Style-CSS -->
+    <!-- <link rel="stylesheet" href="/styles/font-awesome.min.css"> -->
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- web-fonts -->
+    <link
+        href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext"
+        rel="stylesheet">
+    <!-- //web-fonts -->
+</head>
+
+<style>
+    #benefit-list-container {
+        margin-top: 19px;
+        color: white;
+    }
+
+    #benefit-list-container ul li {
+        padding: 10px;
+    }
+
+    .logo h2 a {
+        color: white;
+    }
+
+    .logo h2 a:hover {
+        color: #023e8a;
+        transition: 0.7s ease;
+    }
+
+    .sub-main-w3 #quickstart-sign-in {
+        background: #000;
+
+
+    }
+
+    .sub-main-w3 #quickstart-sign-in:hover {
+        background-color: #444444;
+    }
+
+
+    /*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+    /* reset */
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    dl,
+    dt,
+    dd,
+    ol,
+    nav ul,
+    nav li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* start editing from here */
+
+    a {
+        text-decoration: none;
+    }
+
+    .txt-rt {
+        text-align: right;
+    }
+
+    /* text align right */
+
+    .txt-lt {
+        text-align: left;
+    }
+
+    /* text align left */
+
+    .txt-center {
+        text-align: center;
+    }
+
+    /* text align center */
+
+    .float-rt {
+        float: right;
+    }
+
+    /* float right */
+
+    .float-lt {
+        float: left;
+    }
+
+    /* float left */
+
+    .clear {
+        clear: both;
+    }
+
+    /* clear float */
+
+    .pos-relative {
+        position: relative;
+    }
+
+    /* Position Relative */
+
+    .pos-absolute {
+        position: absolute;
+    }
+
+    /* Position Absolute */
+
+    .vertical-base {
+        vertical-align: baseline;
+    }
+
+    /* vertical align baseline */
+
+    .vertical-top {
+        vertical-align: top;
+    }
+
+    /* vertical align top */
+
+    nav.vertical ul li {
+        display: block;
+    }
+
+    /* vertical menu */
+
+    nav.horizontal ul li {
+        display: inline-block;
+    }
+
+    /* horizontal menu */
+
+    img {
+        max-width: 100%;
+    }
+
+    /*end reset*/
+
+    body {
+        font-size: 100%;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*--header--*/
+
+    h1 a {
+        font-size: 2em;
+        color: #fff;
+        letter-spacing: 0px;
+        font-weight: 600;
+        margin-bottom: 5vw;
+        display: inline-block;
+    }
+
+    h1 a span {
+        margin-right: 10px;
+    }
+
+    /*--//header--*/
+
+    /* content */
+
+    /* left content */
+
+    .main-w3ls {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .left-content {
+        background: url(IMAGES/memberhsip.jpeg) no-repeat center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-position: center;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 67%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .w3ls-content {
+        padding: 5vw;
+    }
+
+    /* navigation */
+
+    ul.nav-w3ls {
+        margin-top: 7em;
+    }
+
+    ul.nav-w3ls li {
+        display: inline-block;
+    }
+
+    ul.nav-w3ls li a {
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin: 0 20px;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+
+    ul.nav-w3ls li a:hover {
+        opacity: .7;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+
+    ul.nav-w3ls li:nth-child(1) a,
+    ul.nav-w3ls li:nth-child(5) a,
+    ul.nav-w3ls li:nth-child(3) a {
+        margin: 0;
+    }
+
+    /* //navigation */
+
+    /* button */
+
+    a.button-w3ls span {
+        background: #000;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 2.5;
+        font-size: 20px;
+        margin-top: 1em;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+
+    a.button-w3ls span:hover {
+        background: #0183e8 !important;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+
+    /* //button */
+
+    /* //left content */
+
+    /* right content */
+
+    .right-form-agile {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .sub-main-w3 {
+        padding: 3vw 3.5vw 2.5vw;
+        background: #023e8a;
+        min-height: 100vh;
+    }
+
+    .w3ls-content h2 {
+        font-size: 50px;
+        color: #fff;
+        font-weight: 800;
+        max-width: 550px;
+    }
+
+    .sub-main-w3 h3 {
+        color: #fff;
+        font-size: 32px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    .sub-main-w3 h5 {
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0 4px;
+    }
+
+    .sub-main-w3 p {
+        color: #d8d6d6;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 1.8em;
+    }
+
+    .sub-main-w3 label {
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        display: inline-block;
+    }
+
+    .pom-agile {
+        padding: 12px 15px;
+        background: #fff;
+        margin-bottom: 15px;
+        width: 100%;
+        border-radius: 4px;
+        box-sizing: border-box;
+        display: -webkit-flex;
+        display: -webkit-box;
+        display: -moz-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        flex-basis: 100%;
+    }
+
+    .pom-agile span {
+        color: #e84601;
+        flex-basis: 4%;
+        -webkit-flex-basis: 4%;
+        margin-right: 6px;
+    }
+
+    /* select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+} */
+
+    /* form */
+
+    .pom-agile input[type="text"],
+    .pom-agile input[type="email"],
+    .pom-agile input[type="number"],
+    .pom-agile input[type="date"],
+    .pom-agile input,
+    .pom-agile select,
+    /* .pom-agile option, */
+
+    .pom-agile input[type="password"] {
+        outline: none;
+        font-size: 14px;
+        border: none;
+        background: transparent;
+        color: #000;
+        letter-spacing: 1px;
+        flex-basis: 95%;
+        -webkit-flex-basis: 95%;
+    }
+
+    .sub-main-w3 input[type="submit"] {
+        color: #fff;
+        background: #e84601;
+        border: none;
+        padding: 12px 0;
+        margin-top: 1.3em;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+
+    .sub-main-w3 input[type="submit"]:hover {
+        opacity: .8;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+
+    .sub-main-w3 .aa {
+        color: #fff;
+        height: 40px;
+        background: #e84601;
+        border: none;
+        padding: 12px 7px;
+        margin-top: 1.3em;
+        outline: none;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+
+    .sub-main-w3 .aa:hover {
+        opacity: .8;
+        -webkit-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        transition: 0.5s all;
+    }
+
+    /* //checkbox */
+
+    /* placeholder-color */
+
+    ::-webkit-input-placeholder {
+        color: #8a8989;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #8a8989;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #8a8989;
+    }
+
+    :-ms-input-placeholder {
+        color: #8a8989;
+    }
+
+    /* //copyright */
+
+    /* responsive */
+
+    @media(max-width: 1080px) {
+        .left-content {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+
+        .right-form-agile {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+
+        .copyright p {
+            font-size: 14px;
+        }
+
+        h1 a {
+            font-size: 1.8em;
+        }
+
+        .w3ls-content h2 {
+            font-size: 44px;
+        }
+
+        .sub-main-w3 h3 {
+            font-size: 28px;
+        }
+
+        .sub-main-w3 h5 {
+            font-size: 18px;
+        }
+
+        .sub-main-w3 p {
+            font-size: 13px;
+            margin-bottom: 1.5em;
+        }
+
+        .sub-main-w3 label {
+            font-size: 13px;
+        }
+
+        .sub-agile input[type="checkbox"]+label {
+            font-size: 14px;
+        }
+
+        h1 a {
+            margin-bottom: 8vw;
+        }
+
+        .copyright p {
+            margin: 4vw 1.5vw;
+            margin-left: 80px;
+        }
+    }
+
+    @media(max-width: 900px) {
+        .copyright p {
+            padding: 4vw 1.5vw;
+            margin: 0;
+            margin-left: 30px;
+        }
+
+        .left-content {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 60%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            order: 1;
+        }
+
+        .right-form-agile {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            order: 1;
+        }
+
+        .sub-main-w3 {
+            padding: 5vw 10vw;
+        }
+
+        .w3ls-content h2 {
+            font-size: 40px;
+        }
+    }
+
+    @media(max-width: 480px) {
+        .w3ls-social h3 {
+            font-size: 20px;
+            margin: 1.5em 0 .6em;
+        }
+
+        .w3ls-content h2 {
+            font-size: 34px;
+        }
+
+        ul.nav-w3ls li a {
+            font-size: 14px;
+        }
+
+        .copyright p {
+            font-size: 13px;
+            margin-left: 80px;
+        }
+
+        ul.nav-w3ls {
+            margin-top: 4em;
+        }
+    }
+
+    @media(max-width: 440px) {
+        ul.nav-w3ls li a {
+            margin: 0 11px;
+        }
+    }
+
+    @media(max-width: 414px) {
+        h1 a {
+            font-size: 1.6em;
+        }
+
+        .w3ls-content h2 {
+            font-size: 30px;
+        }
+
+        ul.nav-w3ls li a {
+            margin: 0 18px;
+        }
+    }
+
+    @media(max-width: 384px) {
+        .sub-agile input[type="checkbox"]+label {
+            font-size: 13px;
+        }
+
+        h1 a {
+            font-size: 1.4em;
+        }
+
+        .w3ls-content h2 {
+            font-size: 28px;
+        }
+    }
+
+    @media(max-width: 375px) {
+        .sub-main-w3 h3 {
+            font-size: 25px;
+        }
+
+        .sub-main-w3 h5 {
+            font-size: 16px;
+        }
+
+        .sub-main-w3 p {
+            font-size: 12px;
+        }
+
+        .pom-agile input[type="text"],
+        .pom-agile input[type="email"],
+        .pom-agile input[type="password"] {
+            font-size: 13px;
+        }
+    }
+
+    @media(max-width: 320px) {
+        ul.nav-w3ls {
+            margin-top: 3em;
+        }
+
+        h1 a {
+            font-size: 1.2em;
+        }
+
+        .w3ls-content h2 {
+            font-size: 26px;
+        }
+
+        .sub-main-w3 h5 {
+            font-size: 14px;
+        }
+    }
+
+    /* //responsive */
+</style>
+
+<body data-new-gr-c-s-check-loaded="14.1033.0" data-gr-ext-installed="">
+    <div class="main-w3ls">
+        <div class="left-content">
+            <div class="w3ls-content">
+                <!-- logo -->
+                <div class="logo" style="display: flex; justify-content: space-between;">
+
+                    <h2> <a href="index.html" target="_blank">CCET ACM </a> <br> Membership Form</h2>
+                    <img src="IMAGES/ccet-acm-logo-website-white.png" alt="" width="25%" height="25%">
+
+                </div>
+                <!-- //logo -->
+
+                <div id="benefit-list-container">
+                    <ul style="list-style: inherit;">
+                        <li>A vast network of nearly 100,000 highly dedicated student and professional peers
+                        </li>
+
+                        <li>A full year subscription to ACM magazines and news letters.(Communications of the ACM, XRDS:
+                            Crossroads,
+                            MemberNet etc.)
+
+                        </li>
+
+                        <li>The option to subscribe to the full ACM Digital Library, which includes over 2 million pages
+                            of text
+                        </li>
+
+                        <li>Become a member of computing community through one of hundreds of Professional and Student
+                            Chapters
+                            worldwide
+
+                        </li>
+
+                        <li>Participation in ACM Distinguished Speakers Program (DSP).Renowned International Thought
+                            Leaders
+                            Speaking on the Most Important Topics in Computing Today
+                        </li>
+
+                        <li>Unique volunteering opportunities to gain hands-on experience and knowledge of the
+                            marketplace
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <!-- copyright -->
+
+            <!-- //copyright -->
+        </div>
+        <div class="right-form-agile">
+            <!-- content -->
+            <div class="sub-main-w3">
+
+                <h3>Signup Now</h3>
+                <h5>Welcome!</h5>
+                <p>This is the first step towards becoming a part of our family.</p>
+
+                <form method="POST" action="https://formspree.io/f/mayaznpj" id="theForm">
+                    <div class="form-style-agile">
+                        <label>Your Name</label>
+                        <div class="pom-agile">
+
+                            <input type="text" name="name" placeholder="Full Name" pattern="^[a-zA-Z ]{4,50}$"
+                                title="Name can only contain alphabets" required="">
+                        </div>
+                    </div>
+
+                    <div class="form-style-agile">
+                        <label>Contact Number</label>
+                        <div class="pom-agile">
+
+                            <input placeholder="Contact Number" name="pnum" type="text" pattern="^[+0-9]{10}$"
+                                maxlength="10" title="Number should be of 10 digits" required="">
+                        </div>
+                    </div>
+                    <div class="form-style-agile">
+                        <label>Email</label>
+                        <div class="pom-agile">
+
+                            <input placeholder="Email" name="email" type="email"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                title="Email should be similar to ccetacm@gmail.com" required="">
+                        </div>
+                    </div>
+                    <div class="form-style-agile">
+                        <label>Year</label>
+                        <div class="pom-agile">
+
+                            <input placeholder="Year" name="year" type="number" min="1" max="4" required="">
+                        </div>
+                    </div>
+
+
+                    <div class="form-style-agile">
+                        <label>College Roll Number</label>
+                        <div class="pom-agile">
+
+                            <input placeholder="College Roll Number" name="rollno" type="text" required="">
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-style-agile">
+                        <label>Area Of Interset</label>
+                        <div class="pom-agile">
+
+                            <select id="area-of-interset" name="area-of-interset" value="area-of-interset" required="">
+                                <option disabled="" selected="">Select Your Interset </option>
+                                <option value="website">Website</option>
+                                <option value="coding">Coding</option>
+                                <option value="designing">Designing</option>
+                                <option value="designing">Research Paper</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-style-agile">
+                        <label>Why do you want to join ACM ?</label>
+                        <div class="pom-agile">
+
+                            <textarea name="whyacm" id="whyacm" cols="100" rows="5"
+                                style="border: none; font-family: 'Poppins', sans-serif;"></textarea>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <input type="submit" value="Submit" id="quickstart-sign-in">
+                    </div>
+                </form>
+
+
+
+
+            </div>
+            <script src="https://kit.fontawesome.com/e96a6e76eb.js"></script>
+        </div>
+    </div>
+
+</html>
