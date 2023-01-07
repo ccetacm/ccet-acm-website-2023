@@ -622,6 +622,19 @@ div.overlay-blue:hover {
   cursor: pointer;
 }
 
+.membership-button button {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 5;
+}
+
+@media only screen and (max-width: 450px) {
+  .membership-button button {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+}
+
 /* END OF INDEX */
 
 /* CODING_TEAM */
