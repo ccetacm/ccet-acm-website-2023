@@ -622,7 +622,6 @@ div.overlay-blue:hover {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .membership-button button {
   font-size: 2.5rem;
   color: #fff;
@@ -634,12 +633,13 @@ div.overlay-blue:hover {
     font-size: 1.5rem;
     margin-top: 10px;
   }
-=======
+}
+
 .footer-heading {
   color: #fff;
   position: relative;
   font-size: 25px;
-  z-index: 1
+  z-index: 1;
 }
 
 .footer-divider {
@@ -648,11 +648,11 @@ div.overlay-blue:hover {
   height: 4px;
   background-color: #fff;
   width: 90px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .footer-divider:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -1.1px;
@@ -660,8 +660,7 @@ div.overlay-blue:hover {
   width: 8px;
   background-color: #896eff;
   -webkit-animation: heading-move 5s infinite linear;
-  animation: heading-move 5s infinite linear
->>>>>>> 0e286774bb785a20e38d4ed9950a5db27ea18e23
+  animation: heading-move 5s infinite linear;
 }
 
 /* END OF INDEX */
@@ -2465,12 +2464,7 @@ h4:hover {
 /* END COMPETITION */
 /* ACM -W - HEADER*/
 .acm-w-logo {
-<<<<<<< HEAD
   max-width: 8%;
-=======
-  max-width: 30%;
-
->>>>>>> 0e286774bb785a20e38d4ed9950a5db27ea18e23
 }
 
 /* ACM-W-HEADER END */
@@ -4718,6 +4712,12 @@ media .events-info {
   transition: 0.8s ease-in-out;
 }
 
+@media (max-width: 600px) {
+  .mag-header {
+    margin-top: 80px;
+  }
+}
+
 @media (max-width: 1024px) {
   .mag-upper {
     display: flex;
@@ -4836,16 +4836,6 @@ media .events-info {
   }
 }
 
-@media (max-width: 600px) {
-  .mag-header {
-    margin-top: 80px;
-  }
-
-  .mag-single-slide .read-btn {
-    top: 25px;
-  }
-}
-
 /* +++ MAGAZINE END +++ */
 
 /* RESEARCH */
@@ -4863,10 +4853,6 @@ media .events-info {
 @media screen and (max-width: 770px) {
   .rsrch-team-item {
     margin-bottom: 10rem !important;
-  }
-
-  .breadcrumb-title span {
-    font-size: 44px;
   }
 }
 
